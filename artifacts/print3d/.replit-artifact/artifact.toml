@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Print3d"
+version = "1.0.0"
+id = "artifacts/print3d"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24856
+
+[services.development]
+run = "pnpm --filter @workspace/print3d run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/print3d", "run", "build" ]
+publicDir = "artifacts/print3d/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24856"
+BASE_PATH = "/"
