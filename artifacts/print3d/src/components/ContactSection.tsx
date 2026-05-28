@@ -1,7 +1,7 @@
 import { Mail, Linkedin } from 'lucide-react';
 import { SiWhatsapp, SiTiktok } from 'react-icons/si';
 import { useLang } from '@/contexts/LangContext';
-import { CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL } from '@/config';
+import { CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL, WHATSAPP_PHONE_DISPLAY } from '@/config';
 import { generateWhatsAppCartLink } from '@/utils/orderMessage';
 
 export function ContactSection() {
@@ -12,7 +12,7 @@ export function ContactSection() {
     {
       icon: SiWhatsapp,
       label: t('contact_whatsapp'),
-      value: '+55 11 91845-3735',
+      value: WHATSAPP_PHONE_DISPLAY,
       href: whatsappLink,
       accent: '#25D366',
       note: lang === 'en' ? 'Fastest response' : 'Resposta mais rápida',

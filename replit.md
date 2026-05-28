@@ -4,7 +4,7 @@ A fully static single-page website for showcasing and selling 3D printed product
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/print3d run dev` — run the frontend dev server
+- `pnpm --filter @workspace/print3d run dev` — run the frontend dev server (Replit)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 8080, health check only)
 - `pnpm run typecheck` — full typecheck across all packages
 
@@ -27,6 +27,7 @@ A fully static single-page website for showcasing and selling 3D printed product
 - `artifacts/print3d/src/contexts/LangContext.tsx` — language toggle (EN/PT)
 - `artifacts/print3d/src/utils/orderMessage.ts` — WhatsApp/email message generation
 - `artifacts/print3d/src/components/` — Header, Hero, ProductCatalog, CartDrawer, etc.
+- `artifacts/print3d/vite.pages.config.ts` — standalone config for GitHub Pages builds
 
 ## Architecture decisions
 
@@ -36,20 +37,26 @@ A fully static single-page website for showcasing and selling 3D printed product
 - Language context (EN/PT) is React state, switching is instant and affects all copy including generated order messages
 - Color system: 60% graphite (#0B0F14), 30% steel (#1E293B), 5% orange (#F97316), 5% cyan (#22D3EE)
 
+## GitHub Pages deployment
+
+Run `pnpm --filter @workspace/print3d run build:pages` (uses `vite.pages.config.ts`, no Replit env vars required). Output goes to `artifacts/print3d/dist/`. Set `VITE_BASE_PATH=/repo-name/` if deploying to a project page. See `artifacts/print3d/README.md` for full instructions.
+
 ## Product
 
 A professional 3D printing product showcase targeting engineers, makers, car enthusiasts, students, and hobbyists. Customers browse 8 products across 6 categories, add to cart, and place orders via WhatsApp or email. Bilingual (EN/PT-BR) with a visible header toggle.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- WhatsApp number: +5511918453735 (stored in config.ts as WHATSAPP_PHONE)
 
 ## Gotchas
 
 - `SiLinkedin` does not exist in react-icons v5 — use `Linkedin` from lucide-react instead
 - Google Fonts `@import url(...)` must be the very first line in index.css (before @import "tailwindcss")
 - All product/section copy goes through `t()` from LangContext — never hardcode EN/PT strings in components
-- To change contact info, edit `src/config.ts` only (WHATSAPP_PHONE, CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL)
+- To change contact info, edit `src/config.ts` only (WHATSAPP_PHONE, WHATSAPP_PHONE_DISPLAY, CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL)
+- `vite.config.ts` requires Replit env vars (PORT, BASE_PATH) — use `vite.pages.config.ts` for standalone/GitHub Pages builds
+- `package.json` has been trimmed to only the deps actually used by the app — do not add back unused Radix/shadcn deps
 
 ## Pointers
 
