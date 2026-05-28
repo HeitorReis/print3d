@@ -1,5 +1,6 @@
 import { useLang } from '@/contexts/LangContext';
 import { generateWhatsAppCartLink } from '@/utils/orderMessage';
+import { ChevronDown } from 'lucide-react';
 
 export function Hero() {
   const { lang, t } = useLang();
@@ -10,64 +11,109 @@ export function Hero() {
 
   const whatsappLink = generateWhatsAppCartLink([], lang);
 
+  const stats = [
+    { value: '8+', label: lang === 'en' ? 'Products' : 'Produtos' },
+    { value: 'PLA/PETG', label: lang === 'en' ? 'Materials' : 'Materiais' },
+    { value: '3–10d', label: lang === 'en' ? 'Delivery' : 'Prazo' },
+    { value: 'FDM', label: lang === 'en' ? 'Technology' : 'Tecnologia' },
+  ];
+
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16"
       style={{ backgroundColor: '#0B0F14' }}
     >
+      {/* Blueprint grid */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(34, 211, 238, 0.04) 1px, transparent 1px)
+            linear-gradient(rgba(34,211,238,0.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(34,211,238,0.035) 1px, transparent 1px)
           `,
-          backgroundSize: '48px 48px',
+          backgroundSize: '64px 64px',
         }}
       />
+      {/* Smaller sub-grid */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 80% 50% at 50% 40%, rgba(249,115,22,0.06) 0%, transparent 70%)',
+          backgroundImage: `
+            linear-gradient(rgba(34,211,238,0.015) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(34,211,238,0.015) 1px, transparent 1px)
+          `,
+          backgroundSize: '16px 16px',
+        }}
+      />
+      {/* Radial glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse 70% 55% at 50% 45%, rgba(249,115,22,0.055) 0%, transparent 70%)',
+        }}
+      />
+      {/* Corner vignette */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse 100% 100% at 50% 50%, transparent 60%, rgba(11,15,20,0.8) 100%)',
         }}
       />
 
+      {/* Technical corner labels */}
       <div
-        className="absolute top-24 left-8 text-xs font-mono select-none hidden lg:block"
-        style={{ color: 'rgba(34,211,238,0.3)' }}
+        className="absolute top-20 left-6 text-xs font-mono select-none hidden lg:block"
+        style={{ color: 'rgba(34,211,238,0.28)' }}
       >
         <div>X: 0.000 mm</div>
         <div>Y: 0.000 mm</div>
         <div>Z: 0.000 mm</div>
       </div>
       <div
-        className="absolute top-24 right-8 text-xs font-mono select-none hidden lg:block text-right"
-        style={{ color: 'rgba(34,211,238,0.3)' }}
+        className="absolute top-20 right-6 text-xs font-mono select-none hidden lg:block text-right"
+        style={{ color: 'rgba(34,211,238,0.28)' }}
       >
         <div>LAYER: —</div>
         <div>MATERIAL: PLA/PETG</div>
         <div>STATUS: READY</div>
       </div>
 
-      <div
-        className="absolute bottom-8 left-8 w-24 h-24 border select-none hidden lg:block"
-        style={{ borderColor: 'rgba(34,211,238,0.12)' }}
-      >
-        <div className="absolute top-1/2 left-0 right-0 border-t" style={{ borderColor: 'rgba(34,211,238,0.12)' }} />
-        <div className="absolute left-1/2 top-0 bottom-0 border-l" style={{ borderColor: 'rgba(34,211,238,0.12)' }} />
+      {/* Crosshair bottom-left */}
+      <div className="absolute bottom-10 left-6 select-none hidden lg:block">
         <div
-          className="absolute top-1/2 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2 rounded-full"
-          style={{ backgroundColor: 'rgba(249,115,22,0.5)' }}
-        />
+          className="relative w-20 h-20 border"
+          style={{ borderColor: 'rgba(34,211,238,0.1)' }}
+        >
+          <div
+            className="absolute top-1/2 left-0 right-0 h-px"
+            style={{ backgroundColor: 'rgba(34,211,238,0.1)' }}
+          />
+          <div
+            className="absolute left-1/2 top-0 bottom-0 w-px"
+            style={{ backgroundColor: 'rgba(34,211,238,0.1)' }}
+          />
+          <div
+            className="absolute top-1/2 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+            style={{ backgroundColor: 'rgba(249,115,22,0.5)' }}
+          />
+        </div>
+        <div
+          className="mt-1 text-xs font-mono"
+          style={{ color: 'rgba(34,211,238,0.22)' }}
+        >
+          ORIGIN
+        </div>
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Main content */}
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+        {/* Badge */}
         <div
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-8 border"
           style={{
-            backgroundColor: 'rgba(249,115,22,0.1)',
-            borderColor: 'rgba(249,115,22,0.3)',
+            backgroundColor: 'rgba(249,115,22,0.08)',
+            borderColor: 'rgba(249,115,22,0.25)',
             color: '#F97316',
           }}
         >
@@ -78,12 +124,12 @@ export function Hero() {
           FDM 3D Printing — PLA / PETG
         </div>
 
+        {/* Headline */}
         <h1
-          className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6"
+          className="text-4xl sm:text-5xl lg:text-[4.5rem] font-bold leading-[1.05] mb-6 tracking-tight"
           style={{
             fontFamily: "'Space Grotesk', sans-serif",
             color: '#F8FAFC',
-            letterSpacing: '-0.02em',
           }}
         >
           {t('hero_title').split('.').map((part, i, arr) =>
@@ -96,18 +142,20 @@ export function Hero() {
           )}
         </h1>
 
+        {/* Subheading */}
         <p
-          className="text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
-          style={{ color: '#CBD5E1' }}
+          className="text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
+          style={{ color: '#94A3B8' }}
         >
           {t('hero_subtitle')}
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* CTA buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
           <button
             onClick={scrollToCatalog}
             data-testid="button-hero-view-products"
-            className="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold text-sm transition-all hover:opacity-90 hover:scale-105 active:scale-100"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold text-sm transition-all duration-200 hover:brightness-110 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0F14]"
             style={{ backgroundColor: '#F97316', color: '#0B0F14' }}
           >
             {t('hero_btn_products')}
@@ -117,20 +165,54 @@ export function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-hero-whatsapp"
-            className="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold text-sm transition-all hover:bg-white/10 active:scale-100 border text-center"
-            style={{ borderColor: 'rgba(249,115,22,0.5)', color: '#F97316' }}
+            className="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold text-sm transition-all duration-200 hover:bg-white/6 active:scale-[0.98] border text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0F14]"
+            style={{ borderColor: 'rgba(249,115,22,0.35)', color: '#F97316' }}
           >
             {t('hero_btn_whatsapp')}
           </a>
         </div>
 
+        {/* Stats row */}
         <div
-          className="mt-20 flex items-center justify-center gap-2 text-xs animate-bounce"
-          style={{ color: 'rgba(148,163,184,0.5)' }}
+          className="w-full max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x border rounded-xl overflow-hidden"
+          style={{
+            borderColor: 'rgba(148,163,184,0.1)',
+            backgroundColor: 'rgba(30,41,59,0.5)',
+          }}
         >
-          <span>↓</span>
+          {stats.map((s, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center py-4 px-2"
+              style={{ borderColor: 'rgba(148,163,184,0.1)' }}
+            >
+              <span
+                className="text-xl font-bold tracking-tight mb-0.5"
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  color: i % 2 === 0 ? '#F97316' : '#22D3EE',
+                }}
+              >
+                {s.value}
+              </span>
+              <span className="text-xs uppercase tracking-widest" style={{ color: '#64748B' }}>
+                {s.label}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <button
+        onClick={scrollToCatalog}
+        className="relative z-10 mb-8 flex flex-col items-center gap-1 transition-opacity hover:opacity-70 focus-visible:outline-none"
+        aria-label="Scroll to products"
+        style={{ color: 'rgba(148,163,184,0.35)' }}
+      >
+        <span className="text-xs font-mono tracking-widest uppercase">scroll</span>
+        <ChevronDown className="w-4 h-4 animate-bounce" />
+      </button>
     </section>
   );
 }
