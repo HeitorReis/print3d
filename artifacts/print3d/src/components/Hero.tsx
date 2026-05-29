@@ -12,10 +12,10 @@ export function Hero() {
   const whatsappLink = generateWhatsAppCartLink([], lang);
 
   const stats = [
-    { value: '8+', label: lang === 'en' ? 'Products' : 'Produtos' },
-    { value: 'PLA/PETG', label: lang === 'en' ? 'Materials' : 'Materiais' },
-    { value: '3–10d', label: lang === 'en' ? 'Delivery' : 'Prazo' },
-    { value: 'FDM', label: lang === 'en' ? 'Technology' : 'Tecnologia' },
+    { value: 'PLA/PETG', label: lang === 'en' ? 'Material options' : 'Materiais' },
+    { value: '2-8d', label: lang === 'en' ? 'Typical delivery' : 'Prazo comum' },
+    { value: 'Quote', label: lang === 'en' ? 'Before printing' : 'Antes de imprimir' },
+    { value: 'Direct', label: lang === 'en' ? 'WhatsApp contact' : 'Contato WhatsApp' },
   ];
 
   return (
@@ -74,7 +74,7 @@ export function Hero() {
         className="absolute top-20 right-6 text-xs font-mono select-none hidden lg:block text-right"
         style={{ color: 'rgba(34,211,238,0.28)' }}
       >
-        <div>LAYER: —</div>
+        <div>LAYER: READY</div>
         <div>MATERIAL: PLA/PETG</div>
         <div>STATUS: READY</div>
       </div>
@@ -121,7 +121,7 @@ export function Hero() {
             className="w-1.5 h-1.5 rounded-full animate-pulse"
             style={{ backgroundColor: '#F97316' }}
           />
-          FDM 3D Printing — PLA / PETG
+          {lang === 'en' ? 'Custom prints on demand - PLA / PETG' : 'Impressões sob demanda - PLA / PETG'}
         </div>
 
         {/* Headline */}
@@ -172,9 +172,9 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Stats row */}
+        {/* Supporting details */}
         <div
-          className="w-full max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x border rounded-xl overflow-hidden"
+          className="w-full max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x border rounded-xl overflow-hidden"
           style={{
             borderColor: 'rgba(148,163,184,0.1)',
             backgroundColor: 'rgba(30,41,59,0.5)',

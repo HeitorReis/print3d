@@ -11,32 +11,33 @@ export function CustomProjects() {
 
   const capabilities = lang === 'en'
     ? [
-        'Functional mechanical parts',
-        'Scale models and miniatures',
+        'Replacement parts and small fixtures',
+        'Custom car clips and accessories',
+        'Desk gadgets and organizers',
+        'Figures, gifts and decorative pieces',
         'Prototypes from CAD files',
-        'Replacement parts and fixtures',
-        'Personalized gifts and decorations',
+        'Scale models and miniatures',
       ]
     : [
-        'Peças mecânicas funcionais',
-        'Maquetes e miniaturas em escala',
+        'Peças de reposição e pequenos fixadores',
+        'Clips e acessórios automotivos personalizados',
+        'Gadgets de mesa e organizadores',
+        'Miniaturas, presentes e peças decorativas',
         'Protótipos a partir de arquivos CAD',
-        'Peças de reposição e fixadores',
-        'Presentes e decorações personalizados',
+        'Maquetes e miniaturas em escala',
       ];
 
   return (
     <section id="custom" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#111827' }}>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: text */}
           <div>
             <div
               className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase mb-4"
               style={{ color: '#22D3EE' }}
             >
               <Cpu className="w-3.5 h-3.5" />
-              — {t('nav_custom')}
+              - {t('nav_custom')}
             </div>
 
             <h2
@@ -73,7 +74,6 @@ export function CustomProjects() {
             </div>
           </div>
 
-          {/* Right: capability list */}
           <div
             className="p-6 rounded-2xl border"
             style={{ backgroundColor: 'rgba(11,15,20,0.5)', borderColor: 'rgba(148,163,184,0.1)' }}
@@ -82,7 +82,7 @@ export function CustomProjects() {
               className="text-xs font-semibold uppercase tracking-widest mb-5"
               style={{ color: '#64748B' }}
             >
-              {lang === 'en' ? 'What we can print' : 'O que podemos imprimir'}
+              {lang === 'en' ? 'What you can request' : 'O que você pode pedir'}
             </p>
             <ul className="space-y-3.5">
               {capabilities.map((item) => (
@@ -105,8 +105,8 @@ export function CustomProjects() {
               </div>
               <p className="text-xs" style={{ color: '#64748B', lineHeight: '1.5' }}>
                 {lang === 'en'
-                  ? 'Send your idea, sketch, or STL file — we will quote and confirm delivery.'
-                  : 'Envie sua ideia, rascunho ou arquivo STL — cotamos e confirmamos o prazo.'}
+                  ? 'I review the request and confirm the quote before production starts.'
+                  : 'Eu avalio o pedido e confirmo o orçamento antes da produção começar.'}
               </p>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ShoppingCart, Box, Menu, X } from 'lucide-react';
+import { Box, Menu, ShoppingCart, X } from 'lucide-react';
 import { useLang } from '@/contexts/LangContext';
 import { useCart } from '@/contexts/CartContext';
 

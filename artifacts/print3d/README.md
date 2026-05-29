@@ -19,7 +19,7 @@ Print3d is a product showcase and direct-order store for an informal 3D printing
 | TypeScript | Type-safe codebase |
 | Tailwind CSS v4 | Utility-first styling |
 | Lucide React | UI icons |
-| React Icons | Brand icons (WhatsApp, TikTok) |
+| React Icons | Brand icons (WhatsApp) |
 
 ---
 
@@ -31,8 +31,9 @@ Print3d is a product showcase and direct-order store for an informal 3D printing
 - **Cart drawer** — add, remove, increase/decrease quantity; persisted in `localStorage`
 - **WhatsApp order generation** — pre-filled message with product names, quantities, prices, delivery times, and total
 - **Email order generation** — mailto link with subject and full order body
+- **Order-aware contact links** — WhatsApp and email CTAs open with the current cart message when items are selected
 - **Ask about item** — per-product WhatsApp inquiry button
-- **Contact section** — WhatsApp, Email, LinkedIn, TikTok links
+- **Contact section** — WhatsApp, Email, LinkedIn, GitHub, Instagram links
 - **Responsive design** — mobile-first layout, cart drawer works on all screen sizes
 - **Industrial dark theme** — graphite background, orange accents, cyan highlights
 
@@ -92,9 +93,10 @@ All contact and social links are in `src/config.ts`. **Replace these before depl
 
 export const WHATSAPP_PHONE = '5511999999999';      // wa.me number — no spaces or dashes
 export const WHATSAPP_PHONE_DISPLAY = '+55 11 99999-9999';  // shown in the Contact section
-export const CONTACT_EMAIL = 'your.email@example.com';
-export const LINKEDIN_URL = 'https://www.linkedin.com/in/yourprofile';
-export const TIKTOK_URL = 'https://www.tiktok.com/@yourprofile';
+export const CONTACT_EMAIL = 'tobiel.reis@gmail.com';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/heitor-gbr';
+export const GITHUB_URL = 'https://github.com/HeitorReis';
+export const INSTAGRAM_URL = 'https://www.instagram.com/tobiel.reis';
 ```
 
 ---
@@ -197,7 +199,7 @@ VITE_BASE_PATH=/print3d/ npm run build:pages
 
 ### Step 2 - Update contact info
 
-Edit `src/config.ts` with your real WhatsApp number, email, LinkedIn, and TikTok before building.
+Edit `src/config.ts` with your real WhatsApp number, email, LinkedIn, GitHub, and Instagram before building.
 
 ### Step 3 - Build locally
 
@@ -230,7 +232,7 @@ artifacts/print3d/
 │   │   ├── CartDrawer.tsx      # Slide-in cart panel
 │   │   ├── CustomProjects.tsx  # Custom orders CTA section
 │   │   ├── ProcessSection.tsx  # 5-step print process
-│   │   ├── ContactSection.tsx  # 4-channel contact cards
+│   │   ├── ContactSection.tsx  # 5-channel contact cards
 │   │   └── Footer.tsx          # Social links + disclaimer
 │   ├── contexts/
 │   │   ├── CartContext.tsx     # Cart state provider
@@ -269,6 +271,6 @@ artifacts/print3d/
 
 ## Disclaimer
 
-**Placeholder contact information:** The default `WHATSAPP_PHONE`, `CONTACT_EMAIL`, `LINKEDIN_URL`, and `TIKTOK_URL` values in `src/config.ts` are placeholders. Replace them with real values before publishing.
+**Placeholder contact information:** Replace any remaining placeholder contact values in `src/config.ts` before publishing.
 
 **Informal brand:** Print3d is an informal project/portfolio brand name. It is not presented as a legally registered company or trademark.

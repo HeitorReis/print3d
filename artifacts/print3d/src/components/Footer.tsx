@@ -1,12 +1,13 @@
-import { Box, Mail, Linkedin } from 'lucide-react';
-import { SiWhatsapp, SiTiktok } from 'react-icons/si';
+import { Box, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 import { useLang } from '@/contexts/LangContext';
-import { LINKEDIN_URL, TIKTOK_URL, CONTACT_EMAIL } from '@/config';
-import { generateWhatsAppCartLink } from '@/utils/orderMessage';
+import { GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL } from '@/config';
+import { generateEmailLink, generateWhatsAppCartLink } from '@/utils/orderMessage';
 
 export function Footer() {
   const { lang, t } = useLang();
   const whatsappLink = generateWhatsAppCartLink([], lang);
+  const emailLink = generateEmailLink([], lang);
 
   const year = new Date().getFullYear();
 
@@ -37,9 +38,10 @@ export function Footer() {
           <div className="flex items-center gap-1">
             {[
               { href: whatsappLink, icon: SiWhatsapp, label: 'WhatsApp', external: true },
-              { href: `mailto:${CONTACT_EMAIL}`, icon: Mail, label: 'Email', external: false },
+              { href: emailLink, icon: Mail, label: 'Email', external: false },
               { href: LINKEDIN_URL, icon: Linkedin, label: 'LinkedIn', external: true },
-              { href: TIKTOK_URL, icon: SiTiktok, label: 'TikTok', external: true },
+              { href: GITHUB_URL, icon: Github, label: 'GitHub', external: true },
+              { href: INSTAGRAM_URL, icon: Instagram, label: 'Instagram', external: true },
             ].map(({ href, icon: Icon, label, external }) => (
               <a
                 key={label}
@@ -70,7 +72,7 @@ export function Footer() {
             {t('footer_disclaimer')}
           </p>
           <p className="text-xs whitespace-nowrap" style={{ color: '#334155' }}>
-            © {year} Print3d.{' '}
+            © {year} PRINT3D.{' '}
             {lang === 'en' ? 'All rights reserved.' : 'Todos os direitos reservados.'}
           </p>
         </div>

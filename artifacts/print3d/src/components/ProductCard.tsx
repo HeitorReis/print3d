@@ -1,8 +1,7 @@
-import { ShoppingCart, MessageCircle, Clock, Layers } from 'lucide-react';
+import { Clock, Layers, PlusCircle } from 'lucide-react';
 import { Product } from '@/data/products';
 import { useLang } from '@/contexts/LangContext';
 import { useCart } from '@/contexts/CartContext';
-import { generateWhatsAppProductLink } from '@/utils/orderMessage';
 
 interface ProductCardProps {
   product: Product;
@@ -27,7 +26,6 @@ export function ProductCard({ product }: ProductCardProps) {
   const tags = lang === 'en' ? product.tagsEn : product.tagsPt;
 
   const catLabel = CATEGORY_LABELS[product.category][lang];
-  const whatsappLink = generateWhatsAppProductLink(product, lang);
 
   return (
     <article
@@ -152,28 +150,16 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Action buttons */}
-        <div className="flex gap-2 pt-0.5">
+        <div className="pt-0.5">
           <button
             onClick={() => addItem(product)}
-            data-testid={`button-add-to-cart-${product.id}`}
-            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+            data-testid={`button-add-to-quote-${product.id}`}
+            className="flex w-full items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
             style={{ backgroundColor: '#F97316', color: '#0B0F14' }}
           >
-            <ShoppingCart className="w-3.5 h-3.5" />
+            <PlusCircle className="w-3.5 h-3.5" />
             {t('btn_add_to_cart')}
           </button>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid={`link-ask-item-${product.id}`}
-            className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 hover:bg-white/6 border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
-            style={{ borderColor: 'rgba(34,211,238,0.2)', color: '#22D3EE' }}
-            aria-label={`${t('btn_ask_item')}: ${name}`}
-          >
-            <MessageCircle className="w-3.5 h-3.5" />
-            {t('btn_ask_item')}
-          </a>
         </div>
       </div>
     </article>

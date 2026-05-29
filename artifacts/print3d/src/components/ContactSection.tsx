@@ -1,7 +1,7 @@
-import { Mail, Linkedin } from 'lucide-react';
-import { SiWhatsapp, SiTiktok } from 'react-icons/si';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 import { useLang } from '@/contexts/LangContext';
-import { CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL, WHATSAPP_PHONE_DISPLAY } from '@/config';
+import { CONTACT_EMAIL, GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL, WHATSAPP_PHONE_DISPLAY } from '@/config';
 import { generateWhatsAppCartLink } from '@/utils/orderMessage';
 
 export function ContactSection() {
@@ -15,7 +15,7 @@ export function ContactSection() {
       value: WHATSAPP_PHONE_DISPLAY,
       href: whatsappLink,
       accent: '#25D366',
-      note: lang === 'en' ? 'Fastest response' : 'Resposta mais rápida',
+      note: lang === 'en' ? 'Fastest for quotes' : 'Mais rápido para orçamento',
     },
     {
       icon: Mail,
@@ -23,36 +23,43 @@ export function ContactSection() {
       value: CONTACT_EMAIL,
       href: `mailto:${CONTACT_EMAIL}`,
       accent: '#22D3EE',
-      note: lang === 'en' ? 'For detailed requests' : 'Para pedidos detalhados',
+      note: lang === 'en' ? 'For files and details' : 'Para arquivos e detalhes',
     },
     {
       icon: Linkedin,
       label: t('contact_linkedin'),
-      value: 'LinkedIn',
+      value: 'heitor-gbr',
       href: LINKEDIN_URL,
       accent: '#0A66C2',
       note: lang === 'en' ? 'Professional contact' : 'Contato profissional',
     },
     {
-      icon: SiTiktok,
-      label: t('contact_tiktok'),
-      value: '@print3d',
-      href: TIKTOK_URL,
+      icon: Github,
+      label: t('contact_github'),
+      value: 'HeitorReis',
+      href: GITHUB_URL,
       accent: '#F8FAFC',
-      note: lang === 'en' ? 'See the process' : 'Veja o processo',
+      note: lang === 'en' ? 'Projects and code' : 'Projetos e código',
+    },
+    {
+      icon: Instagram,
+      label: t('contact_instagram'),
+      value: '@tobiel.reis',
+      href: INSTAGRAM_URL,
+      accent: '#E1306C',
+      note: lang === 'en' ? 'Updates and photos' : 'Atualizações e fotos',
     },
   ];
 
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#111827' }}>
       <div className="max-w-5xl mx-auto">
-        {/* Header */}
         <div className="mb-12">
           <div
             className="text-xs font-semibold tracking-widest uppercase mb-2"
             style={{ color: '#22D3EE' }}
           >
-            — {t('contact_title')}
+            - {t('contact_title')}
           </div>
           <h2
             className="text-3xl sm:text-4xl font-bold mb-4"
@@ -60,15 +67,14 @@ export function ContactSection() {
           >
             {t('contact_title')}
           </h2>
-          <p className="text-base max-w-xl" style={{ color: '#94A3B8' }}>
+          <p className="text-base max-w-2xl leading-relaxed" style={{ color: '#94A3B8' }}>
             {lang === 'en'
-              ? 'Reach out via any channel. We respond quickly to WhatsApp and email.'
-              : 'Entre em contato por qualquer canal. Respondemos rapidamente por WhatsApp e e-mail.'}
+              ? "Send your idea or question. WhatsApp is the fastest way to request a quote. I'll reply with feasibility, material suggestion, price and estimated delivery."
+              : 'Envie sua ideia ou dúvida. WhatsApp é o caminho mais rápido para pedir orçamento. Eu respondo com viabilidade, sugestão de material, preço e prazo estimado.'}
           </p>
         </div>
 
-        {/* Contact cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {contacts.map((contact) => {
             const Icon = contact.icon;
             return (

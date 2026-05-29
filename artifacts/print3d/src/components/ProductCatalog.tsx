@@ -34,7 +34,7 @@ export function ProductCatalog() {
               className="text-xs font-semibold tracking-widest uppercase mb-2"
               style={{ color: '#22D3EE' }}
             >
-              — {t('nav_products')}
+              - {t('nav_products')}
             </div>
             <h2
               className="text-3xl sm:text-4xl font-bold"

@@ -85,7 +85,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
             data-testid="button-close-cart"
             className="p-1.5 rounded-lg transition-colors hover:bg-white/8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             style={{ color: '#64748B' }}
-            aria-label="Close cart"
+            aria-label="Close quote request"
           >
             <X className="w-5 h-5" />
           </button>
@@ -106,7 +106,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                   {t('cart_empty')}
                 </p>
                 <p className="text-xs" style={{ color: '#64748B' }}>
-                  {lang === 'en' ? 'Add items from the catalog to get started.' : 'Adicione itens do catálogo para começar.'}
+                  {lang === 'en' ? 'Choose an item or send a custom request to get a quote.' : 'Escolha um item ou envie um pedido personalizado para receber um orçamento.'}
                 </p>
               </div>
               <button
@@ -214,7 +214,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
           )}
         </div>
 
-        {/* Footer: totals + checkout */}
+        {/* Footer: totals + quote actions */}
         {items.length > 0 && (
           <div
             className="shrink-0 border-t"
@@ -230,7 +230,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                   {t('cart_estimated_total')}
                 </p>
                 <p className="text-xs" style={{ color: '#475569' }}>
-                  {lang === 'en' ? 'Confirmed after order placement' : 'Confirmado após pedido'}
+                  {lang === 'en' ? 'Confirmed before production' : 'Confirmado antes da produção'}
                 </p>
               </div>
               <span

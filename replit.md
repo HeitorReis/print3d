@@ -21,7 +21,7 @@ A fully static single-page website for showcasing and selling 3D printed product
 
 - `artifacts/print3d/src/` — main frontend app
 - `artifacts/print3d/src/data/products.ts` — static product catalog (8 products)
-- `artifacts/print3d/src/config.ts` — WhatsApp phone, email, LinkedIn/TikTok URLs
+- `artifacts/print3d/src/config.ts` — WhatsApp phone, email, LinkedIn/GitHub/Instagram URLs
 - `artifacts/print3d/src/i18n.ts` — all translation strings (EN + PT-BR)
 - `artifacts/print3d/src/contexts/CartContext.tsx` — cart state + localStorage persistence
 - `artifacts/print3d/src/contexts/LangContext.tsx` — language toggle (EN/PT)
@@ -34,6 +34,7 @@ A fully static single-page website for showcasing and selling 3D printed product
 - Fully static frontend — no API calls from the frontend, all product data is hardcoded in `src/data/products.ts`
 - Cart persisted to localStorage under key `print3d_cart`
 - WhatsApp order uses `wa.me/{phone}?text={encoded}` links; email uses `mailto:` links
+- Contact CTAs should pass the current cart into the WhatsApp/email link generators so selected items open as a pre-filled order message
 - Language context (EN/PT) is React state, switching is instant and affects all copy including generated order messages
 - Color system: 60% graphite (#0B0F14), 30% steel (#1E293B), 5% orange (#F97316), 5% cyan (#22D3EE)
 
@@ -54,7 +55,7 @@ A professional 3D printing product showcase targeting engineers, makers, car ent
 - `SiLinkedin` does not exist in react-icons v5 — use `Linkedin` from lucide-react instead
 - Google Fonts `@import url(...)` must be the very first line in index.css (before @import "tailwindcss")
 - All product/section copy goes through `t()` from LangContext — never hardcode EN/PT strings in components
-- To change contact info, edit `src/config.ts` only (WHATSAPP_PHONE, WHATSAPP_PHONE_DISPLAY, CONTACT_EMAIL, LINKEDIN_URL, TIKTOK_URL)
+- To change contact info, edit `src/config.ts` only (WHATSAPP_PHONE, WHATSAPP_PHONE_DISPLAY, CONTACT_EMAIL, LINKEDIN_URL, GITHUB_URL, INSTAGRAM_URL)
 - `vite.config.ts` requires Replit env vars (PORT, BASE_PATH) — use `vite.pages.config.ts` for standalone/GitHub Pages builds
 - `package.json` has been trimmed to only the deps actually used by the app — do not add back unused Radix/shadcn deps
 

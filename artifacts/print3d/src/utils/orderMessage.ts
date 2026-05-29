@@ -1,4 +1,3 @@
-import { Product } from '@/data/products';
 import { CartItem } from '@/hooks/useCart';
 import { Lang } from '@/i18n';
 import { WHATSAPP_PHONE, CONTACT_EMAIL } from '@/config';
@@ -11,9 +10,9 @@ function formatPrice(priceStr: string, qty: number): number {
 
 export function generateWhatsAppCartLink(items: CartItem[], lang: Lang): string {
   if (items.length === 0) {
-    const text = lang === 'en' 
-      ? "Hello! I found Print3d and would like to request information about a custom 3D printed product."
-      : "Olá! Encontrei a Print3d e gostaria de solicitar informações sobre um produto personalizado impresso em 3D.";
+    const text = lang === 'en'
+      ? "Hello! I found PRINT3D and would like to request a quote for a custom 3D printed part."
+      : "Olá! Encontrei a PRINT3D e gostaria de pedir um orçamento para uma peça impressa em 3D.";
     return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
   }
 
@@ -23,35 +22,24 @@ export function generateWhatsAppCartLink(items: CartItem[], lang: Lang): string 
     total += price;
     const name = lang === 'en' ? i.product.nameEn : i.product.namePt;
     const delivery = lang === 'en' ? i.product.deliveryEn : i.product.deliveryPt;
-    return `${i.quantity}x ${name}\n${lang === 'en' ? 'Price' : 'Preço'}: ${i.product.price}\n${lang === 'en' ? 'Delivery' : 'Prazo'}: ${delivery}`;
+    return `${i.quantity}x ${name}\n${lang === 'en' ? 'Starting price' : 'Preço inicial'}: ${i.product.price}\n${lang === 'en' ? 'Estimated delivery' : 'Prazo estimado'}: ${delivery}`;
   }).join('\n\n');
 
-  const greeting = lang === 'en' 
-    ? "Hello! I would like to request an order from Print3d:\n\n"
-    : "Olá! Gostaria de fazer um pedido na Print3d:\n\n";
-    
+  const greeting = lang === 'en'
+    ? "Hello! I would like to request a quote from PRINT3D:\n\n"
+    : "Olá! Gostaria de pedir um orçamento na PRINT3D:\n\n";
+
   const footer = lang === 'en'
-    ? `\nEstimated total: R$ ${total.toFixed(2).replace('.', ',')}\n\nCan you confirm availability, material options, color options and payment details?`
-    : `\nTotal estimado: R$ ${total.toFixed(2).replace('.', ',')}\n\nVocê pode confirmar disponibilidade, opções de material, cores e forma de pagamento?`;
+    ? `\nEstimated total: R$ ${total.toFixed(2).replace('.', ',')}\n\nCan you confirm feasibility, material, color options and delivery?`
+    : `\nTotal estimado: R$ ${total.toFixed(2).replace('.', ',')}\n\nVocê pode confirmar viabilidade, material, cores e prazo?`;
 
   const text = greeting + itemsText + footer;
   return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
 }
 
-export function generateWhatsAppProductLink(product: Product, lang: Lang): string {
-  const name = lang === 'en' ? product.nameEn : product.namePt;
-  const delivery = lang === 'en' ? product.deliveryEn : product.deliveryPt;
-  
-  const text = lang === 'en'
-    ? `Hello! I would like more information about this Print3d product:\n${name}\nPrice: ${product.price}\nDelivery: ${delivery}\nCan you confirm customization options?`
-    : `Olá! Gostaria de mais informações sobre este produto da Print3d:\n${name}\nPreço: ${product.price}\nPrazo: ${delivery}\nVocê pode confirmar as opções de personalização?`;
-    
-  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
-}
-
 export function generateEmailLink(items: CartItem[], lang: Lang): string {
-  const subject = lang === 'en' ? "Print3d order request" : "Pedido Print3d";
-  
+  const subject = lang === 'en' ? "PRINT3D quote request" : "Pedido de orçamento PRINT3D";
+
   if (items.length === 0) return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`;
 
   let total = 0;
@@ -60,18 +48,18 @@ export function generateEmailLink(items: CartItem[], lang: Lang): string {
     total += price;
     const name = lang === 'en' ? i.product.nameEn : i.product.namePt;
     const delivery = lang === 'en' ? i.product.deliveryEn : i.product.deliveryPt;
-    return `${i.quantity}x ${name}\n${lang === 'en' ? 'Price' : 'Preço'}: ${i.product.price}\n${lang === 'en' ? 'Delivery' : 'Prazo'}: ${delivery}`;
+    return `${i.quantity}x ${name}\n${lang === 'en' ? 'Starting price' : 'Preço inicial'}: ${i.product.price}\n${lang === 'en' ? 'Estimated delivery' : 'Prazo estimado'}: ${delivery}`;
   }).join('\n\n');
 
-  const greeting = lang === 'en' 
-    ? "Hello! I would like to request an order from Print3d:\n\n"
-    : "Olá! Gostaria de fazer um pedido na Print3d:\n\n";
-    
+  const greeting = lang === 'en'
+    ? "Hello! I would like to request a quote from PRINT3D:\n\n"
+    : "Olá! Gostaria de pedir um orçamento na PRINT3D:\n\n";
+
   const footer = lang === 'en'
-    ? `\nEstimated total: R$ ${total.toFixed(2).replace('.', ',')}\n\nCan you confirm availability, material options, color options and payment details?`
-    : `\nTotal estimado: R$ ${total.toFixed(2).replace('.', ',')}\n\nVocê pode confirmar disponibilidade, opções de material, cores e forma de pagamento?`;
+    ? `\nEstimated total: R$ ${total.toFixed(2).replace('.', ',')}\n\nCan you confirm feasibility, material, color options and delivery?`
+    : `\nTotal estimado: R$ ${total.toFixed(2).replace('.', ',')}\n\nVocê pode confirmar viabilidade, material, cores e prazo?`;
 
   const body = greeting + itemsText + footer;
-  
+
   return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
