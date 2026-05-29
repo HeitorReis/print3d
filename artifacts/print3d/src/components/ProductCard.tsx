@@ -1,4 +1,4 @@
-import { Clock, Layers, PlusCircle } from 'lucide-react';
+import { PlusCircle } from 'lucide-react';
 import { Product } from '@/data/products';
 import { useLang } from '@/contexts/LangContext';
 import { useCart } from '@/contexts/CartContext';
@@ -7,25 +7,24 @@ interface ProductCardProps {
   product: Product;
 }
 
-const CATEGORY_LABELS: Record<Product['category'], { en: string; pt: string }> = {
-  gadgets: { en: 'Gadgets', pt: 'Gadgets' },
-  'car-parts': { en: 'Car Parts', pt: 'Peças Auto' },
-  figures: { en: 'Figures', pt: 'Miniaturas' },
-  decorations: { en: 'Decorations', pt: 'Decorações' },
-  prototypes: { en: 'Prototypes', pt: 'Protótipos' },
-  custom: { en: 'Custom', pt: 'Personalizado' },
+const CATEGORY_LABELS: Record<Product['category'], string> = {
+  decoracao: 'Decoração',
+  ergonomia: 'Ergonomia',
+  gamer: 'Gamer',
+  organizacao: 'Organização',
+  acessorios: 'Acessórios',
 };
 
+function getPublicImageUrl(path: string): string {
+  return `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
+}
+
 export function ProductCard({ product }: ProductCardProps) {
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const { addItem } = useCart();
 
-  const name = lang === 'en' ? product.nameEn : product.namePt;
-  const description = lang === 'en' ? product.descriptionEn : product.descriptionPt;
-  const delivery = lang === 'en' ? product.deliveryEn : product.deliveryPt;
-  const tags = lang === 'en' ? product.tagsEn : product.tagsPt;
-
-  const catLabel = CATEGORY_LABELS[product.category][lang];
+  const catLabel = CATEGORY_LABELS[product.category];
+  const imageUrl = getPublicImageUrl(product.image);
 
   return (
     <article
@@ -48,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Image block */}
       <div
         className="relative h-44 flex items-center justify-center overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${product.gradientFrom}, ${product.gradientTo})` }}
+        style={{ background: 'linear-gradient(135deg, #1e293b, #0f172a)' }}
       >
         {/* Abstract layer pattern overlay */}
         <div
@@ -63,27 +62,17 @@ export function ProductCard({ product }: ProductCardProps) {
             )`,
           }}
         />
-        <Layers
-          className="w-12 h-12 transition-transform duration-500 group-hover:scale-110 relative z-10"
-          style={{ color: 'rgba(248,250,252,0.18)' }}
+        <img
+          src={imageUrl}
+          alt={product.name}
+          className="relative z-10 h-full w-full object-contain p-5 transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
         {/* Hover orange tint */}
         <div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           style={{ background: 'linear-gradient(135deg, rgba(249,115,22,0.1), transparent)' }}
         />
-        {/* Material badge */}
-        <div
-          className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded text-xs font-semibold tracking-wide"
-          style={{
-            backgroundColor: 'rgba(11,15,20,0.85)',
-            color: '#22D3EE',
-            border: '1px solid rgba(34,211,238,0.2)',
-            backdropFilter: 'blur(4px)',
-          }}
-        >
-          {product.material}
-        </div>
         {/* Category badge */}
         <div
           className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-xs font-semibold tracking-wide"
@@ -106,7 +95,7 @@ export function ProductCard({ product }: ProductCardProps) {
             style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#F8FAFC' }}
             data-testid={`text-product-name-${product.id}`}
           >
-            {name}
+            {product.name}
           </h3>
           <span
             className="text-base font-bold whitespace-nowrap shrink-0 tabular-nums"
@@ -119,21 +108,12 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Description */}
         <p className="text-xs leading-relaxed flex-1" style={{ color: '#94A3B8', lineHeight: '1.6' }}>
-          {description}
+          {product.description}
         </p>
-
-        {/* Delivery row */}
-        <div className="flex items-center gap-1.5 text-xs" style={{ color: '#64748B' }}>
-          <Clock className="w-3 h-3 shrink-0" style={{ color: '#22D3EE' }} />
-          <span>
-            {lang === 'en' ? 'Est. delivery:' : 'Prazo:'}{' '}
-            <span style={{ color: '#CBD5E1' }}>{delivery}</span>
-          </span>
-        </div>
 
         {/* Technical tags */}
         <div className="flex flex-wrap gap-1.5">
-          {tags.map((tag) => (
+          {product.tags.map((tag) => (
             <span
               key={tag}
               className="text-xs px-2 py-0.5 rounded border"

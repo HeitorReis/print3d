@@ -1,147 +1,104 @@
+export type ProductCategory = 'decoracao' | 'ergonomia' | 'gamer' | 'organizacao' | 'acessorios';
+
 export interface Product {
-  id: number;
-  nameEn: string;
-  namePt: string;
-  category: 'gadgets' | 'car-parts' | 'figures' | 'decorations' | 'prototypes' | 'custom';
-  descriptionEn: string;
-  descriptionPt: string;
+  id: string;
+  name: string;
+  category: ProductCategory;
+  description: string;
   price: string;
-  deliveryEn: string;
-  deliveryPt: string;
-  material: string;
-  tagsEn: string[];
-  tagsPt: string[];
-  gradientFrom: string;
-  gradientTo: string;
+  image: string;
+  tags: string[];
 }
 
 export const products: Product[] = [
   {
-    id: 1,
-    nameEn: 'Technical Phone Stand',
-    namePt: 'Suporte para Celular',
-    category: 'gadgets',
-    descriptionEn: 'Minimal desk phone stand with cable space and a stable base. Available in different colors.',
-    descriptionPt: 'Suporte minimalista para celular com espaço para cabo e base estável. Disponível em diferentes cores.',
-    price: 'R$ 34,90',
-    deliveryEn: '2-4 business days',
-    deliveryPt: '2-4 dias úteis',
-    material: 'PLA',
-    tagsEn: ['Desk', 'Cable space', 'Custom color'],
-    tagsPt: ['Mesa', 'Espaço para cabo', 'Cor personalizada'],
-    gradientFrom: '#1e293b',
-    gradientTo: '#0f172a',
+    id: 'aviao-embraer-c390-5cm',
+    name: 'Avião Embraer C-390 5 cm',
+    category: 'decoracao',
+    description:
+      'Miniatura decorativa do Embraer C-390 impressa em 3D, ideal para mesa, estante, coleção ou presente para quem gosta de aviação, engenharia e tecnologia.',
+    price: 'R$ 15,00',
+    image: '/images/products/aviao-embraer-c390-5cm-placeholder.png',
+    tags: ['Decoração', 'Aviação', 'Miniatura', 'Presente'],
   },
   {
-    id: 2,
-    nameEn: 'Custom Dashboard Cable Clip',
-    namePt: 'Clip de Cabo para Painel',
-    category: 'car-parts',
-    descriptionEn: 'Small PETG clip for organizing cables inside the car. Dimensions can be adjusted before printing.',
-    descriptionPt: 'Clip pequeno em PETG para organizar cabos no carro. As medidas podem ser ajustadas antes da impressão.',
-    price: 'R$ 19,90',
-    deliveryEn: '2-3 business days',
-    deliveryPt: '2-3 dias úteis',
-    material: 'PETG',
-    tagsEn: ['Car', 'PETG', 'Adjustable size'],
-    tagsPt: ['Carro', 'PETG', 'Medida ajustável'],
-    gradientFrom: '#1a2744',
-    gradientTo: '#0c1220',
+    id: 'suporte-decorativo-aviao',
+    name: 'Suporte decorativo para avião',
+    category: 'decoracao',
+    description:
+      'Base decorativa para exposição da miniatura do C-390. Deixa a peça mais bonita, organizada e com aparência mais profissional.',
+    price: 'R$ 10,00',
+    image: '/images/products/suporte-decorativo-aviao-placeholder.png',
+    tags: ['Decoração', 'Suporte', 'Acessório'],
   },
   {
-    id: 3,
-    nameEn: 'Engineering Desk Organizer',
-    namePt: 'Organizador de Mesa',
-    category: 'gadgets',
-    descriptionEn: 'Modular organizer for tools, pens, cables and small components. Useful for desks, workbenches and study setups.',
-    descriptionPt: 'Organizador modular para ferramentas, canetas, cabos e pequenos componentes. Útil para mesas, bancadas e estudos.',
-    price: 'R$ 49,90',
-    deliveryEn: '3-5 business days',
-    deliveryPt: '3-5 dias úteis',
-    material: 'PLA',
-    tagsEn: ['Workspace', 'Modular', 'Practical'],
-    tagsPt: ['Workspace', 'Modular', 'Prático'],
-    gradientFrom: '#1c2a1e',
-    gradientTo: '#0d1610',
+    id: 'kit-aviao-c390-suporte',
+    name: 'Kit Avião Embraer C-390 + suporte',
+    category: 'decoracao',
+    description:
+      'Kit decorativo com miniatura do Embraer C-390 e suporte de exposição. Ideal para decorar setups, escritórios, mesas e estantes.',
+    price: 'R$ 25,00',
+    image: '/images/products/kit-aviao-c390-suporte-placeholder.png',
+    tags: ['Kit', 'Decoração', 'Aviação', 'Presente'],
   },
   {
-    id: 4,
-    nameEn: 'Miniature Figure',
-    namePt: 'Miniatura Personalizada',
-    category: 'figures',
-    descriptionEn: 'Custom miniature figure for collectors, gifts or display. Finish and size can be discussed before printing.',
-    descriptionPt: 'Miniatura personalizada para colecionadores, presentes ou exposição. Acabamento e tamanho podem ser combinados antes da impressão.',
-    price: 'R$ 59,90',
-    deliveryEn: '4-6 business days',
-    deliveryPt: '4-6 dias úteis',
-    material: 'PLA',
-    tagsEn: ['Collectible', 'Gift', 'Custom size'],
-    tagsPt: ['Colecionável', 'Presente', 'Tamanho personalizado'],
-    gradientFrom: '#2a1c2e',
-    gradientTo: '#160d1a',
+    id: 'suporte-ergonomico-notebook',
+    name: 'Suporte ergonômico para notebook',
+    category: 'ergonomia',
+    description:
+      'Suporte compacto para notebook, pensado para melhorar a inclinação do aparelho e deixar o uso mais confortável no trabalho, estudo ou home office.',
+    price: 'R$ 45,00',
+    image: '/images/products/suporte-ergonomico-notebook-placeholder.png',
+    tags: ['Ergonomia', 'Notebook', 'Escritório', 'Home Office'],
   },
   {
-    id: 5,
-    nameEn: 'Geometric Industrial Vase',
-    namePt: 'Vaso Geométrico Industrial',
-    category: 'decorations',
-    descriptionEn: 'Geometric decorative vase with a clean industrial look. Best for dry arrangements or decorative use.',
-    descriptionPt: 'Vaso decorativo geométrico com visual industrial limpo. Ideal para arranjos secos ou uso decorativo.',
-    price: 'R$ 69,90',
-    deliveryEn: '4-6 business days',
-    deliveryPt: '4-6 dias úteis',
-    material: 'PLA',
-    tagsEn: ['Decor', 'Geometric', 'Dry use'],
-    tagsPt: ['Decoração', 'Geométrico', 'Uso seco'],
-    gradientFrom: '#2a200e',
-    gradientTo: '#160f05',
+    id: 'suportes-joycon-nintendo-switch',
+    name: 'Par de suportes Joy-Con Nintendo Switch',
+    category: 'gamer',
+    description:
+      'Par de suportes ergonômicos para Joy-Con do Nintendo Switch. Melhora a pegada e deixa o uso dos controles mais confortável.',
+    price: 'R$ 45,00',
+    image: '/images/products/suportes-joycon-nintendo-switch-placeholder.png',
+    tags: ['Gamer', 'Nintendo Switch', 'Joy-Con', 'Acessório'],
   },
   {
-    id: 6,
-    nameEn: 'Custom Prototype Bracket',
-    namePt: 'Suporte Protótipo Personalizado',
-    category: 'prototypes',
-    descriptionEn: 'Prototype bracket printed from your dimensions or CAD file. Material and strength needs are reviewed before printing.',
-    descriptionPt: 'Suporte protótipo impresso a partir das suas medidas ou arquivo CAD. Material e necessidade de resistência são avaliados antes da impressão.',
-    price: 'R$ 89,90',
-    deliveryEn: '5-8 business days',
-    deliveryPt: '5-8 dias úteis',
-    material: 'PETG',
-    tagsEn: ['Prototype', 'CAD file', 'Reviewed'],
-    tagsPt: ['Protótipo', 'Arquivo CAD', 'Avaliado'],
-    gradientFrom: '#1e1e2e',
-    gradientTo: '#0f0f1a',
+    id: 'suporte-celular-2-em-1',
+    name: 'Suporte 2 em 1 para celular',
+    category: 'acessorios',
+    description:
+      'Suporte versátil para celular, que pode ser usado normalmente sobre a mesa ou pendurado de ponta cabeça em uma superfície plana.',
+    price: 'R$ 30,00',
+    image: '/images/products/suporte-celular-2-em-1-placeholder.png',
+    tags: ['Celular', 'Organização', 'Acessório', 'Mesa'],
   },
   {
-    id: 7,
-    nameEn: 'Wall Cable Routing Clip Set',
-    namePt: 'Kit de Clips para Cabos de Parede',
-    category: 'gadgets',
-    descriptionEn: 'Set of wall clips for cleaner cable organization at home, in the office or near a workstation.',
-    descriptionPt: 'Kit de clips de parede para organizar cabos em casa, no escritório ou perto da estação de trabalho.',
-    price: 'R$ 24,90',
-    deliveryEn: '2-4 business days',
-    deliveryPt: '2-4 dias úteis',
-    material: 'PLA',
-    tagsEn: ['Organization', 'Wall clips', 'Set'],
-    tagsPt: ['Organização', 'Clips de parede', 'Kit'],
-    gradientFrom: '#1a2233',
-    gradientTo: '#0c1220',
+    id: 'estojo-viagem-cilindrico-textura',
+    name: 'Estojo de viagem cilíndrico com textura',
+    category: 'organizacao',
+    description:
+      'Estojo cilíndrico texturizado para organizar pequenos objetos, acessórios, cabos e itens do dia a dia.',
+    price: 'R$ 35,00',
+    image: '/images/products/estojo-viagem-cilindrico-textura-placeholder.png',
+    tags: ['Viagem', 'Organização', 'Estojo', 'Acessórios'],
   },
   {
-    id: 8,
-    nameEn: 'Custom Project Review',
-    namePt: 'Avaliação de Projeto Personalizado',
-    category: 'custom',
-    descriptionEn: "Send an idea, sketch, measurements or file. I will check feasibility and send a quote before printing.",
-    descriptionPt: 'Envie uma ideia, desenho, medidas ou arquivo. Eu avalio a viabilidade e envio um orçamento antes da impressão.',
-    price: 'From R$ 39,90',
-    deliveryEn: 'To be estimated',
-    deliveryPt: 'A combinar',
-    material: 'PLA, PETG or other',
-    tagsEn: ['Custom', 'Feasibility', 'Quote first'],
-    tagsPt: ['Personalizado', 'Viabilidade', 'Orçamento antes'],
-    gradientFrom: '#1e2a1e',
-    gradientTo: '#0d160d',
+    id: 'porta-caneta-cerebro',
+    name: 'Porta-caneta em formato de cérebro',
+    category: 'decoracao',
+    description:
+      'Porta-caneta criativo em formato de cérebro, perfeito para organizar a mesa com um visual diferente e funcional.',
+    price: 'R$ 35,00',
+    image: '/images/products/porta-caneta-cerebro-placeholder.png',
+    tags: ['Escritório', 'Organização', 'Decoração', 'Criativo'],
+  },
+  {
+    id: 'porta-caneta-3-subdivisoes',
+    name: 'Porta-caneta com 3 subdivisões',
+    category: 'organizacao',
+    description:
+      'Porta-caneta básico com três divisórias, ideal para organizar canetas, lápis, marcadores e pequenos itens de escritório.',
+    price: 'R$ 30,00',
+    image: '/images/products/porta-caneta-3-subdivisoes-placeholder.png',
+    tags: ['Escritório', 'Organização', 'Porta-caneta', 'Home Office'],
   },
 ];

@@ -14,6 +14,10 @@ function parsePrice(priceStr: string): number {
   return isNaN(numeric) ? 0 : numeric;
 }
 
+function getPublicImageUrl(path: string): string {
+  return `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
+}
+
 export function CartDrawer({ open, onClose }: CartDrawerProps) {
   const { items, removeItem, updateQty, clearCart } = useCart();
   const { lang, t } = useLang();
@@ -121,9 +125,8 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
           ) : (
             <div className="space-y-3">
               {items.map((item) => {
-                const name = lang === 'en' ? item.product.nameEn : item.product.namePt;
-                const delivery = lang === 'en' ? item.product.deliveryEn : item.product.deliveryPt;
                 const itemTotal = parsePrice(item.product.price) * item.quantity;
+                const imageUrl = getPublicImageUrl(item.product.image);
 
                 return (
                   <div
@@ -137,13 +140,19 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                   >
                     {/* Product thumbnail */}
                     <div
-                      className="w-14 h-14 rounded-lg shrink-0 flex items-center justify-center border"
+                      className="w-14 h-14 rounded-lg shrink-0 flex items-center justify-center border overflow-hidden"
                       style={{
-                        background: `linear-gradient(135deg, ${item.product.gradientFrom}, ${item.product.gradientTo})`,
+                        background: 'linear-gradient(135deg, #1e293b, #0f172a)',
                         borderColor: 'rgba(148,163,184,0.1)',
                       }}
-                      aria-hidden="true"
-                    />
+                    >
+                      <img
+                        src={imageUrl}
+                        alt=""
+                        className="h-full w-full object-contain p-1.5"
+                        aria-hidden="true"
+                      />
+                    </div>
 
                     <div className="flex-1 min-w-0">
                       <p
@@ -151,10 +160,10 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                         style={{ color: '#F8FAFC' }}
                         data-testid={`cart-item-name-${item.product.id}`}
                       >
-                        {name}
+                        {item.product.name}
                       </p>
                       <p className="text-xs mb-2" style={{ color: '#64748B' }}>
-                        {lang === 'en' ? 'Est.' : 'Prazo:'} {delivery} · {item.product.material}
+                        {item.product.price} cada
                       </p>
 
                       <div className="flex items-center justify-between">
@@ -200,7 +209,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                             data-testid={`button-remove-item-${item.product.id}`}
                             className="p-1 rounded transition-colors hover:text-red-400 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-400"
                             style={{ color: '#475569' }}
-                            aria-label={`Remove ${name}`}
+                            aria-label={`Remover ${item.product.name}`}
                           >
                             <Trash2 className="w-3.5 h-3.5" />
                           </button>

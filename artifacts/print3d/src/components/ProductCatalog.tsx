@@ -13,12 +13,11 @@ export function ProductCatalog() {
 
   const filters: { key: FilterCategory; labelKey: TranslationKey }[] = [
     { key: 'all', labelKey: 'filter_all' },
-    { key: 'figures', labelKey: 'filter_figures' },
-    { key: 'gadgets', labelKey: 'filter_gadgets' },
-    { key: 'car-parts', labelKey: 'filter_car_parts' },
-    { key: 'decorations', labelKey: 'filter_decorations' },
-    { key: 'prototypes', labelKey: 'filter_prototypes' },
-    { key: 'custom', labelKey: 'filter_custom' },
+    { key: 'decoracao', labelKey: 'filter_decoracao' },
+    { key: 'ergonomia', labelKey: 'filter_ergonomia' },
+    { key: 'gamer', labelKey: 'filter_gamer' },
+    { key: 'organizacao', labelKey: 'filter_organizacao' },
+    { key: 'acessorios', labelKey: 'filter_acessorios' },
   ];
 
   const filtered =
@@ -79,7 +78,7 @@ export function ProductCatalog() {
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="text-center py-20" style={{ color: '#64748B' }}>
-            No products found.
+            Nenhum produto encontrado.
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

@@ -6,11 +6,27 @@ export interface CartItem {
   quantity: number;
 }
 
+function isValidCartItem(item: unknown): item is CartItem {
+  if (!item || typeof item !== 'object') return false;
+
+  const candidate = item as CartItem;
+  return (
+    typeof candidate.quantity === 'number' &&
+    candidate.quantity > 0 &&
+    typeof candidate.product?.id === 'string' &&
+    typeof candidate.product.name === 'string' &&
+    typeof candidate.product.price === 'string'
+  );
+}
+
 export function useCartState() {
   const [items, setItems] = useState<CartItem[]>(() => {
     try {
       const stored = localStorage.getItem('print3d_cart');
-      if (stored) return JSON.parse(stored);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        return Array.isArray(parsed) ? parsed.filter(isValidCartItem) : [];
+      }
     } catch (e) {
       console.error('Failed to parse cart', e);
     }
@@ -35,11 +51,11 @@ export function useCartState() {
     });
   }, []);
 
-  const removeItem = useCallback((id: number) => {
+  const removeItem = useCallback((id: string) => {
     setItems(prev => prev.filter(item => item.product.id !== id));
   }, []);
 
-  const updateQty = useCallback((id: number, quantity: number) => {
+  const updateQty = useCallback((id: string, quantity: number) => {
     if (quantity <= 0) {
       removeItem(id);
       return;
