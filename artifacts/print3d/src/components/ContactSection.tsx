@@ -44,7 +44,7 @@ export function ContactSection() {
     {
       icon: Instagram,
       label: t('contact_instagram'),
-      value: '@tobiel.reis',
+      value: '@hbreis_',
       href: INSTAGRAM_URL,
       accent: '#E1306C',
       note: lang === 'en' ? 'Updates and photos' : 'Atualizações e fotos',

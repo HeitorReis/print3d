@@ -96,7 +96,7 @@ export const WHATSAPP_PHONE_DISPLAY = '+55 11 99999-9999';  // shown in the Cont
 export const CONTACT_EMAIL = 'tobiel.reis@gmail.com';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/heitor-gbr';
 export const GITHUB_URL = 'https://github.com/HeitorReis';
-export const INSTAGRAM_URL = 'https://www.instagram.com/tobiel.reis';
+export const INSTAGRAM_URL = 'https://www.instagram.com/hbreis_';
 ```
 
 ---
