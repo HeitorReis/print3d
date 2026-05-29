@@ -6,7 +6,7 @@
  *   # or
  *   npx vite build --config vite.pages.config.ts
  *
- * Set BASE to match your GitHub Pages URL:
+ * Set VITE_BASE_PATH to override the GitHub Pages URL base:
  *   - User/org page  (username.github.io):           BASE = '/'
  *   - Project page   (username.github.io/repo-name): BASE = '/repo-name/'
  */
@@ -16,7 +16,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
-const BASE = process.env.VITE_BASE_PATH ?? '/';
+const BASE = process.env.VITE_BASE_PATH ?? '/print3d/';
 
 export default defineConfig({
   base: BASE,

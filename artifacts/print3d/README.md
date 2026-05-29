@@ -172,72 +172,47 @@ Output is written to `artifacts/print3d/dist/`.
 
 ## GitHub Pages Deployment
 
-### Step 1 — Set the base path
+This repository is configured to deploy automatically with GitHub Actions from `.github/workflows/deploy-pages.yml`.
 
-Open `vite.pages.config.ts` and set `BASE` to match your Pages URL:
+### Step 1 - Confirm the base path
+
+`vite.pages.config.ts` defaults to `'/print3d/'`, which matches:
+
+```text
+https://HeitorReis.github.io/print3d/
+```
+
+If you move this app to a different repository or a user/org page, update `VITE_BASE_PATH` in `.github/workflows/deploy-pages.yml` or override it locally.
 
 | Pages type | URL pattern | BASE value |
 |---|---|---|
 | User / org page | `username.github.io` | `'/'` |
 | Project page | `username.github.io/repo-name` | `'/repo-name/'` |
 
-You can also pass it as an environment variable:
+Local override example:
 
 ```bash
 VITE_BASE_PATH=/print3d/ npm run build:pages
 ```
 
-### Step 2 — Update contact info
+### Step 2 - Update contact info
 
 Edit `src/config.ts` with your real WhatsApp number, email, LinkedIn, and TikTok before building.
 
-### Step 3 — Build
+### Step 3 - Build locally
 
 ```bash
 cd artifacts/print3d
 npm run build:pages
 ```
 
-### Step 4 — Deploy the `dist/` folder
+### Step 4 - Enable Pages in GitHub
 
-**Option A — GitHub Actions (recommended)**
+Go to **Settings -> Pages**, set **Build and deployment** source to **GitHub Actions**.
 
-Create `.github/workflows/deploy.yml`:
+### Step 5 - Deploy
 
-```yaml
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: [main]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: cd artifacts/print3d && npm install && npm run build:pages
-      - uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: artifacts/print3d/dist
-```
-
-**Option B — Manual with gh-pages**
-
-```bash
-cd artifacts/print3d
-npm install
-npm run build:pages
-npx gh-pages -d dist
-```
-
-### Step 5 — Enable Pages in GitHub
-
-Go to **Settings → Pages**, set source to `gh-pages` branch, root folder.
+Push to `main`, or run the **Deploy GitHub Pages** workflow manually from the Actions tab. The workflow installs dependencies with pnpm, builds `@workspace/print3d` with `VITE_BASE_PATH=/print3d/`, uploads `artifacts/print3d/dist`, and publishes it to GitHub Pages.
 
 ---
 
