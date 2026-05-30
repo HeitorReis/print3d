@@ -73,16 +73,25 @@ export function ProductMediaFrame({ media, alt, fullscreen = false }: ProductMed
   }
 
   return (
-    <img
-      src={getPublicMediaUrl(media.src)}
-      alt={alt}
+    <div
       className={cn(
-        'relative z-10 h-full w-full object-contain transition-transform duration-500',
-        fullscreen ? 'p-4 sm:p-8' : 'p-5 group-hover:scale-105'
+        'relative z-10 flex h-full w-full items-center justify-center overflow-hidden',
+        fullscreen ? 'p-4 sm:p-8' : 'px-0 py-3'
       )}
-      loading="lazy"
-      onError={() => setFailed(true)}
-    />
+    >
+      <img
+        src={getPublicMediaUrl(media.src)}
+        alt={alt}
+        className={cn(
+          'block object-center',
+          fullscreen
+            ? 'max-h-full max-w-full object-contain'
+            : 'h-auto max-h-full w-full object-contain'
+        )}
+        loading="lazy"
+        onError={() => setFailed(true)}
+      />
+    </div>
   );
 }
 
@@ -129,18 +138,24 @@ function MediaCarouselBody({
   return (
     <div className="relative h-full">
       <Carousel
-        opts={{ align: 'start', loop: canNavigate, startIndex }}
+        opts={{
+          align: 'start',
+          loop: canNavigate,
+          startIndex,
+          dragFree: false,
+          watchDrag: canNavigate,
+        }}
         setApi={setApi}
         className="h-full"
       >
-        <CarouselContent className="ml-0 h-full">
-          {media.map((item) => (
+        <CarouselContent className="ml-0 h-full cursor-grab touch-pan-y active:cursor-grabbing">
+          {media.map((item, index) => (
             <CarouselItem key={item.filePath} className="h-full pl-0">
               {onOpenFullscreen ? (
                 <button
                   type="button"
-                  className="h-full w-full cursor-zoom-in text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
-                  onClick={() => onOpenFullscreen(activeIndex)}
+                  className="flex h-full w-full cursor-zoom-in items-center justify-center text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+                  onClick={() => onOpenFullscreen(index)}
                   aria-label={`Ver ${product.name} em tela cheia`}
                 >
                   <ProductMediaFrame
@@ -164,14 +179,14 @@ function MediaCarouselBody({
           <>
             <CarouselPrevious
               className={cn(
-                'left-2 top-1/2 z-20 h-8 w-8 -translate-y-1/2 border-white/10 bg-black/45 text-white hover:bg-black/65',
-                fullscreen && 'left-3 h-10 w-10'
+                'left-0 top-1/2 z-40 h-14 w-9 -translate-y-1/2 rounded-l-none rounded-r-md border-l-0 border-white/15 bg-black/75 text-white shadow-xl hover:bg-black/90 disabled:pointer-events-auto disabled:opacity-60 sm:h-16 sm:w-10',
+                fullscreen && 'left-0 h-20 w-12 sm:h-24 sm:w-14'
               )}
             />
             <CarouselNext
               className={cn(
-                'right-2 top-1/2 z-20 h-8 w-8 -translate-y-1/2 border-white/10 bg-black/45 text-white hover:bg-black/65',
-                fullscreen && 'right-3 h-10 w-10'
+                'right-0 top-1/2 z-40 h-14 w-9 -translate-y-1/2 rounded-l-md rounded-r-none border-r-0 border-white/15 bg-black/75 text-white shadow-xl hover:bg-black/90 disabled:pointer-events-auto disabled:opacity-60 sm:h-16 sm:w-10',
+                fullscreen && 'right-0 h-20 w-12 sm:h-24 sm:w-14'
               )}
             />
           </>
@@ -220,7 +235,7 @@ export function ProductMediaCarousel({ product }: ProductMediaCarouselProps) {
   };
 
   return (
-    <>
+    <div className="absolute inset-0 z-10">
       <MediaCarouselBody
         product={product}
         onOpenFullscreen={openFullscreen}
@@ -261,6 +276,6 @@ export function ProductMediaCarousel({ product }: ProductMediaCarouselProps) {
           </div>
         </DialogContent>
       </Dialog>
-    </>
+    </div>
   );
 }

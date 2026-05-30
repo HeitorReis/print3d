@@ -47,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
       >
         {/* Abstract layer pattern overlay */}
         <div
-          className="absolute inset-0 opacity-30"
+          className="pointer-events-none absolute inset-0 opacity-30"
           style={{
             backgroundImage: `repeating-linear-gradient(
               -45deg,
@@ -61,20 +61,22 @@ export function ProductCard({ product }: ProductCardProps) {
         <ProductMediaCarousel product={product} />
         {/* Hover orange tint */}
         <div
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           style={{ background: 'linear-gradient(135deg, rgba(249,115,22,0.1), transparent)' }}
         />
-        {/* Category badge */}
-        <div
-          className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-xs font-semibold tracking-wide"
-          style={{
-            backgroundColor: 'rgba(11,15,20,0.85)',
-            color: '#F97316',
-            border: '1px solid rgba(249,115,22,0.2)',
-            backdropFilter: 'blur(4px)',
-          }}
-        >
-          {catLabel}
+        {/* Image badges */}
+        <div className="pointer-events-none absolute left-2.5 top-2.5 z-30">
+          <span
+            className="rounded px-2 py-0.5 text-xs font-semibold tracking-wide"
+            style={{
+              backgroundColor: 'rgba(11,15,20,0.85)',
+              color: '#F97316',
+              border: '1px solid rgba(249,115,22,0.2)',
+              backdropFilter: 'blur(4px)',
+            }}
+          >
+            {catLabel}
+          </span>
         </div>
       </div>
 
@@ -101,24 +103,6 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className="text-xs leading-relaxed flex-1" style={{ color: '#94A3B8', lineHeight: '1.6' }}>
           {product.description}
         </p>
-
-        {/* Technical tags */}
-        <div className="flex flex-wrap gap-1.5">
-          {product.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs px-2 py-0.5 rounded border"
-              style={{
-                borderColor: 'rgba(34,211,238,0.12)',
-                color: '#64748B',
-                backgroundColor: 'rgba(34,211,238,0.04)',
-                fontFamily: "'Space Grotesk', sans-serif",
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
 
         {/* Action buttons */}
         <div className="pt-0.5">
