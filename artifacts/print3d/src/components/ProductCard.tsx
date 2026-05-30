@@ -2,6 +2,7 @@ import { PlusCircle } from 'lucide-react';
 import { Product } from '@/data/products';
 import { useLang } from '@/contexts/LangContext';
 import { useCart } from '@/contexts/CartContext';
+import { ProductMediaCarousel } from './ProductMediaCarousel';
 
 interface ProductCardProps {
   product: Product;
@@ -15,16 +16,11 @@ const CATEGORY_LABELS: Record<Product['category'], string> = {
   acessorios: 'Acessórios',
 };
 
-function getPublicImageUrl(path: string): string {
-  return `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
-}
-
 export function ProductCard({ product }: ProductCardProps) {
   const { t } = useLang();
   const { addItem } = useCart();
 
   const catLabel = CATEGORY_LABELS[product.category];
-  const imageUrl = getPublicImageUrl(product.image);
 
   return (
     <article
@@ -62,12 +58,7 @@ export function ProductCard({ product }: ProductCardProps) {
             )`,
           }}
         />
-        <img
-          src={imageUrl}
-          alt={product.name}
-          className="relative z-10 h-full w-full object-contain p-5 transition-transform duration-500 group-hover:scale-105"
-          loading="lazy"
-        />
+        <ProductMediaCarousel product={product} />
         {/* Hover orange tint */}
         <div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

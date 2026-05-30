@@ -1,8 +1,10 @@
-import { X, Minus, Plus, Trash2, ShoppingCart, Mail } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { X, Minus, Plus, Trash2, ShoppingCart, Mail, ImageOff } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 import { useCart } from '@/contexts/CartContext';
 import { useLang } from '@/contexts/LangContext';
 import { generateWhatsAppCartLink, generateEmailLink } from '@/utils/orderMessage';
+import { Product, getPrimaryProductMedia } from '@/data/products';
 
 interface CartDrawerProps {
   open: boolean;
@@ -16,6 +18,33 @@ function parsePrice(priceStr: string): number {
 
 function getPublicImageUrl(path: string): string {
   return `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
+}
+
+function CartProductThumbnail({ product }: { product: Product }) {
+  const media = getPrimaryProductMedia(product);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    setFailed(false);
+  }, [media.src]);
+
+  if (failed) {
+    return (
+      <div className="flex h-full w-full items-center justify-center" aria-hidden="true">
+        <ImageOff className="h-5 w-5" style={{ color: '#64748B' }} />
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={getPublicImageUrl(media.src)}
+      alt=""
+      className="h-full w-full object-contain p-1.5"
+      aria-hidden="true"
+      onError={() => setFailed(true)}
+    />
+  );
 }
 
 export function CartDrawer({ open, onClose }: CartDrawerProps) {
@@ -126,7 +155,6 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
             <div className="space-y-3">
               {items.map((item) => {
                 const itemTotal = parsePrice(item.product.price) * item.quantity;
-                const imageUrl = getPublicImageUrl(item.product.image);
 
                 return (
                   <div
@@ -146,12 +174,7 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                         borderColor: 'rgba(148,163,184,0.1)',
                       }}
                     >
-                      <img
-                        src={imageUrl}
-                        alt=""
-                        className="h-full w-full object-contain p-1.5"
-                        aria-hidden="true"
-                      />
+                      <CartProductThumbnail product={item.product} />
                     </div>
 
                     <div className="flex-1 min-w-0">
