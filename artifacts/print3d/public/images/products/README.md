@@ -1,20 +1,19 @@
-# Placeholders dos produtos
+# Fotos dos produtos
 
-Cada produto tem 4 slots de midia no carrossel:
+Para adicionar fotos ao carrossel, crie uma pasta com o `id` do produto e coloque os arquivos dentro dela.
+O app le automaticamente todos os arquivos de imagem encontrados nessa pasta, em ordem alfabetica/numerica.
+Se houver mais de 3 fotos, todas aparecem. Se houver menos de 3, aparecem somente as disponiveis.
 
-- `foto-1-placeholder.png`
-- `foto-2-placeholder.png`
-- `foto-3-placeholder.png`
-- `gif-placeholder.gif`
+Formatos aceitos: `.png`, `.jpg`, `.jpeg`, `.webp`, `.avif` e `.gif`.
 
-Crie uma pasta com o `id` do produto e substitua os arquivos mantendo estes nomes.
 Exemplo:
 
 ```text
-public/images/products/aviao-embraer-c390-5cm/foto-1-placeholder.png
-public/images/products/aviao-embraer-c390-5cm/foto-2-placeholder.png
-public/images/products/aviao-embraer-c390-5cm/foto-3-placeholder.png
-public/images/products/aviao-embraer-c390-5cm/gif-placeholder.gif
+public/images/products/aviao-embraer-c390-5cm/foto-1.png
+public/images/products/aviao-embraer-c390-5cm/foto-2.png
+public/images/products/aviao-embraer-c390-5cm/foto-3.png
+public/images/products/aviao-embraer-c390-5cm/foto-4.png
+public/images/products/aviao-embraer-c390-5cm/video-preview.gif
 ```
 
-Se algum arquivo nao existir ou for deletado, o app mostra um placeholder com o caminho esperado.
+Se a pasta do produto estiver vazia ou nao existir, o app usa a imagem principal antiga do produto como fallback.

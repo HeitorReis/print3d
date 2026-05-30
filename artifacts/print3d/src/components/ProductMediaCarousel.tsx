@@ -66,7 +66,7 @@ export function ProductMediaFrame({ media, alt, fullscreen = false }: ProductMed
             color: '#64748B',
           }}
         >
-          {media.placeholderName}
+          {media.filePath}
         </span>
       </div>
     );
@@ -135,7 +135,7 @@ function MediaCarouselBody({
       >
         <CarouselContent className="ml-0 h-full">
           {media.map((item) => (
-            <CarouselItem key={item.placeholderName} className="h-full pl-0">
+            <CarouselItem key={item.filePath} className="h-full pl-0">
               {onOpenFullscreen ? (
                 <button
                   type="button"
@@ -181,7 +181,7 @@ function MediaCarouselBody({
       <div className="absolute bottom-2 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1.5">
         {media.map((item, index) => (
           <span
-            key={item.placeholderName}
+            key={item.filePath}
             className={cn(
               'h-1.5 rounded-full transition-all',
               index === activeIndex ? 'w-5' : 'w-1.5'
@@ -249,7 +249,7 @@ export function ProductMediaCarousel({ product }: ProductMediaCarouselProps) {
               {product.name}
             </DialogTitle>
             <DialogDescription className="sr-only">
-              Carrossel com 3 fotos e 1 GIF do produto.
+              Carrossel com as fotos disponiveis do produto.
             </DialogDescription>
           </div>
           <div className="h-[min(78vh,760px)]">
