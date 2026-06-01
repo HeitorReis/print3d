@@ -71,7 +71,7 @@ export function getPrimaryProductMedia(product: Product): ProductMedia {
 export const products: Product[] = [
   {
     id: 'aviao-embraer-c390-5cm',
-    name: 'Avião Embraer C-390 5 cm',
+    name: 'Avião Embraer C-390',
     category: 'decoracao',
     description:
       'Miniatura decorativa do Embraer C-390 impressa em 3D, ideal para mesa, estante, coleção ou presente para quem gosta de aviação, engenharia e tecnologia.',
