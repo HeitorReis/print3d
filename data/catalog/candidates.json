@@ -1,0 +1,1592 @@
+{
+  "meta": {
+    "versao": "2026-08-27",
+    "levantadoPor": "auditoria manual de 62 paginas de modelo no MakerWorld",
+    "regraDeCorte": "Para ser APROVADO o modelo precisa cumprir as 3 travas do briefing: (1) licenca de dominio publico (CC0 / 'Creative Commons Public Domain'), (2) perfil de impressao compativel com a Bambu Lab A1 mini, (3) nenhuma montagem com ferragem/ima/cola/rolamento.",
+    "comoAtualizar": "Abra a pagina do modelo no MakerWorld, copie a frase de licenca exata para license.textoExato, confira a lista de impressoras e rode `node data/tools/analyze.mjs`.",
+    "campos": {
+      "sourced": "valor lido diretamente da pagina do modelo em 2026-08-27",
+      "estimado": "valor inferido - veja o campo `base` de cada estimativa e substitua por medicao real do Bambu Studio quando fatiar"
+    },
+    "avisoLicenca": "CC0 resolve o direito autoral do ARQUIVO. Nao resolve marca/personagem: um modelo CC0 do Minecraft continua sendo infracao de propriedade intelectual de terceiro. Todos os aprovados aqui sao objetos genericos, sem personagem, marca ou obra protegida."
+  },
+  "licencasEncontradas": {
+    "CC0": {
+      "textoNoSite": "This user content is licensed under a Creative Commons Public Domain",
+      "vendaDeImpressoes": "permitida",
+      "atribuicao": "nao exigida"
+    },
+    "CC-BY": {
+      "textoNoSite": "Creative Commons Attribution",
+      "vendaDeImpressoes": "permitida com atribuicao",
+      "usadoAqui": false
+    },
+    "CC-BY-SA": {
+      "textoNoSite": "Creative Commons Attribution-Share Alike",
+      "vendaDeImpressoes": "permitida com atribuicao e mesma licenca",
+      "usadoAqui": false
+    },
+    "CC-BY-ND": {
+      "textoNoSite": "Creative Commons Attribution-NoDerivatives",
+      "vendaDeImpressoes": "restrita",
+      "usadoAqui": false
+    },
+    "CC-BY-NC": {
+      "textoNoSite": "Creative Commons Attribution-Noncommercial",
+      "vendaDeImpressoes": "PROIBIDA",
+      "usadoAqui": false
+    },
+    "CC-BY-NC-SA": {
+      "textoNoSite": "Creative Commons Attribution-Noncommercial-Share Alike",
+      "vendaDeImpressoes": "PROIBIDA",
+      "usadoAqui": false
+    },
+    "CC-BY-NC-ND": {
+      "textoNoSite": "Creative Commons Attribution-Noncommercial-NoDerivatives",
+      "vendaDeImpressoes": "PROIBIDA",
+      "usadoAqui": false
+    },
+    "SDFL": {
+      "textoNoSite": "Standard Digital File License - 'You shall not share, sub-license, sell, rent, host, transfer, or distribute in any way the digital or 3D printed versions of this object... The objects may not be used without permission in any way whatsoever in which you charge money, or collect fees.'",
+      "vendaDeImpressoes": "PROIBIDA - proibe explicitamente vender a versao impressa",
+      "usadoAqui": false
+    }
+  },
+  "candidatos": [
+    {
+      "id": "mw-841705",
+      "makerworldId": 841705,
+      "status": "aprovado",
+      "nome": "Stabilo Boss Textmarker Holder",
+      "autor": "fried_fry",
+      "url": "https://makerworld.com/en/models/841705-stabilo-boss-textmarker-holder",
+      "categoria": "escritorio",
+      "familiaDeMercado": "organizador-de-mesa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 0.85,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          130,
+          55
+        ],
+        "estimado": true,
+        "base": "suporte para 8 marcadores tipo Stabilo Boss deitados lado a lado"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 880,
+        "impressoes": 591,
+        "curtidas": 68,
+        "boosts": null
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US3a1aaec375f1a6/design/2024-12-02_7f88e1f948c26.png",
+        "https://makerworld.bblmw.com/makerworld/model/US3a1aaec375f1a6/design/2024-12-02_2cfa36cde50e9.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1324815",
+      "makerworldId": 1324815,
+      "status": "aprovado",
+      "nome": "Post-it To-Do List Template & Holder",
+      "autor": "MakerWorld",
+      "url": "https://makerworld.com/en/models/1324815-post-it-to-do-list-template-holder",
+      "categoria": "escritorio",
+      "familiaDeMercado": "organizador-de-mesa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.4,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          100,
+          100
+        ],
+        "estimado": true,
+        "base": "bloco de post-it 76x76 mm mais borda e canaleta de caneta"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 675,
+        "impressoes": 417,
+        "curtidas": 289,
+        "boosts": 241
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000001324815/design/2025-04-15_d2a5340ceeb1c8.webp",
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000001324815/design/2025-04-15_0dbb916780a398.webp"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-420070",
+      "makerworldId": 420070,
+      "status": "aprovado-com-ressalva",
+      "ressalva": "A pagina nao publica tempo de impressao nem lista de impressoras; o tempo abaixo e estimado pelo volume aparente e precisa ser confirmado no fatiador.",
+      "nome": "Desk organizer - Hex",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/420070-desk-organizer-hex",
+      "categoria": "escritorio",
+      "familiaDeMercado": "organizador-de-mesa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 3.0,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": null,
+        "fonte": "estimado"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          95,
+          85
+        ],
+        "estimado": true,
+        "base": "modulo hexagonal de mesa"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 68,
+        "impressoes": 28,
+        "curtidas": 21,
+        "boosts": 17
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000000420070/design/2024-04-08_3e4889936f63b.png",
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000000420070/design/2024-04-08_d85b1dac9a016.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-787520",
+      "makerworldId": 787520,
+      "status": "aprovado",
+      "nome": "Desk Shelf Riser Feet",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/787520-desk-shelf-riser-feet",
+      "categoria": "escritorio",
+      "familiaDeMercado": "suporte-monitor",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 2.5,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          150,
+          60
+        ],
+        "estimado": true,
+        "base": "par de pes para elevar prateleira/monitor"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 44,
+        "impressoes": 25,
+        "curtidas": 5,
+        "boosts": 10
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US4cb7ab815dfa59/design/2024-11-14_f4171970fa329.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US4cb7ab815dfa59/design/2024-11-14_f9359d18224288.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1566753",
+      "makerworldId": 1566753,
+      "status": "aprovado-com-ressalva",
+      "ressalva": "Modelo parametrico (gerador de caixas). Tempo depende do tamanho escolhido; valor abaixo e para uma caixa de 100x70x40 mm.",
+      "nome": "Simple Box Generator - Make Any Container!",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/1566753-simple-box-generator-make-any-container",
+      "categoria": "escritorio",
+      "familiaDeMercado": "organizador-de-mesa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 2.2,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": null,
+        "fonte": "estimado"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          100,
+          70
+        ],
+        "estimado": true,
+        "base": "caixa parametrica media"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "paredeFina"
+      },
+      "popularidade": {
+        "downloads": null,
+        "impressoes": null,
+        "curtidas": 952,
+        "boosts": 295
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000001566753/design/2025-07-01_ac244d915d3d08.jpeg",
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000001566753/design/2025-07-01_040a9bc0163528.jpeg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-200361",
+      "makerworldId": 200361,
+      "status": "aprovado",
+      "nome": "Keyboard foot",
+      "autor": "Dadikonna",
+      "url": "https://makerworld.com/en/models/200361-keyboard-foot",
+      "categoria": "tecnologia",
+      "familiaDeMercado": "acessorio-setup-pequeno",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 0.3,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          35,
+          25
+        ],
+        "estimado": true,
+        "base": "pe de inclinacao de teclado"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 800,
+        "impressoes": 1200,
+        "curtidas": 662,
+        "boosts": 265
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US16722ca3299a16/design/2024-02-23_f47f5dde4eddc.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US16722ca3299a16/design/2024-02-23_ff03ab29f16a6.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 4,
+        "rotuloSku": "Kit com 4 pes"
+      }
+    },
+    {
+      "id": "mw-947577",
+      "makerworldId": 947577,
+      "status": "aprovado",
+      "nome": "Wall mount phone holder (Pro_Max_Ultra)",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/947577-wall-mount-phone-holder-pro_max_ultra",
+      "categoria": "tecnologia",
+      "familiaDeMercado": "suporte-celular",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.8,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          85,
+          70
+        ],
+        "estimado": true,
+        "base": "berco de celular grande + aba de parede"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 377,
+        "impressoes": 497,
+        "curtidas": 36,
+        "boosts": 11
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/USad67e323da280a/design/2025-01-03_a96a6d439e1878.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/USad67e323da280a/design/2025-01-03_d262f0f9ad10a.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-2058192",
+      "makerworldId": 2058192,
+      "status": "aprovado-com-ressalva",
+      "ressalva": "As duas metades encaixam entre si para virar objeto portatil. Encaixe seco, sem ferragem - dentro da regra 'sem montagem', mas o cliente recebe 2 pecas.",
+      "nome": "Gaming Laptop Stand",
+      "autor": "AIZAWA.MOLD",
+      "url": "https://makerworld.com/en/models/2058192-gaming-laptop-stand",
+      "categoria": "tecnologia",
+      "familiaDeMercado": "suporte-notebook",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.4,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          150,
+          85
+        ],
+        "estimado": true,
+        "base": "par de apoios de notebook"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 138,
+        "impressoes": 95,
+        "curtidas": 112,
+        "boosts": 43
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000002058192/design/2025-11-30_e64bcf3960f0e.png",
+        "https://makerworld.bblmw.com/makerworld/model/DSM00000002058192/design/2025-11-30_0d8e7ad7098528.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1010016",
+      "makerworldId": 1010016,
+      "status": "aprovado",
+      "nome": "Wire Garbage Bag Holder Clip",
+      "autor": "Tyler_Klym",
+      "url": "https://makerworld.com/en/models/1010016",
+      "categoria": "cozinha",
+      "familiaDeMercado": "utilitario-cozinha",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.9,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced",
+        "incertezaAlta": true,
+        "notaIncerteza": "O MakerWorld publica o tempo do PERFIL, nao o numero de pecas na mesa. Para um clipe deste tamanho, 1 h quase certamente corresponde a varias pecas ja arranjadas. Enquanto isso nao for confirmado no Bambu Studio, o motor usa a hipotese pessimista (1 peca por perfil) e o produto aparece artificialmente ruim."
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          80,
+          35
+        ],
+        "estimado": true,
+        "base": "clipe de borda de lixeira de arame"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": null,
+        "impressoes": 36,
+        "curtidas": 4,
+        "boosts": 11
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/USc2c7f8088fe205/design/2025-01-18_3985c22198434.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/USc2c7f8088fe205/design/2025-01-18_02fbc655c6887.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-821583",
+      "makerworldId": 821583,
+      "status": "aprovado",
+      "nome": "Small Clip - for herb bags & other packaging",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/821583-small-clip-for-herb-bags-other-packaging",
+      "categoria": "cozinha",
+      "familiaDeMercado": "utilitario-cozinha",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.0,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced",
+        "incertezaAlta": true,
+        "notaIncerteza": "O MakerWorld publica o tempo do PERFIL, nao o numero de pecas na mesa. Para um clipe deste tamanho, 1 h quase certamente corresponde a varias pecas ja arranjadas. Enquanto isso nao for confirmado no Bambu Studio, o motor usa a hipotese pessimista (1 peca por perfil) e o produto aparece artificialmente ruim."
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          50,
+          22
+        ],
+        "estimado": true,
+        "base": "clipe pequeno de saco de tempero"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 13,
+        "impressoes": 9,
+        "curtidas": 8,
+        "boosts": 9
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US29d90aabb5d7b7/design/2024-12-01_b0db28c9b635f.jpeg",
+        "https://makerworld.bblmw.com/makerworld/model/US29d90aabb5d7b7/design/2024-12-01_cc3cabae1baca.jpeg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1575906",
+      "makerworldId": 1575906,
+      "status": "aprovado-com-ressalva",
+      "ressalva": "Pecas encaixam por snap-fit, sem cola nem ferragem, mas exige juntar 2 partes antes de embalar.",
+      "nome": "Vortex Fruit Washer (Size L)",
+      "autor": "Valera Perinski",
+      "url": "https://makerworld.com/en/models/1575906-vortex-fruit-washer-size-l",
+      "categoria": "cozinha",
+      "familiaDeMercado": "gadget-cozinha",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 5.1,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": true,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          150,
+          150
+        ],
+        "estimado": true,
+        "base": "lavador de frutas tamanho L"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "paredeFina"
+      },
+      "popularidade": {
+        "downloads": 9700,
+        "impressoes": 4900,
+        "curtidas": 691,
+        "boosts": 3135
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US9c965f88b89bdc/design/2025-07-04_1798d15d2e5978.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US9c965f88b89bdc/design/2025-07-04_8808aa0e06caf8.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1530752",
+      "makerworldId": 1530752,
+      "status": "aprovado",
+      "nome": "Soap dish (always dry soap)",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/1530752-soap-dish-always-dry-soap",
+      "categoria": "bem-estar",
+      "familiaDeMercado": "banheiro-bem-estar",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.2,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          110,
+          80
+        ],
+        "estimado": true,
+        "base": "saboneteira padrao com dreno"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": null,
+        "impressoes": 27,
+        "curtidas": 4,
+        "boosts": 11
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US8aa0a1fd427746/design/2025-06-18_229bb728cffc88.webp",
+        "https://makerworld.bblmw.com/makerworld/model/US8aa0a1fd427746/design/2025-06-18_07c0984173cdb.webp"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-21188",
+      "makerworldId": 21188,
+      "status": "aprovado",
+      "nome": "Sturdy Infinity Cube",
+      "autor": "waveman",
+      "url": "https://makerworld.com/en/models/21188-sturdy-infinity-cube",
+      "categoria": "entretenimento",
+      "familiaDeMercado": "fidget-antistress",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.6,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "printInPlace": true,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          60,
+          60
+        ],
+        "estimado": true,
+        "base": "cubo infinito montado 8x4 cm; footprint de impressao aberto ~60x60"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 46300,
+        "impressoes": 34000,
+        "curtidas": 17516,
+        "boosts": 6958
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US5f278585b88a01/design/2023-09-25_46f0a05f3505b.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US5f278585b88a01/design/2023-09-25_f797507f4f68f.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-2322874",
+      "makerworldId": 2322874,
+      "status": "aprovado",
+      "nome": "Penne 2.0 - Public Domain Safety Whistle (CC0)",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/2322874-penne-2-0-public-domain-safety-whistle-cc0",
+      "categoria": "life-hacks",
+      "familiaDeMercado": "brinde-pequeno",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "Creative Commons Public Domain (CC0) - 'No attribution required. No restrictions. Ever.'",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 4.9,
+        "mesas": 1,
+        "unidadesNoPerfil": 100,
+        "a1mini": true,
+        "fonte": "sourced",
+        "nota": "A pagina publica o layout 'Qty 100 Full plate' para A1 mini em 4,9 h."
+      },
+      "montagem": {
+        "necessaria": false,
+        "printInPlace": true,
+        "ferragem": []
+      },
+      "geometria": {
+        "pecasPorMesaOverride": 100,
+        "estimado": false,
+        "base": "declarado pelo autor: mesa cheia da A1 mini = 100 apitos"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido",
+        "gramasPorPecaMedida": 1.0,
+        "fonteMassa": "autor: '~1 gram per whistle'"
+      },
+      "popularidade": {
+        "downloads": 291,
+        "impressoes": null,
+        "curtidas": 232,
+        "boosts": 94
+      },
+      "imagens": [],
+      "venda": {
+        "unidadesPorSku": 10,
+        "rotuloSku": "Kit com 10 apitos"
+      },
+      "nota_reclassificacao": "Reclassificado de entretenimento para life-hacks: apito de seguranca e item utilitario, nao brinquedo."
+    },
+    {
+      "id": "mw-1128502",
+      "makerworldId": 1128502,
+      "status": "aprovado",
+      "nome": "Spiral Fidget Cone",
+      "autor": "Upcrid",
+      "url": "https://makerworld.com/en/models/1128502-spiral-fidget-cone",
+      "categoria": "entretenimento",
+      "familiaDeMercado": "fidget-antistress",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.9,
+        "mesas": 2,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          65,
+          65
+        ],
+        "estimado": true,
+        "base": "cone espiral de passagem"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 67,
+        "impressoes": 42,
+        "curtidas": 43,
+        "boosts": 18
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US9b03c389582d1/design/2025-02-19_5416c296c16b7.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US9b03c389582d1/design/2025-02-19_2356e51a56984.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-652631",
+      "makerworldId": 652631,
+      "status": "aprovado",
+      "nome": "Tic Tac Twist",
+      "autor": "Jack",
+      "url": "https://makerworld.com/en/models/652631-tic-tac-twist",
+      "categoria": "entretenimento",
+      "familiaDeMercado": "jogo-de-mesa-pequeno",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 3.5,
+        "mesas": 3,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          120,
+          120
+        ],
+        "estimado": true,
+        "base": "tabuleiro de jogo da velha giratorio"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 51,
+        "impressoes": 103,
+        "curtidas": 38,
+        "boosts": 21
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US2d0ed4750e7997/design/2024-09-20_7f2d13707c9a.gif",
+        "https://makerworld.bblmw.com/makerworld/model/US2d0ed4750e7997/design/2024-09-20_bde272bdf012e.gif"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-907547",
+      "makerworldId": 907547,
+      "status": "aprovado",
+      "nome": "Screw in coat/backpack/helmet hook",
+      "autor": "Rose",
+      "url": "https://makerworld.com/en/models/907547-screw-in-coat-backpack-helmet-hook",
+      "categoria": "life-hacks",
+      "familiaDeMercado": "gancho-organizacao",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 5.0,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": [
+          "parafuso do proprio usuario"
+        ]
+      },
+      "geometria": {
+        "footprintMm": [
+          60,
+          55
+        ],
+        "estimado": true,
+        "base": "gancho de parede para mochila/capacete"
+      },
+      "material": {
+        "tipo": "PETG",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": null,
+        "impressoes": null,
+        "curtidas": 7,
+        "boosts": 7
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US8175ebed471743/design/2024-12-23_0bf01580b3366.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US8175ebed471743/design/2024-12-23_99d26bad11dbd.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-116454",
+      "makerworldId": 116454,
+      "status": "aprovado",
+      "nome": "Tubular Vase",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/116454-tubular-vase",
+      "categoria": "decoracao",
+      "familiaDeMercado": "vaso-decorativo",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.9,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          80,
+          80
+        ],
+        "estimado": true,
+        "base": "vaso tubular medio"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "paredeFina"
+      },
+      "popularidade": {
+        "downloads": 120,
+        "impressoes": 63,
+        "curtidas": 9,
+        "boosts": 2
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US5080f4648c2b58/design/2023-12-31_444b5a6705c93.png",
+        "https://makerworld.bblmw.com/makerworld/model/US5080f4648c2b58/design/2023-12-31_c5686172d77448.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-79685",
+      "makerworldId": 79685,
+      "status": "aprovado",
+      "nome": "Plant Pot",
+      "autor": "nao identificado na pagina",
+      "url": "https://makerworld.com/en/models/79685-plant-pot",
+      "categoria": "decoracao",
+      "familiaDeMercado": "vaso-decorativo",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 4.2,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          120,
+          120
+        ],
+        "estimado": true,
+        "base": "cachepo medio"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "paredeFina"
+      },
+      "popularidade": {
+        "downloads": 381,
+        "impressoes": 18,
+        "curtidas": 8,
+        "boosts": 388
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US704ec5612443d0/design/2023-11-30_d498db626ea89.png",
+        "https://makerworld.bblmw.com/makerworld/model/US704ec5612443d0/design/2023-11-30_9bc4d49e871a.png"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1384845",
+      "makerworldId": 1384845,
+      "status": "aprovado",
+      "nome": "A Cute Sleepy Puppy",
+      "autor": "Smart3d",
+      "url": "https://makerworld.com/en/models/1384845-a-cute-sleepy-puppy",
+      "categoria": "decoracao",
+      "familiaDeMercado": "miniatura-decorativa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 0.4,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          55,
+          40
+        ],
+        "estimado": true,
+        "base": "miniatura de cachorro deitado"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 219,
+        "impressoes": 188,
+        "curtidas": 122,
+        "boosts": 17
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/USdd863c9511295/design/2025-05-04_721ee3e7b30ca.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/USdd863c9511295/design/2025-05-04_82037221798b48.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-899654",
+      "makerworldId": 899654,
+      "status": "aprovado",
+      "nome": "French Bulldog",
+      "autor": "Burak19891",
+      "url": "https://makerworld.com/en/models/899654-french-bulldog",
+      "categoria": "decoracao",
+      "familiaDeMercado": "miniatura-decorativa",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 1.3,
+        "mesas": 1,
+        "unidadesNoPerfil": 1,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          65,
+          35
+        ],
+        "estimado": true,
+        "base": "miniatura de buldogue frances"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "solido"
+      },
+      "popularidade": {
+        "downloads": 7,
+        "impressoes": 12,
+        "curtidas": 1,
+        "boosts": 0
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US67690f0f81231d/design/2024-12-21_6ac0aa5cd44df.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      }
+    },
+    {
+      "id": "mw-1068632",
+      "makerworldId": 1068632,
+      "status": "aprovado-com-ressalva",
+      "ressalva": "11 mesas para o conjunto completo. So faz sentido como kit, nao como peca unica.",
+      "nome": "Wall stickers",
+      "autor": "Rose",
+      "url": "https://makerworld.com/en/models/1068632-wall-stickers",
+      "categoria": "decoracao",
+      "familiaDeMercado": "decoracao-parede",
+      "licenca": {
+        "codigo": "CC0",
+        "textoExato": "This user content is licensed under a Creative Commons Public Domain",
+        "verificadoEm": "2026-08-27"
+      },
+      "impressao": {
+        "perfilTempoH": 9.8,
+        "mesas": 11,
+        "unidadesNoPerfil": 11,
+        "a1mini": true,
+        "fonte": "sourced"
+      },
+      "montagem": {
+        "necessaria": false,
+        "ferragem": []
+      },
+      "geometria": {
+        "footprintMm": [
+          150,
+          150
+        ],
+        "estimado": true,
+        "base": "placa decorativa de parede"
+      },
+      "material": {
+        "tipo": "PLA",
+        "perfilDeVazao": "paredeFina"
+      },
+      "popularidade": {
+        "downloads": null,
+        "impressoes": null,
+        "curtidas": 24,
+        "boosts": 13
+      },
+      "imagens": [
+        "https://makerworld.bblmw.com/makerworld/model/US469ae2f900b6e9/design/2025-02-02_422184db41c7a.jpg",
+        "https://makerworld.bblmw.com/makerworld/model/US469ae2f900b6e9/design/2025-02-02_e822ce51ee71e.jpg"
+      ],
+      "venda": {
+        "unidadesPorSku": 1,
+        "rotuloSku": "Peca unica"
+      },
+      "excluirDoRanking": true,
+      "motivoExclusao": "Conjunto de 11 mesas. O motor modela ciclo de mesa unica; um kit de 11 mesas precisa de modelagem propria. Mantido no catalogo como referencia."
+    }
+  ],
+  "reprovados": [
+    {
+      "id": "mw-2852675",
+      "nome": "Cable Organizer v2",
+      "categoria": "tecnologia",
+      "licenca": "SDFL",
+      "motivo": "Standard Digital File License proibe vender a peca impressa",
+      "popularidade": {
+        "downloads": 7900,
+        "impressoes": 7500,
+        "curtidas": 10602,
+        "boosts": 2653
+      },
+      "url": "https://makerworld.com/en/models/2852675-cable-organizer-v2-cable-clip-cable-winder"
+    },
+    {
+      "id": "mw-941862",
+      "nome": "Ultimate Cable Management Tie",
+      "categoria": "tecnologia",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "popularidade": {
+        "downloads": 20700,
+        "impressoes": 15200,
+        "curtidas": 15331,
+        "boosts": 4897
+      },
+      "url": "https://makerworld.com/en/models/941862-ultimate-cable-management-tie-different-sizes"
+    },
+    {
+      "id": "mw-2001262",
+      "nome": "Desk cable holder with clamp",
+      "categoria": "life-hacks",
+      "licenca": "SDFL",
+      "motivo": "SDFL + montagem",
+      "popularidade": {
+        "downloads": 23400,
+        "impressoes": 16700,
+        "curtidas": 10657,
+        "boosts": 2379
+      },
+      "url": "https://makerworld.com/en/models/2001262-desk-cable-holder-cable-organizer-with-clamp"
+    },
+    {
+      "id": "mw-1029890",
+      "nome": "Flexi Funny Octopus",
+      "categoria": "entretenimento",
+      "licenca": "SDFL",
+      "motivo": "SDFL - e o modelo mais popular do nicho (89,7k downloads) e nao pode ser vendido",
+      "popularidade": {
+        "downloads": 89700,
+        "impressoes": 61600,
+        "curtidas": 6176,
+        "boosts": 25617
+      },
+      "url": "https://makerworld.com/en/models/1029890-flexi-funny-octopus"
+    },
+    {
+      "id": "mw-1077335",
+      "nome": "Universal Bottle Cap Opener",
+      "categoria": "cozinha",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "popularidade": {
+        "downloads": 4864,
+        "impressoes": 759,
+        "curtidas": 7400,
+        "boosts": 1815
+      },
+      "url": "https://makerworld.com/en/models/1077335-universal-bottle-cap-opener"
+    },
+    {
+      "id": "mw-1365197",
+      "nome": "Toothpaste Squeezer",
+      "categoria": "life-hacks",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "url": "https://makerworld.com/en/models/1365197-toothpaste-squeezer"
+    },
+    {
+      "id": "mw-1380365",
+      "nome": "Cord Lock",
+      "categoria": "life-hacks",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "url": "https://makerworld.com/en/models/1380365-cord-lock"
+    },
+    {
+      "id": "mw-211625",
+      "nome": "A1/A1 Mini Parts Box",
+      "categoria": "escritorio",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "url": "https://makerworld.com/en/models/211625"
+    },
+    {
+      "id": "mw-2134065",
+      "nome": "Cosmetic Brush Holder - Makeup Organizer",
+      "categoria": "bem-estar",
+      "licenca": "SDFL",
+      "motivo": "SDFL",
+      "url": "https://makerworld.com/en/models/2134065-cosmetic-brush-holder-makeup-organizer"
+    },
+    {
+      "id": "mw-375299",
+      "nome": "360 Makeup Brush Holder & Organizer",
+      "categoria": "bem-estar",
+      "licenca": "SDFL",
+      "motivo": "SDFL + rolamento 608ZZ + cola",
+      "popularidade": {
+        "downloads": 6100,
+        "impressoes": 3800,
+        "curtidas": 475,
+        "boosts": 342
+      },
+      "url": "https://makerworld.com/en/models/375299-360deg-makeup-brush-holder-organizer"
+    },
+    {
+      "id": "mw-2834454",
+      "nome": "Makeup Brush Holder - Bow",
+      "categoria": "bem-estar",
+      "licenca": "SDFL",
+      "motivo": "SDFL + sem A1 mini",
+      "popularidade": {
+        "impressoes": 2557,
+        "curtidas": 2500,
+        "boosts": 7486
+      },
+      "url": "https://makerworld.com/en/models/2834454-makeup-brush-holder-bow"
+    },
+    {
+      "id": "mw-1294992",
+      "nome": "Guasha Tool",
+      "categoria": "bem-estar",
+      "licenca": "SDFL",
+      "motivo": "SDFL + montagem com cola",
+      "popularidade": {
+        "downloads": 2230,
+        "impressoes": 990,
+        "curtidas": 1100,
+        "boosts": 733
+      },
+      "url": "https://makerworld.com/en/models/1294992-guasha-tool"
+    },
+    {
+      "id": "mw-1435777",
+      "nome": "7 Pill Jars & Boxes",
+      "categoria": "bem-estar",
+      "licenca": "SDFL",
+      "motivo": "SDFL + sem A1 mini",
+      "url": "https://makerworld.com/en/models/1435777-7-pill-jars-boxes"
+    },
+    {
+      "id": "mw-411225",
+      "nome": "Small Container With Screw Lid",
+      "categoria": "cozinha",
+      "licenca": "SDFL",
+      "motivo": "SDFL + sem A1 mini",
+      "url": "https://makerworld.com/en/models/411225-small-container-with-screw-lid-threaded"
+    },
+    {
+      "id": "mw-2735483",
+      "nome": "Compact Phone Stand with Cable Holder",
+      "categoria": "tecnologia",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/2735483-compact-phone-stand-with-cable-holder"
+    },
+    {
+      "id": "mw-446754",
+      "nome": "HAIR CLAW CLIP (redesign)",
+      "categoria": "bem-estar",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial - print-in-place e altissima traçao (3,7k downloads), vale procurar equivalente CC0",
+      "popularidade": {
+        "downloads": 3700,
+        "impressoes": 2400,
+        "curtidas": 1011,
+        "boosts": 2539
+      },
+      "url": "https://makerworld.com/en/models/446754-hair-claw-clip-redesign"
+    },
+    {
+      "id": "mw-1225325",
+      "nome": "Hair Clip Holder",
+      "categoria": "bem-estar",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/1225325-hair-clip-holder"
+    },
+    {
+      "id": "mw-1677588",
+      "nome": "Phone holder for power socket",
+      "categoria": "life-hacks",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/1677588-phone-holder-for-power-socket"
+    },
+    {
+      "id": "mw-570655",
+      "nome": "Measuring Spoon Holder",
+      "categoria": "cozinha",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/570655-measuring-spoon-holder"
+    },
+    {
+      "id": "mw-16671",
+      "nome": "Headphone Hanger Under Desk",
+      "categoria": "tecnologia",
+      "licenca": "CC-BY-NC-SA",
+      "motivo": "Nao comercial + sem A1 mini",
+      "url": "https://makerworld.com/en/models/16671-headphone-hanger-under-desk-w-cable-management"
+    },
+    {
+      "id": "mw-379427",
+      "nome": "Column Razor-Toothbrush Holder",
+      "categoria": "bem-estar",
+      "licenca": "CC-BY-NC",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/379427-column-razor-toothbrush-holder"
+    },
+    {
+      "id": "mw-62733",
+      "nome": "Stackable Storage Box",
+      "categoria": "cozinha",
+      "licenca": "CC-BY-NC",
+      "motivo": "Nao comercial + 32,5 h / 8 mesas",
+      "url": "https://makerworld.com/en/models/62733-stackable-storage-box"
+    },
+    {
+      "id": "mw-175388",
+      "nome": "Screw pill container",
+      "categoria": "bem-estar",
+      "licenca": "CC-BY-NC",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/175388-screw-pill-container"
+    },
+    {
+      "id": "mw-444998",
+      "nome": "Massage tool acupressure",
+      "categoria": "bem-estar",
+      "licenca": "CC-BY-NC-ND",
+      "motivo": "Nao comercial",
+      "url": "https://makerworld.com/en/models/444998-massage-tool-acupressure"
+    },
+    {
+      "id": "mw-1102502",
+      "nome": "Bonsai Tree",
+      "categoria": "decoracao",
+      "licenca": "CC-BY-ND",
+      "motivo": "Sem derivados - fora da trava de dominio publico",
+      "popularidade": {
+        "downloads": 3400,
+        "impressoes": 1000,
+        "curtidas": 2208,
+        "boosts": 139
+      },
+      "url": "https://makerworld.com/en/models/1102502-bonsai-tree"
+    },
+    {
+      "id": "mw-1538100",
+      "nome": "Phone Wall Mount",
+      "categoria": "tecnologia",
+      "licenca": "CC-BY-SA",
+      "motivo": "Fora da trava de dominio publico",
+      "url": "https://makerworld.com/en/models/1538100-phone-wall-mount"
+    },
+    {
+      "id": "mw-421303",
+      "nome": "Geometric wall art - 3 designs",
+      "categoria": "decoracao",
+      "licenca": "CC-BY-SA",
+      "motivo": "Fora da trava de dominio publico",
+      "url": "https://makerworld.com/en/models/421303-geometric-wall-art-3-designs"
+    },
+    {
+      "id": "mw-823219",
+      "nome": "Print in place push button (free to sell)",
+      "categoria": "entretenimento",
+      "licenca": "CC-BY",
+      "motivo": "Permite venda com atribuicao, mas fora da trava 'apenas dominio publico'. Melhor fallback se voce flexibilizar a regra.",
+      "popularidade": {
+        "downloads": 323,
+        "impressoes": 135,
+        "curtidas": 521,
+        "boosts": 266
+      },
+      "url": "https://makerworld.com/en/models/823219-print-in-place-push-button-free-to-sell"
+    },
+    {
+      "id": "mw-924790",
+      "nome": "Headphone stand HYPERX",
+      "categoria": "tecnologia",
+      "licenca": "CC0",
+      "motivo": "CC0 mas SEM perfil para A1 mini",
+      "url": "https://makerworld.com/en/models/924790-headphone-stand-hyperx"
+    },
+    {
+      "id": "mw-1195534",
+      "nome": "DESK ORGANIZER",
+      "categoria": "escritorio",
+      "licenca": "CC0",
+      "motivo": "CC0 mas A1 mini ausente da lista de impressoras",
+      "url": "https://makerworld.com/en/models/1195534-desk-organizer"
+    },
+    {
+      "id": "mw-572565",
+      "nome": "Stackable Trash Bag Roll Holder",
+      "categoria": "cozinha",
+      "licenca": "CC0",
+      "motivo": "CC0 mas sem A1 mini",
+      "url": "https://makerworld.com/en/models/572565-stackable-trash-bag-roll-holder-dispenser"
+    },
+    {
+      "id": "mw-615276",
+      "nome": "Desiccant Drying Tray with Cover",
+      "categoria": "cozinha",
+      "licenca": "CC0",
+      "motivo": "CC0 mas sem A1 mini",
+      "url": "https://makerworld.com/en/models/615276-desiccant-drying-tray-with-cover"
+    },
+    {
+      "id": "mw-1787873",
+      "nome": "SHAMPOO HOLDER",
+      "categoria": "bem-estar",
+      "licenca": "CC0",
+      "motivo": "CC0 mas sem A1 mini e 23,7 h / 4 mesas",
+      "url": "https://makerworld.com/en/models/1787873-shampoo-holder"
+    },
+    {
+      "id": "mw-2662193",
+      "nome": "PlayGrid - Core Module",
+      "categoria": "entretenimento",
+      "licenca": "CC0",
+      "motivo": "CC0 mas sem A1 mini e com montagem",
+      "url": "https://makerworld.com/en/models/2662193-playgrid-core-module"
+    },
+    {
+      "id": "mw-2524565",
+      "nome": "Super Simple Articulated Snake",
+      "categoria": "entretenimento",
+      "licenca": "CC0",
+      "motivo": "CC0 e print-in-place, mas sem A1 mini",
+      "url": "https://makerworld.com/en/models/2524565-super-simple-articulated-snake-free-use-fidget"
+    },
+    {
+      "id": "mw-1100511",
+      "nome": "Concentric fidget toy",
+      "categoria": "entretenimento",
+      "licenca": "CC0",
+      "motivo": "CC0 mas perfil so para Prusa MK3S",
+      "url": "https://makerworld.com/en/models/1100511-concentric-fidget-toy"
+    },
+    {
+      "id": "mw-536020",
+      "nome": "Blank Sign",
+      "categoria": "life-hacks",
+      "licenca": "CC0",
+      "motivo": "CC0 mas perfil so para Prusa MINI",
+      "url": "https://makerworld.com/en/models/536020-blank-sign"
+    },
+    {
+      "id": "mw-457912",
+      "nome": "Customizable moon lamp with photo",
+      "categoria": "decoracao",
+      "licenca": "CC0",
+      "motivo": "CC0 mas sem A1 mini e exige LED",
+      "url": "https://makerworld.com/en/models/457912-customizable-moon-lamp-with-photo"
+    },
+    {
+      "id": "mw-644411",
+      "nome": "AirPods Pro magnetic holder stand",
+      "categoria": "tecnologia",
+      "licenca": "CC0",
+      "motivo": "CC0 e A1 mini OK, mas exige imas 30x3 e 6x3 e fita - quebra a regra 'sem montagem'",
+      "url": "https://makerworld.com/en/models/644411-airpods-pro-magnetic-holder-stand"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { ValueProps } from '@/components/ValueProps';
 import { ProductCatalog } from '@/components/ProductCatalog';
+import { TrustSection } from '@/components/TrustSection';
 import { CartDrawer } from '@/components/CartDrawer';
 import { CustomProjects } from '@/components/CustomProjects';
 import { ProcessSection } from '@/components/ProcessSection';
@@ -19,6 +20,7 @@ export function Home() {
         <Hero />
         <ValueProps />
         <ProductCatalog />
+        <TrustSection />
         <CustomProjects />
         <ProcessSection />
         <ContactSection />

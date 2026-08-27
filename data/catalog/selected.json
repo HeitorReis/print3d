@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "versao": "2026-08-27",
+    "criterio": "6 categorias com maior score no motor de lucrabilidade (data/outputs/ranking.md), um produto por categoria. Categoria 'cozinha' ficou em 7o lugar e foi cortada.",
+    "regraDePreco": "precoUsualBRL e o preco de referencia da marca (loja propria / cotacao direta). Precos de marketplace sao DERIVADOS dele em data/tools/pricing.mjs para absorver comissao e taxa fixa. O preco usual nunca e sobrescrito.",
+    "regraDeFoto": "NENHUMA foto do MakerWorld pode ser usada nos anuncios. A licenca CC0 cobre o ARQUIVO 3D, nao necessariamente as fotos do designer. Alem disso marketplaces punem foto generica. Todo anuncio usa foto propria da peca impressa - ver docs/06-playbook-de-publicacao.md secao 'Briefing de fotos'. Ate la o site usa placeholders vetoriais da propria marca."
+  },
+  "produtos": [
+    {
+      "ordem": 1,
+      "slug": "cubo-infinito-antiestresse",
+      "candidatoId": "mw-21188",
+      "categoria": "entretenimento",
+      "nome": "Cubo Infinito Antiestresse",
+      "precoUsualBRL": 29.9,
+      "material": "PLA",
+      "dimensoesMm": [
+        80,
+        40,
+        40
+      ],
+      "porQueFoiEscolhido": "Maior demanda revelada de todo o levantamento: 34.000 impressões e 17.516 curtidas no MakerWorld, e o único produto do catálogo com preço brasileiro observado em duas lojas independentes (R$ 19,90 e R$ 39,00). Print-in-place puro, sai da mesa pronto.",
+      "referenciaVisual": "https://makerworld.com/en/models/21188-sturdy-infinity-cube",
+      "tituloML": "Cubo Infinito Antiestresse Fidget Toy Impressão 3D PLA",
+      "tituloShopee": "Cubo Infinito Antiestresse Fidget Toy Anti Ansiedade Brinquedo Sensorial Impressão 3D PLA 8x4cm Presente Escritório Home Office",
+      "gancho": "Cabe no bolso e some com a ansiedade da reunião.",
+      "bullets": [
+        "Movimento contínuo: dobra, gira e volta ao ponto de partida sem fim",
+        "Peça única impressa em 3D — sai da impressora já montada, sem parafuso, cola ou ímã",
+        "8 cm aberto / 4 cm fechado — cabe no bolso, na mochila e na gaveta da mesa",
+        "PLA de origem vegetal, leve e resistente ao uso diário",
+        "Ideal para foco em reunião, estudo, home office e para quem tem mania de mexer nas mãos"
+      ],
+      "descricao": "Um cubo que não para.\n\nO Cubo Infinito é formado por oito blocos ligados por dobradiças impressas junto com a peça. Você dobra, ele vira; dobra de novo, ele volta. Não tem começo nem fim, e é exatamente por isso que a mão não larga.\n\nQuem usa costuma usar pelo mesmo motivo: ocupar as mãos para o cérebro focar. Reunião longa, aula, leitura, ligação. Em vez de bater a caneta na mesa, você mexe no cubo — em silêncio.\n\nCOMO É FEITO\nImpresso em 3D em PLA, camada por camada, na própria oficina. Não há montagem: as dobradiças nascem prontas dentro da peça. Cada unidade é impressa depois do pedido, na cor escolhida.\n\nESPECIFICAÇÕES\n- Material: PLA (plástico de origem vegetal)\n- Medidas: aproximadamente 8 x 4 x 4 cm fechado\n- Peso: aproximadamente 33 g\n- Acabamento: linhas de camada visíveis, característica da impressão 3D\n- Não contém ímãs, rolamentos ou parafusos\n\nO QUE VEM NA CAIXA\n1 Cubo Infinito Antiestresse na cor escolhida.\n\nCUIDADOS\nLimpe com pano úmido. Não deixe dentro do carro fechado no sol: PLA amolece acima de 55 °C.\n\nSOBRE A ORIGEM DO MODELO\nO modelo 3D usado nesta peça está em domínio público (Creative Commons CC0). Não há personagem, marca ou obra de terceiro envolvida.",
+      "tags": [
+        "Antiestresse",
+        "Fidget",
+        "Presente",
+        "Escritório",
+        "Print-in-place"
+      ],
+      "palavrasChave": [
+        "cubo infinito",
+        "fidget toy",
+        "antiestresse",
+        "anti ansiedade",
+        "brinquedo sensorial",
+        "infinity cube",
+        "impressão 3d"
+      ],
+      "faq": [
+        {
+          "p": "Vem montado?",
+          "r": "Sim. A peça sai inteira da impressora, com as dobradiças já formadas. Não há nada para encaixar."
+        },
+        {
+          "p": "Faz barulho?",
+          "r": "Muito pouco. É plástico contra plástico, mais silencioso que um fidget com rolamento."
+        },
+        {
+          "p": "Serve para criança?",
+          "r": "A partir de 3 anos, com supervisão. Não há peça solta que possa ser engolida."
+        }
+      ]
+    },
+    {
+      "ordem": 2,
+      "slug": "suporte-notebook-ergonomico",
+      "candidatoId": "mw-2058192",
+      "categoria": "tecnologia",
+      "nome": "Suporte Ergonômico para Notebook (par)",
+      "precoUsualBRL": 59.9,
+      "material": "PETG",
+      "dimensoesMm": [
+        150,
+        85,
+        60
+      ],
+      "porQueFoiEscolhido": "Melhor relação lucro por hora da categoria tecnologia (R$ 38,98/h) e a menor ocupação de impressora do catálogo (39%), ou seja, sobra máquina para os outros produtos. Ticket alto o suficiente para pagar frete sozinho.",
+      "referenciaVisual": "https://makerworld.com/en/models/2058192-gaming-laptop-stand",
+      "tituloML": "Suporte Ergonômico para Notebook Par Elevador Laptop 3D",
+      "tituloShopee": "Suporte Ergonômico para Notebook Par Elevador de Laptop Antiderrapante Ventilação Home Office Impressão 3D PETG até 17 polegadas",
+      "gancho": "Levanta a tela, endireita o pescoço, esfria a máquina.",
+      "bullets": [
+        "Par de apoios que eleva o notebook e melhora o ângulo da tela e do teclado",
+        "Abre espaço de ar embaixo da máquina — o cooler respira e a base esquenta menos",
+        "PETG: mais resistente ao calor que o PLA comum, feito para ficar embaixo de uma máquina quente",
+        "Encaixe seco entre as duas metades para virar um bloco único e caber na mochila",
+        "Serve em notebooks de 13 a 17 polegadas"
+      ],
+      "descricao": "O jeito mais barato de parar de olhar para baixo o dia inteiro.\n\nNotebook em cima da mesa deixa a tela abaixo da linha dos olhos. O pescoço compensa. Depois de algumas horas, dói.\n\nEste par de apoios levanta a traseira da máquina alguns centímetros. A tela sobe, o teclado ganha inclinação e o punho para de dobrar. E, de quebra, abre um vão de ar embaixo do notebook — o ar quente sai por baixo em vez de ficar preso contra a mesa.\n\nPOR QUE PETG E NÃO PLA\nA base de um notebook em jogo ou renderização passa dos 45 °C. PLA comum começa a amolecer perto de 55 °C, PETG aguenta mais. Este produto é impresso em PETG de propósito.\n\nESPECIFICAÇÕES\n- Material: PETG\n- Conteúdo: 2 apoios (par)\n- Elevação: aproximadamente 6 cm na traseira\n- Compatível com notebooks de 13 a 17 polegadas\n- Peso do par: aproximadamente 29 g\n- Base com área de contato ampla para não marcar a mesa\n\nO QUE VEM NA CAIXA\n2 apoios na cor escolhida.\n\nCUIDADOS\nLimpe com pano úmido. Não use solvente.\n\nSOBRE A ORIGEM DO MODELO\nModelo 3D em domínio público (Creative Commons CC0).",
+      "tags": [
+        "Ergonomia",
+        "Home Office",
+        "Notebook",
+        "PETG"
+      ],
+      "palavrasChave": [
+        "suporte notebook",
+        "elevador de notebook",
+        "suporte laptop",
+        "ergonomia home office",
+        "apoio notebook",
+        "impressão 3d"
+      ],
+      "faq": [
+        {
+          "p": "Escorrega na mesa?",
+          "r": "A base tem área de contato larga e o PETG tem atrito alto. Em vidro liso, um quadradinho de fita dupla-face resolve."
+        },
+        {
+          "p": "Aguenta notebook pesado?",
+          "r": "Sim. O par foi dimensionado para máquinas de até 3 kg."
+        },
+        {
+          "p": "Vem montado?",
+          "r": "São duas peças independentes, uma para cada lado. Não há montagem."
+        }
+      ]
+    },
+    {
+      "ordem": 3,
+      "slug": "organizador-marca-texto",
+      "candidatoId": "mw-841705",
+      "categoria": "escritorio",
+      "nome": "Organizador de Marca-Texto 8 Lugares",
+      "precoUsualBRL": 39.9,
+      "material": "PLA",
+      "dimensoesMm": [
+        130,
+        55,
+        45
+      ],
+      "porQueFoiEscolhido": "Segundo maior lucro por hora do catálogo (R$ 45,38/h) com apenas 46% de ocupação da impressora. Escritório é a categoria mais profunda em modelos CC0 — dá para lançar variações sem trocar de nicho.",
+      "referenciaVisual": "https://makerworld.com/en/models/841705-stabilo-boss-textmarker-holder",
+      "tituloML": "Organizador de Marca Texto 8 Lugares Porta Caneta Mesa 3D",
+      "tituloShopee": "Organizador de Marca Texto 8 Lugares Suporte Porta Caneta Marcador Grifador Mesa Escritório Estudo Impressão 3D PLA",
+      "gancho": "Oito marca-textos, oito lugares, zero garimpo na gaveta.",
+      "bullets": [
+        "Oito nichos inclinados, um para cada marca-texto — a ponta colorida fica sempre à vista",
+        "Encaixe pensado para marcadores tipo chanfrado (Stabilo Boss e similares)",
+        "Peça única: não tem tampa, mola nem parafuso para quebrar",
+        "Base larga, não tomba quando você puxa uma caneta com pressa",
+        "13 cm de frente por 5,5 cm de profundidade — cabe entre o monitor e o teclado"
+      ],
+      "descricao": "Quem estuda com marca-texto sabe: a cor que você quer é sempre a que sumiu.\n\nEste organizador resolve isso deixando os oito marcadores em pé, inclinados para trás, com a ponta colorida virada para você. Bate o olho, vê a cor, pega. Sem revirar estojo.\n\nOs nichos foram desenhados para o formato chanfrado dos marcadores tipo Stabilo Boss — o mais comum em papelaria no Brasil. Marcadores de corpo redondo também entram, com folga.\n\nESPECIFICAÇÕES\n- Material: PLA\n- Medidas: aproximadamente 13 x 5,5 x 4,5 cm\n- Capacidade: 8 marca-textos\n- Peso: aproximadamente 17 g\n- Peça única, sem partes móveis\n\nO QUE VEM NA CAIXA\n1 organizador na cor escolhida. Os marcadores da foto não acompanham o produto.\n\nCUIDADOS\nLimpe com pano úmido. Evite deixar exposto ao sol direto por muitas horas.\n\nSOBRE A ORIGEM DO MODELO\nModelo 3D em domínio público (Creative Commons CC0). O produto não é fabricado nem licenciado pela Stabilo; a menção à marca serve apenas para descrever o formato de marcador que se encaixa.",
+      "tags": [
+        "Escritório",
+        "Organização",
+        "Estudo",
+        "Home Office"
+      ],
+      "palavrasChave": [
+        "organizador de marca texto",
+        "porta marca texto",
+        "suporte marcador",
+        "organizador de mesa",
+        "papelaria",
+        "impressão 3d"
+      ],
+      "faq": [
+        {
+          "p": "Serve para caneta comum?",
+          "r": "Serve, mas os nichos foram dimensionados para o corpo chanfrado do marca-texto. Caneta fina fica com folga."
+        },
+        {
+          "p": "Acompanha os marcadores?",
+          "r": "Não. O produto é apenas o organizador."
+        },
+        {
+          "p": "Dá para lavar?",
+          "r": "Pano úmido resolve. Não vai à máquina de lavar louças."
+        }
+      ]
+    },
+    {
+      "ordem": 4,
+      "slug": "saboneteira-drenante",
+      "candidatoId": "mw-1530752",
+      "categoria": "bem-estar",
+      "nome": "Saboneteira Drenante Seca-Sabonete",
+      "precoUsualBRL": 29.9,
+      "material": "PETG",
+      "dimensoesMm": [
+        110,
+        80,
+        25
+      ],
+      "porQueFoiEscolhido": "Único modelo CC0 compatível com A1 mini encontrado em bem-estar — o nicho é escasso em domínio público, o que também significa pouca concorrência impressa. Resolve uma dor concreta e repetida (sabonete que derrete no próprio caldo).",
+      "referenciaVisual": "https://makerworld.com/en/models/1530752-soap-dish-always-dry-soap",
+      "tituloML": "Saboneteira Drenante Sabonete Sempre Seco Banheiro Pia 3D",
+      "tituloShopee": "Saboneteira Drenante Porta Sabonete Autodrenante Sempre Seco Banheiro Pia Cozinha Impressão 3D PETG Antiderrapante",
+      "gancho": "Sabonete parado na água vira gosma. Aqui a água vai embora.",
+      "bullets": [
+        "Fundo inclinado com canaleta: a água escorre para fora em vez de empoçar sob o sabonete",
+        "Sabonete seca entre um banho e outro — dura visivelmente mais",
+        "PETG: não amarela nem incha com umidade constante como plástico comum",
+        "Superfície vazada, fácil de enxaguar — não acumula limo no fundo",
+        "Serve para sabonete em barra e para shampoo em barra"
+      ],
+      "descricao": "O sabonete não derrete de tanto usar. Derrete de ficar parado na água.\n\nToda saboneteira comum vira uma pocinha. A barra fica de molho, amolece pelas bordas e some na metade do tempo. Este modelo resolve pela geometria: o piso é inclinado e vazado, com canaleta de saída na frente. A água que escorre do sabonete não fica — vai embora.\n\nResultado prático: a barra seca entre um banho e outro e dura mais.\n\nPOR QUE PETG\nBanheiro é umidade constante. PETG é o material que melhor aguenta água quente e vapor sem deformar nem amarelar, por isso é o escolhido aqui em vez do PLA comum.\n\nESPECIFICAÇÕES\n- Material: PETG\n- Medidas: aproximadamente 11 x 8 x 2,5 cm\n- Peso: aproximadamente 25 g\n- Piso vazado com dreno frontal\n- Serve para sabonete em barra e shampoo sólido\n\nO QUE VEM NA CAIXA\n1 saboneteira na cor escolhida. O sabonete da foto não acompanha.\n\nCUIDADOS\nLave com água e sabão. Não ferva e não coloque em máquina de lavar louças.\n\nSOBRE A ORIGEM DO MODELO\nModelo 3D em domínio público (Creative Commons CC0).",
+      "tags": [
+        "Banheiro",
+        "Bem-estar",
+        "Utilidade",
+        "PETG"
+      ],
+      "palavrasChave": [
+        "saboneteira",
+        "porta sabonete",
+        "saboneteira drenante",
+        "shampoo em barra",
+        "banheiro",
+        "impressão 3d"
+      ],
+      "faq": [
+        {
+          "p": "A água escorre para onde?",
+          "r": "Para a frente da peça, pela canaleta. O ideal é apoiar na borda da pia ou dentro do box, com a canaleta virada para o ralo."
+        },
+        {
+          "p": "Cabe shampoo em barra?",
+          "r": "Cabe. A área útil comporta barras de até 9 x 6 cm."
+        },
+        {
+          "p": "Escorrega no azulejo molhado?",
+          "r": "PETG tem atrito razoável em superfície molhada. Em azulejo muito liso, use um pedaço de fita dupla-face resistente à água."
+        }
+      ]
+    },
+    {
+      "ordem": 5,
+      "slug": "mini-cachorro-dormindo",
+      "candidatoId": "mw-1384845",
+      "categoria": "decoracao",
+      "nome": "Mini Cachorro Dormindo",
+      "precoUsualBRL": 29.9,
+      "material": "PLA",
+      "dimensoesMm": [
+        55,
+        40,
+        25
+      ],
+      "porQueFoiEscolhido": "Maior lucro por hora de todo o catálogo (R$ 85,48/h) por uma margem enorme: 24 minutos de impressora e 8 g de filamento por peça, seis por mesa. É o produto que paga a conta de luz dos outros.",
+      "referenciaVisual": "https://makerworld.com/en/models/1384845-a-cute-sleepy-puppy",
+      "tituloML": "Mini Cachorro Dormindo Enfeite Decorativo Mesa Impressão 3D",
+      "tituloShopee": "Mini Cachorro Dormindo Enfeite Decorativo de Mesa Estante Miniatura Cachorrinho Presente Impressão 3D PLA 5cm",
+      "gancho": "Um cachorrinho dormindo em cima do monitor. Só isso. E funciona.",
+      "bullets": [
+        "Miniatura de 5,5 cm de um cachorro enrolado dormindo",
+        "Cabe em qualquer canto: monitor, prateleira, mesa de cabeceira, painel do carro",
+        "Peça única impressa em 3D — sem cola, sem emenda, sem pintura que descasca",
+        "Impressa sob demanda na cor que você escolher",
+        "Presente barato que não parece barato"
+      ],
+      "descricao": "Tem coisa que não precisa de justificativa.\n\nÉ um cachorro pequeno, enrolado, dormindo. Cinco centímetros e meio. Fica em cima do monitor, na borda da prateleira, no console do carro, na mesinha ao lado da cama. Não ocupa espaço e sempre arranca comentário de quem vê.\n\nFunciona bem como lembrancinha, como presente de amigo secreto barato e como aquele item que você compra junto só porque é fofo.\n\nCOMO É FEITO\nImpresso em 3D em PLA, camada por camada. Cada unidade sai depois do pedido, na cor escolhida. A textura de camada é proposital: é o que mostra que a peça foi impressa e não injetada.\n\nESPECIFICAÇÕES\n- Material: PLA (plástico de origem vegetal)\n- Medidas: aproximadamente 5,5 x 4 x 2,5 cm\n- Peso: aproximadamente 8 g\n- Peça única, sem partes móveis\n\nO QUE VEM NA CAIXA\n1 miniatura na cor escolhida.\n\nCUIDADOS\nLimpe com pincel macio ou pano seco. Não deixe no painel do carro sob sol forte: PLA amolece acima de 55 °C.\n\nSOBRE A ORIGEM DO MODELO\nModelo 3D em domínio público (Creative Commons CC0). Não representa personagem de nenhuma marca.",
+      "tags": [
+        "Decoração",
+        "Miniatura",
+        "Presente",
+        "Pet"
+      ],
+      "palavrasChave": [
+        "mini cachorro",
+        "miniatura cachorro",
+        "enfeite de mesa",
+        "decoração 3d",
+        "lembrancinha",
+        "presente barato"
+      ],
+      "faq": [
+        {
+          "p": "É oco ou maciço?",
+          "r": "Impresso com preenchimento interno, não é oco nem totalmente sólido. Fica leve e resistente."
+        },
+        {
+          "p": "Dá para pintar?",
+          "r": "Dá. PLA aceita tinta acrílica e spray para plástico depois de uma lixada leve."
+        },
+        {
+          "p": "Tem em outras cores?",
+          "r": "Sim — a cor é escolhida no pedido. Consulte as disponíveis no momento."
+        }
+      ]
+    },
+    {
+      "ordem": 6,
+      "slug": "kit-10-apitos-emergencia",
+      "candidatoId": "mw-2322874",
+      "categoria": "life-hacks",
+      "nome": "Kit 10 Apitos de Emergência",
+      "precoUsualBRL": 24.9,
+      "material": "PLA",
+      "dimensoesMm": [
+        45,
+        15,
+        10
+      ],
+      "porQueFoiEscolhido": "Economia de produção única no levantamento: o próprio autor publica o arranjo de mesa cheia da A1 mini com 100 apitos em 4,9 h, e informa ~1 g por peça. É o único produto com massa e peças por mesa MEDIDAS, não estimadas. Custo de material do kit inteiro: R$ 1,10.",
+      "referenciaVisual": "https://makerworld.com/en/models/2322874-penne-2-0-public-domain-safety-whistle-cc0",
+      "tituloML": "Kit 10 Apitos de Emergência Segurança Trilha Escola Apito",
+      "tituloShopee": "Kit 10 Apitos de Emergência Apito de Segurança Trilha Camping Escola Professor Brinde Evento Impressão 3D PLA Leve 1g",
+      "gancho": "Dez apitos por menos que o preço de um. Um em cada mochila.",
+      "bullets": [
+        "Kit com 10 apitos — um para cada mochila, chaveiro, estojo de primeiros socorros e bolso de jaqueta",
+        "1 grama cada: você esquece que está carregando até precisar",
+        "Sopro seco e agudo, sem esfera interna que trava ou enferruja",
+        "Peça única impressa em 3D, sem parte móvel e sem metal",
+        "Uso comum: trilha, camping, escola, professor de educação física, brinde de evento, kit de emergência"
+      ],
+      "descricao": "Apito é daqueles itens que só faz falta uma vez — e nessa vez faz muita falta.\n\nEste kit traz dez unidades porque a lógica é essa: não adianta ter um apito guardado na gaveta. Adianta ter um preso na mochila de trilha, um no chaveiro, um no estojo de primeiros socorros do carro, um na bolsa da criança.\n\nO desenho não tem esfera interna. Apito com bolinha trava quando molha, enferruja e para de funcionar justamente em situação de chuva. Este é um canal de ar sólido: sopra e apita, molhado ou seco.\n\nPARA QUEM COSTUMA COMPRAR\nProfessores de educação física, grupos de trilha e escoteiros, organizadores de evento e corrida, kits escolares, kits de emergência doméstica e veicular.\n\nESPECIFICAÇÕES\n- Material: PLA\n- Conteúdo: 10 apitos\n- Medidas de cada apito: aproximadamente 4,5 x 1,5 x 1 cm\n- Peso de cada apito: aproximadamente 1 g\n- Peça única, sem esfera, sem metal, sem montagem\n\nO QUE VEM NA CAIXA\n10 apitos. Cores sortidas ou cor única, a combinar no pedido.\n\nCUIDADOS\nLavável em água corrente. Não ferva.\n\nAVISO\nProduto de sinalização sonora simples. Não substitui equipamento de segurança certificado.\n\nSOBRE A ORIGEM DO MODELO\nModelo 3D publicado explicitamente em domínio público pelo autor (Creative Commons CC0, com a nota \"No attribution required. No restrictions. Ever.\").",
+      "tags": [
+        "Segurança",
+        "Trilha",
+        "Escola",
+        "Kit"
+      ],
+      "palavrasChave": [
+        "apito",
+        "apito de emergência",
+        "apito de segurança",
+        "kit apito",
+        "trilha camping",
+        "apito escolar"
+      ],
+      "faq": [
+        {
+          "p": "Apita alto mesmo?",
+          "r": "É um apito de sopro direto, sem esfera. O som é agudo e seco, feito para chamar atenção a curta e média distância."
+        },
+        {
+          "p": "Posso escolher as cores?",
+          "r": "Pode. O padrão é cores sortidas; cor única sob combinação."
+        },
+        {
+          "p": "Serve para arbitragem esportiva?",
+          "r": "Serve para uso escolar e recreativo. Para arbitragem profissional, prefira apito homologado pela federação."
+        }
+      ]
+    }
+  ]
+}

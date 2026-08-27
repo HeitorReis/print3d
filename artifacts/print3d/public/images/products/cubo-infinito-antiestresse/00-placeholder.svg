@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" role="img" aria-label="Cubo Infinito Antiestresse">
+  <defs>
+    <pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0 H0 V16" fill="none" stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="260" height="220" fill="#0F172A"/>
+  <rect width="260" height="220" fill="url(#g)"/>
+  <g stroke="#F97316" stroke-width="3" fill="none"><rect x="70" y="70" width="60" height="60" rx="6"/><rect x="130" y="70" width="60" height="60" rx="6"/><rect x="70" y="130" width="60" height="60" rx="6"/><rect x="130" y="130" width="60" height="60" rx="6"/></g><path d="M100 100 L160 160" stroke="#22D3EE" stroke-width="3"/>
+  <text x="130" y="205" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(148,163,184,0.55)" letter-spacing="2">FOTO EM BREVE</text>
+</svg>

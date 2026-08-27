@@ -20,7 +20,10 @@ A fully static single-page website for showcasing and selling 3D printed product
 ## Where things live
 
 - `artifacts/print3d/src/` — main frontend app
-- `artifacts/print3d/src/data/products.ts` — static product catalog (8 products)
+- `artifacts/print3d/src/data/products.ts` — **GERADO** a partir de `data/catalog/selected.json` por `node data/tools/sync-site.mjs`. Nao edite a mao.
+- `data/catalog/` — fonte da verdade do catalogo: candidatos auditados, precos de mercado, taxas de marketplace, parametros de custo
+- `data/tools/` — motor de lucrabilidade, precificacao por canal, gerador do playbook e sincronizacao do site
+- `docs/` — levantamento, metodologia, selecao, copywriting, plataformas, playbook de publicacao e plano de agentes
 - `artifacts/print3d/src/config.ts` — WhatsApp phone, email, LinkedIn/GitHub/Instagram URLs
 - `artifacts/print3d/src/i18n.ts` — all translation strings (EN + PT-BR)
 - `artifacts/print3d/src/contexts/CartContext.tsx` — cart state + localStorage persistence
@@ -31,7 +34,7 @@ A fully static single-page website for showcasing and selling 3D printed product
 
 ## Architecture decisions
 
-- Fully static frontend — no API calls from the frontend, all product data is hardcoded in `src/data/products.ts`
+- Fully static frontend — no API calls from the frontend. Product data is GENERATED into `src/data/products.ts` from `data/catalog/selected.json`; regenerate with `node data/tools/sync-site.mjs`
 - Cart persisted to localStorage under key `print3d_cart`
 - WhatsApp order uses `wa.me/{phone}?text={encoded}` links; email uses `mailto:` links
 - Contact CTAs should pass the current cart into the WhatsApp/email link generators so selected items open as a pre-filled order message

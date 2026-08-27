@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" role="img" aria-label="Suporte Ergonômico para Notebook (par)">
+  <defs>
+    <pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0 H0 V16" fill="none" stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="260" height="220" fill="#0F172A"/>
+  <rect width="260" height="220" fill="url(#g)"/>
+  <g stroke="#F97316" stroke-width="3" fill="none"><path d="M50 160 L90 100 L210 100 L170 160 Z"/><path d="M40 175 h180"/></g><path d="M90 100 L110 70 L200 70" stroke="#22D3EE" stroke-width="3" fill="none"/>
+  <text x="130" y="205" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(148,163,184,0.55)" letter-spacing="2">FOTO EM BREVE</text>
+</svg>

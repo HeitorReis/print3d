@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "versao": "2026-08-27",
+    "aviso": "Taxas mudam com frequencia e variam por categoria. Confirme sempre no simulador oficial de cada plataforma antes de publicar. As fontes estao em cada plataforma.",
+    "moeda": "BRL"
+  },
+  "plataformas": [
+    {
+      "id": "mercado-livre",
+      "nome": "Mercado Livre",
+      "status": "recomendado",
+      "comissao": { "classico": { "min": 0.10, "max": 0.14 }, "premium": { "min": 0.15, "max": 0.19 } },
+      "custoFixoPorUnidade": { "aplicaAbaixoDeBRL": 79, "faixaBRL": [6, 7], "usarBRL": 6.5 },
+      "freteGratis": { "obrigatorioAPartirDeBRL": 79, "quemPaga": "vendedor, com subsidio proporcional a reputacao" },
+      "mensalidade": 0,
+      "efeitoDeDegrau": "Entre ~R$60 e R$79 o vendedor paga custo fixo e nao ganha vitrine de frete gratis; acima de R$79 some o custo fixo mas entra o frete. E o ponto onde a maioria dos catalogos pequenos perde dinheiro.",
+      "estrategiaRecomendada": "Vender kit/combo para atravessar o degrau dos R$79 com margem, ou ficar deliberadamente abaixo de R$60 com peca leve.",
+      "fontes": ["https://lider10.com.br/blog/taxas-mercado-livre-2026.html", "https://www.nuvemshop.com.br/blog/alternativas-elo7-fechou/"]
+    },
+    {
+      "id": "shopee",
+      "nome": "Shopee Brasil",
+      "status": "recomendado",
+      "comissaoPorFaixa": [
+        { "ateBRL": 79.99, "percentual": 0.20, "fixoBRL": 4.0 },
+        { "ateBRL": 99.99, "percentual": 0.14, "fixoBRL": 16.0 },
+        { "ateBRL": 199.99, "percentual": 0.14, "fixoBRL": 20.0 },
+        { "ateBRL": 499.99, "percentual": 0.14, "fixoBRL": 26.0 },
+        { "ateBRL": null, "percentual": 0.14, "fixoBRL": 28.0 }
+      ],
+      "adicionalCPF": { "acimaDePedidos90d": 450, "porItemBRL": 3.0 },
+      "adicionalCampanha": 0.025,
+      "mensalidade": 0,
+      "observacao": "Na faixa ate R$79,99 a carga efetiva e brutal para itens baratos: um produto de R$25 paga 20% + R$4 = R$9,00, ou 36% do preco. Produtos de ticket baixo precisam ser vendidos em kit na Shopee.",
+      "fontes": ["https://blog.irroba.com.br/novas-taxas-shopee-2026-guia-de-comissoes-e-frete/", "https://seller.shopee.com.br/edu/article/26839/Comissao-para-vendedores-CNPJ-e-CPF-em-2026"]
+    },
+    {
+      "id": "amazon-br",
+      "nome": "Amazon Brasil",
+      "status": "opcional",
+      "planos": [
+        { "nome": "Individual", "mensalidadeBRL": 0, "porItemVendidoBRL": 2.0 },
+        { "nome": "Profissional", "mensalidadeBRL": 19.0, "porItemVendidoBRL": 0, "promocao": "12 meses gratis para testar" }
+      ],
+      "comissaoReferencia": { "estimativaHandmade": 0.16, "observacao": "percentual varia por categoria e algumas tem valor minimo - confirmar na tabela oficial" },
+      "taxaDeReembolso": { "percentualDaComissao": 0.20, "minimoBRL": 10 },
+      "fontes": ["https://venda.amazon.com.br/sellerblog/investimentos-e-tarifas--quanto-custa-vender-na-amazon", "https://www.nuvemshop.com.br/blog/alternativas-elo7-fechou/"]
+    },
+    {
+      "id": "nuvemshop",
+      "nome": "Nuvemshop (loja propria)",
+      "status": "recomendado-como-checkout",
+      "planos": [{ "nome": "Gratis", "mensalidadeBRL": 0 }, { "nome": "Pago", "mensalidadeBRL": 69 }],
+      "comissaoSobreVenda": 0,
+      "observacao": "Sem comissao sobre a venda usando Nuvem Pago (o gateway cobra a taxa de pagamento). E o destino natural do trafego que o GitHub Pages e o Instagram geram.",
+      "fontes": ["https://www.nuvemshop.com.br/blog/alternativas-elo7-fechou/"]
+    },
+    {
+      "id": "etsy",
+      "nome": "Etsy",
+      "status": "opcional-exportacao",
+      "porAnuncioUSD": 0.20,
+      "comissao": 0.065,
+      "observacao": "Faz sentido apenas para peca com apelo internacional e ticket alto o suficiente para pagar frete.",
+      "fontes": ["https://www.nuvemshop.com.br/blog/alternativas-elo7-fechou/"]
+    },
+    {
+      "id": "elo7",
+      "nome": "Elo7",
+      "status": "ENCERRADO",
+      "encerradoEm": "2026-05-11",
+      "observacao": "A plataforma encerrou as operacoes em 11 de maio de 2026. Nao planeje nada para ela.",
+      "fontes": ["https://www.nuvemshop.com.br/blog/alternativas-elo7-fechou/"]
+    }
+  ],
+  "formalizacao": {
+    "mei": {
+      "limiteAnualBRL": 81000,
+      "limiteMensalProporcionalBRL": 6750,
+      "cnaeSugerido": "2229-3/99 - artesao em plastico independente (confirmar com contador se descreve mesmo a sua operacao)",
+      "restricoes": ["no maximo 1 empregado", "nao pode ser socio/administrador de outra empresa"],
+      "notaFiscal": "MEI costuma ter mais dispensa vendendo para pessoa fisica do que para empresa, mas a regra varia por estado. Marketplaces exigem emissao em varios cenarios - confirme antes de publicar.",
+      "fontes": ["https://printcal.co/blog/mei-impressao-3d-nota-fiscal-cnae/"]
+    }
+  }
+}

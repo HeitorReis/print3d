@@ -12,10 +12,10 @@ export function Hero() {
   const whatsappLink = generateWhatsAppCartLink([], lang);
 
   const stats = [
-    { value: 'PLA/PETG', label: lang === 'en' ? 'Material options' : 'Materiais' },
-    { value: '2-8d', label: lang === 'en' ? 'Typical delivery' : 'Prazo comum' },
-    { value: 'Quote', label: lang === 'en' ? 'Before printing' : 'Antes de imprimir' },
-    { value: 'Direct', label: lang === 'en' ? 'WhatsApp contact' : 'Contato WhatsApp' },
+    { value: t('hero_stat_1_value'), label: t('hero_stat_1_label') },
+    { value: t('hero_stat_2_value'), label: t('hero_stat_2_label') },
+    { value: t('hero_stat_3_value'), label: t('hero_stat_3_label') },
+    { value: t('hero_stat_4_value'), label: t('hero_stat_4_label') },
   ];
 
   return (
@@ -121,7 +121,7 @@ export function Hero() {
             className="w-1.5 h-1.5 rounded-full animate-pulse"
             style={{ backgroundColor: '#F97316' }}
           />
-          {lang === 'en' ? 'Custom prints on demand - PLA / PETG' : 'Impressões sob demanda - PLA / PETG'}
+          {t('hero_badge')}
         </div>
 
         {/* Headline */}

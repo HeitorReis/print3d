@@ -1,39 +1,29 @@
 import { useState } from 'react';
-import { products, Product } from '@/data/products';
+import { products, Product, CATEGORY_LABELS } from '@/data/products';
 import { ProductCard } from './ProductCard';
 import { useLang } from '@/contexts/LangContext';
-import { translations } from '@/i18n';
 
 type FilterCategory = 'all' | Product['category'];
-type TranslationKey = keyof typeof translations.en;
 
 export function ProductCatalog() {
   const { t } = useLang();
   const [activeFilter, setActiveFilter] = useState<FilterCategory>('all');
 
-  const filters: { key: FilterCategory; labelKey: TranslationKey }[] = [
-    { key: 'all', labelKey: 'filter_all' },
-    { key: 'decoracao', labelKey: 'filter_decoracao' },
-    { key: 'ergonomia', labelKey: 'filter_ergonomia' },
-    { key: 'gamer', labelKey: 'filter_gamer' },
-    { key: 'organizacao', labelKey: 'filter_organizacao' },
-    { key: 'acessorios', labelKey: 'filter_acessorios' },
+  const categories = Array.from(new Set(products.map((p) => p.category)));
+  const filters: { key: FilterCategory; label: string }[] = [
+    { key: 'all', label: t('filter_all') },
+    ...categories.map((c) => ({ key: c as FilterCategory, label: CATEGORY_LABELS[c] })),
   ];
 
-  const filtered =
-    activeFilter === 'all' ? products : products.filter((p) => p.category === activeFilter);
+  const filtered = activeFilter === 'all' ? products : products.filter((p) => p.category === activeFilter);
 
   return (
     <section id="catalog" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#0B0F14' }}>
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
           <div>
-            <div
-              className="text-xs font-semibold tracking-widest uppercase mb-2"
-              style={{ color: '#22D3EE' }}
-            >
-              - {t('nav_products')}
+            <div className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#22D3EE' }}>
+              — {t('catalog_kicker')}
             </div>
             <h2
               className="text-3xl sm:text-4xl font-bold"
@@ -42,21 +32,17 @@ export function ProductCatalog() {
               {t('catalog_heading')}
             </h2>
           </div>
-          <p
-            className="text-sm font-mono shrink-0"
-            style={{ color: '#64748B' }}
-          >
+          <p className="text-sm font-mono shrink-0" style={{ color: '#64748B' }}>
             {filtered.length.toString().padStart(2, '0')}/{products.length.toString().padStart(2, '0')}{' '}
             {t('catalog_items_label')}
           </p>
         </div>
 
-        {/* Filters */}
-        <div
-          className="flex flex-wrap gap-2 mb-10"
-          role="group"
-          aria-label="Category filters"
-        >
+        <p className="text-sm max-w-2xl leading-relaxed mb-10" style={{ color: '#94A3B8' }}>
+          {t('catalog_sub')}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-10" role="group" aria-label="Filtros de categoria">
           {filters.map((f) => (
             <button
               key={f.key}
@@ -70,23 +56,16 @@ export function ProductCatalog() {
               }}
               aria-pressed={activeFilter === f.key}
             >
-              {t(f.labelKey)}
+              {f.label}
             </button>
           ))}
         </div>
 
-        {/* Grid */}
-        {filtered.length === 0 ? (
-          <div className="text-center py-20" style={{ color: '#64748B' }}>
-            Nenhum produto encontrado.
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {filtered.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
+          {filtered.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
     </section>
   );

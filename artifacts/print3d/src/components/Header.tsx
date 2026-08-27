@@ -23,7 +23,7 @@ export function Header({ onCartOpen }: HeaderProps) {
   }, []);
 
   useEffect(() => {
-    const sections = ['catalog', 'custom', 'process', 'contact'];
+    const sections = ['catalog', 'trust', 'custom', 'process', 'contact'];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -46,6 +46,7 @@ export function Header({ onCartOpen }: HeaderProps) {
 
   const navLinks = [
     { label: t('nav_products'), id: 'catalog' },
+    { label: t('nav_trust'), id: 'trust' },
     { label: t('nav_custom'), id: 'custom' },
     { label: t('nav_process'), id: 'process' },
     { label: t('nav_contact'), id: 'contact' },
