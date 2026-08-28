@@ -1,4 +1,4 @@
-import { Calculator, ShieldCheck, FlaskConical, Package, MessageSquare } from 'lucide-react';
+import { Calculator, Target, FlaskConical, Package, MessageSquare } from 'lucide-react';
 import { useLang } from '@/contexts/LangContext';
 import { translations } from '@/i18n';
 
@@ -6,7 +6,7 @@ type Key = keyof typeof translations.en;
 
 const CARDS: { icon: typeof Calculator; titleKey: Key; bodyKey: Key; accent: string; index: string }[] = [
   { icon: Calculator, titleKey: 'vp_curated_title', bodyKey: 'vp_curated_body', accent: '#F97316', index: '01' },
-  { icon: ShieldCheck, titleKey: 'vp_legal_title', bodyKey: 'vp_legal_body', accent: '#22D3EE', index: '02' },
+  { icon: Target, titleKey: 'vp_legal_title', bodyKey: 'vp_legal_body', accent: '#22D3EE', index: '02' },
   { icon: FlaskConical, titleKey: 'vp_material_title', bodyKey: 'vp_material_body', accent: '#F97316', index: '03' },
   { icon: Package, titleKey: 'vp_made_title', bodyKey: 'vp_made_body', accent: '#22D3EE', index: '04' },
   { icon: MessageSquare, titleKey: 'vp_direct_title', bodyKey: 'vp_direct_body', accent: '#F97316', index: '05' },

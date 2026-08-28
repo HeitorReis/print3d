@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, PlusCircle, ShieldCheck } from 'lucide-react';
+import { ChevronDown, PlusCircle } from 'lucide-react';
 import { Product, CATEGORY_LABELS, formatBRL } from '@/data/products';
 import { useLang } from '@/contexts/LangContext';
 import { useCart } from '@/contexts/CartContext';
@@ -165,19 +165,6 @@ export function ProductCard({ product }: ProductCardProps) {
               ))}
             </div>
 
-            <a
-              href={product.license.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-start gap-1.5 text-xs leading-relaxed transition-colors hover:underline"
-              style={{ color: '#22D3EE' }}
-            >
-              <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-              <span>
-                {t('label_license')}: {t('label_public_domain')}
-                {product.license.author ? ` — ${product.license.author}` : ''}
-              </span>
-            </a>
           </div>
         )}
 

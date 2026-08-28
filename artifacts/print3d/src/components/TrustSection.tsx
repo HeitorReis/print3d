@@ -1,11 +1,11 @@
-import { FileCheck2, Layers, Thermometer, Truck, Tag, User } from 'lucide-react';
+import { CheckCircle2, Layers, Thermometer, Truck, Tag, User } from 'lucide-react';
 import { useLang } from '@/contexts/LangContext';
 import { translations } from '@/i18n';
 
 type Key = keyof typeof translations.en;
 
 const CARDS: { icon: typeof FileCheck2; titleKey: Key; bodyKey: Key; accent: string; index: string }[] = [
-  { icon: FileCheck2, titleKey: 'trust_1_title', bodyKey: 'trust_1_body', accent: '#22D3EE', index: '01' },
+  { icon: CheckCircle2, titleKey: 'trust_1_title', bodyKey: 'trust_1_body', accent: '#22D3EE', index: '01' },
   { icon: Layers, titleKey: 'trust_2_title', bodyKey: 'trust_2_body', accent: '#F97316', index: '02' },
   { icon: Thermometer, titleKey: 'trust_3_title', bodyKey: 'trust_3_body', accent: '#22D3EE', index: '03' },
   { icon: Truck, titleKey: 'trust_4_title', bodyKey: 'trust_4_body', accent: '#F97316', index: '04' },
