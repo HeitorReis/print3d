@@ -79,15 +79,15 @@ Depois das primeiras avaliações, publique também:
 
 > Cabe no bolso e some com a ansiedade da reunião.
 
-**Por que está no catálogo.** Maior demanda revelada de todo o levantamento: 34.000 impressões e 17.516 curtidas no MakerWorld, e o único produto do catálogo com preço brasileiro observado em duas lojas independentes (R$ 19,90 e R$ 39,00). Print-in-place puro, sai da mesa pronto.
+**Por que está no catálogo.** Demanda brasileira COMPROVADA: no Mercado Livre o líder da categoria tem +1000 vendidos e 4,6 estrelas. Mas o preço real é duro — ele vende a R$ 19,00, e a mediana da categoria caiu para R$ 24,52. Entra como produto-âncora de tráfego, não de margem: 35% no marketplace.
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 29,90** | — |
-| Mercado Livre | R$ 38,90 | R$ 20,51 (53%) |
-| Shopee | R$ 38,90 | R$ 19,89 (51%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 21,90** | — |
+| Mercado Livre | R$ 25,90 | R$ 9,07 (35%) |
+| Shopee | R$ 25,90 | R$ 9,49 (37%) |
 
 ### Título — Mercado Livre (54/60 caracteres)
 
@@ -178,15 +178,15 @@ https://makerworld.com/en/models/21188-sturdy-infinity-cube
 
 > Levanta a tela, endireita o pescoço, esfria a máquina.
 
-**Por que está no catálogo.** Melhor relação lucro por hora da categoria tecnologia (R$ 38,98/h) e a menor ocupação de impressora do catálogo (39%), ou seja, sobra máquina para os outros produtos. Ticket alto o suficiente para pagar frete sozinho.
+**Por que está no catálogo.** ATENÇÃO: existe concorrente direto impresso em 3D — 'Pés Elevadores' da Vix3D — vendendo o mesmo conceito a R$ 18,33 com +1000 vendidos. E suportes de alumínio com regulagem começam em R$ 17,19 com milhares de avaliações. O preço caiu de R$ 59,90 para R$ 26,90. Só se sustenta com diferenciação real (PETG declarado, acabamento, atendimento).
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 59,90** | — |
-| Mercado Livre | R$ 71,90 | R$ 49,46 (69%) |
-| Shopee | R$ 71,90 | R$ 46,21 (64%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 26,90** | — |
+| Mercado Livre | R$ 31,90 | R$ 14,26 (45%) |
+| Shopee | R$ 31,90 | R$ 14,21 (45%) |
 
 ### Título — Mercado Livre (55/60 caracteres)
 
@@ -278,15 +278,15 @@ https://makerworld.com/en/models/2058192-gaming-laptop-stand
 
 > Oito marca-textos, oito lugares, zero garimpo na gaveta.
 
-**Por que está no catálogo.** Segundo maior lucro por hora do catálogo (R$ 45,38/h) com apenas 46% de ocupação da impressora. Escritório é a categoria mais profunda em modelos CC0 — dá para lançar variações sem trocar de nicho.
+**Por que está no catálogo.** O melhor do catálogo depois da revisão: apenas 18 concorrentes na Amazon para a busca específica — a menor saturação medida — e mediana de R$ 37,24. Margem de 58% no Mercado Livre com 46% de ocupação de impressora. Escritório também é a categoria mais profunda em modelos CC0.
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 39,90** | — |
-| Mercado Livre | R$ 45,90 | R$ 28,85 (63%) |
-| Shopee | R$ 45,90 | R$ 27,68 (60%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 31,90** | — |
+| Mercado Livre | R$ 37,90 | R$ 21,81 (58%) |
+| Shopee | R$ 37,90 | R$ 21,28 (56%) |
 
 ### Título — Mercado Livre (57/60 caracteres)
 
@@ -374,15 +374,15 @@ https://makerworld.com/en/models/841705-stabilo-boss-textmarker-holder
 
 > Sabonete parado na água vira gosma. Aqui a água vai embora.
 
-**Por que está no catálogo.** Único modelo CC0 compatível com A1 mini encontrado em bem-estar — o nicho é escasso em domínio público, o que também significa pouca concorrência impressa. Resolve uma dor concreta e repetida (sabonete que derrete no próprio caldo).
+**Por que está no catálogo.** Único modelo CC0 compatível com A1 mini em bem-estar. Mas a categoria é dominada por plástico injetado de marca: a Coza vende a R$ 16,91 com 2,2 mil avaliações e +200 compras no mês. Preço caiu de R$ 29,90 para R$ 19,90 e a margem no marketplace ficou em 33% — a mais apertada do catálogo.
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 29,90** | — |
-| Mercado Livre | R$ 35,90 | R$ 18,50 (52%) |
-| Shopee | R$ 35,90 | R$ 18,13 (50%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 19,90** | — |
+| Mercado Livre | R$ 23,90 | R$ 7,94 (33%) |
+| Shopee | R$ 23,90 | R$ 8,53 (36%) |
 
 ### Título — Mercado Livre (57/60 caracteres)
 
@@ -473,15 +473,15 @@ https://makerworld.com/en/models/1530752-soap-dish-always-dry-soap
 
 > Um cachorrinho dormindo em cima do monitor. Só isso. E funciona.
 
-**Por que está no catálogo.** Maior lucro por hora de todo o catálogo (R$ 85,48/h) por uma margem enorme: 24 minutos de impressora e 8 g de filamento por peça, seis por mesa. É o produto que paga a conta de luz dos outros.
+**Por que está no catálogo.** Continua sendo o maior lucro por hora do catálogo (R$ 77,05/h) mesmo com o preço revisado para baixo: 24 minutos de impressora e 8 g de filamento por peça, seis por mesa. Concorrentes diretos impressos em 3D estão entre R$ 29,90 e R$ 45,00. É o produto que paga a conta de luz dos outros.
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 29,90** | — |
-| Mercado Livre | R$ 37,90 | R$ 23,16 (61%) |
-| Shopee | R$ 37,90 | R$ 22,63 (60%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 27,90** | — |
+| Mercado Livre | R$ 33,90 | R$ 19,64 (58%) |
+| Shopee | R$ 33,90 | R$ 19,43 (57%) |
 
 ### Título — Mercado Livre (59/60 caracteres)
 
@@ -571,15 +571,15 @@ https://makerworld.com/en/models/1384845-a-cute-sleepy-puppy
 
 > Dez apitos por menos que o preço de um. Um em cada mochila.
 
-**Por que está no catálogo.** Economia de produção única no levantamento: o próprio autor publica o arranjo de mesa cheia da A1 mini com 100 apitos em 4,9 h, e informa ~1 g por peça. É o único produto com massa e peças por mesa MEDIDAS, não estimadas. Custo de material do kit inteiro: R$ 1,10.
+**Por que está no catálogo.** Subiu de posição com os dados reais. O comparável correto não era um kit de passa-fio de R$ 17 — é o Kit 10 Apitos de Metal a R$ 33,15. Isso dobrou a âncora de preço para R$ 35,20 e levou o produto a R$ 67,51/h. Ressalva honesta: apito de metal tem material percebido melhor que PLA.
 
 ### Preços
 
 | Canal | Preço | Margem |
 |---|---|---|
-| Loja própria / WhatsApp (**preço usual**) | **R$ 24,90** | — |
-| Mercado Livre | R$ 32,90 | R$ 18,50 (56%) |
-| Shopee | R$ 32,90 | R$ 18,37 (56%) |
+| Loja própria / WhatsApp (**preço usual**) | **R$ 29,90** | — |
+| Mercado Livre | R$ 35,90 | R$ 21,14 (59%) |
+| Shopee | R$ 35,90 | R$ 20,77 (58%) |
 
 ### Título — Mercado Livre (57/60 caracteres)
 

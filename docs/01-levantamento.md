@@ -1,5 +1,7 @@
 # Etapa 1‑1 — Levantamento inicial
 
+> **Atualizado em 28/08/2026.** A limitação descrita abaixo foi parcialmente resolvida: com o navegador do próprio computador, coletei preços de primeira mão na Amazon (6 famílias) e no Mercado Livre (2 famílias, com contagem de vendidos). Ver [08‑revisão com dados reais](08-revisao-com-dados-reais.md).
+
 ## O que foi possível apurar, e o que não foi
 
 Antes dos números, a parte desconfortável: **Mercado Livre, Shopee e Amazon Brasil bloqueiam leitura automatizada** (`robots.txt` proíbe `/lista`, `/p/`, `/dp/` e as buscas). Não existe caminho legítimo de coletar preço e "vendidos" dessas três plataformas por aqui. Tentei as três, e as três recusaram.

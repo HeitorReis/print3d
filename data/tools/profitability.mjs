@@ -213,10 +213,25 @@ export function taxaDeMarketplace(plataforma, preco) {
 // Avaliacao completa de um candidato
 // ---------------------------------------------------------------------------
 
-function demandaValidadaInterna(candidato) {
+/**
+ * Demanda revelada, em log10.
+ *
+ * Preferencia 1: `vendidosMax` da familia de mercado - quantas unidades o
+ * concorrente direto mais vendido ja vendeu no Brasil. E disposicao a pagar
+ * medida, e e o sinal certo.
+ *
+ * Preferencia 2 (fallback): impressoes do modelo no MakerWorld. Mede interesse
+ * global de makers, nao demanda brasileira. Fica marcado como `fallback` na
+ * saida para nao ser confundido com o primeiro.
+ */
+function demandaValidadaInterna(candidato, familia) {
+  const vendidos = familia?.vendidosMax;
+  if (typeof vendidos === 'number' && vendidos > 0) {
+    return { valor: Math.log10(1 + vendidos), fonte: 'vendidos-no-marketplace', bruto: vendidos };
+  }
   const p = candidato.popularidade || {};
   const impressoes = p.impressoes ?? p.downloads ?? 0;
-  return Math.log10(1 + impressoes);
+  return { valor: Math.log10(1 + impressoes), fonte: 'fallback-impressoes-makerworld', bruto: impressoes };
 }
 
 export function avaliar(candidato, familia, params) {
@@ -240,7 +255,10 @@ export function avaliar(candidato, familia, params) {
   return {
     id: candidato.id,
     nome: candidato.nome,
-    demandaValidada: demandaValidadaInterna(candidato),
+    demandaValidada: demandaValidadaInterna(candidato, familia).valor,
+    demanda: demandaValidadaInterna(candidato, familia),
+    saturacao: familia.saturacao ?? null,
+    alertaConcorrencia: familia.alertaConcorrencia ?? null,
     categoria: candidato.categoria,
     familia: candidato.familiaDeMercado,
     licenca: candidato.licenca?.codigo,
@@ -302,11 +320,4 @@ export function score(av, maximos, pesos = { hora: 0.40, dia: 0.40, folga: 0.05,
   const folga = 1 - Math.min(1, av.producao.ocupacaoDaImpressoraPct / 100);
   const nDemanda = maximos.demanda > 0 ? av.demandaValidada / maximos.demanda : 0;
   return pesos.hora * nHora + pesos.dia * nDia + pesos.folga * folga + pesos.demanda * nDemanda;
-}
-
-/** log10(1 + impressoes) - demanda revelada, com escala comprimida. */
-export function demandaValidada(candidato) {
-  const p = candidato.popularidade || {};
-  const impressoes = p.impressoes ?? p.downloads ?? 0;
-  return Math.log10(1 + impressoes);
 }

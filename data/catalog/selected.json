@@ -2,7 +2,7 @@
   "meta": {
     "versao": "2026-08-27",
     "criterio": "6 categorias com maior score no motor de lucrabilidade (data/outputs/ranking.md), um produto por categoria. Categoria 'cozinha' ficou em 7o lugar e foi cortada.",
-    "regraDePreco": "precoUsualBRL e o preco de referencia da marca (loja propria / cotacao direta). Precos de marketplace sao DERIVADOS dele em data/tools/pricing.mjs para absorver comissao e taxa fixa. O preco usual nunca e sobrescrito.",
+    "regraDePreco": "precoUsualBRL e o preco de referencia da marca (loja propria / cotacao direta), definido ~15% abaixo da mediana observada no proprio marketplace. Precos de marketplace sao DERIVADOS dele em data/tools/pricing.mjs. Revisado em 28/08/2026 com precos coletados de primeira mao no Mercado Livre e na Amazon.",
     "regraDeFoto": "NENHUMA foto do MakerWorld pode ser usada nos anuncios. A licenca CC0 cobre o ARQUIVO 3D, nao necessariamente as fotos do designer. Alem disso marketplaces punem foto generica. Todo anuncio usa foto propria da peca impressa - ver docs/06-playbook-de-publicacao.md secao 'Briefing de fotos'. Ate la o site usa placeholders vetoriais da propria marca."
   },
   "produtos": [
@@ -12,14 +12,14 @@
       "candidatoId": "mw-21188",
       "categoria": "entretenimento",
       "nome": "Cubo Infinito Antiestresse",
-      "precoUsualBRL": 29.9,
+      "precoUsualBRL": 21.9,
       "material": "PLA",
       "dimensoesMm": [
         80,
         40,
         40
       ],
-      "porQueFoiEscolhido": "Maior demanda revelada de todo o levantamento: 34.000 impressões e 17.516 curtidas no MakerWorld, e o único produto do catálogo com preço brasileiro observado em duas lojas independentes (R$ 19,90 e R$ 39,00). Print-in-place puro, sai da mesa pronto.",
+      "porQueFoiEscolhido": "Demanda brasileira COMPROVADA: no Mercado Livre o líder da categoria tem +1000 vendidos e 4,6 estrelas. Mas o preço real é duro — ele vende a R$ 19,00, e a mediana da categoria caiu para R$ 24,52. Entra como produto-âncora de tráfego, não de margem: 35% no marketplace.",
       "referenciaVisual": "https://makerworld.com/en/models/21188-sturdy-infinity-cube",
       "tituloML": "Cubo Infinito Antiestresse Fidget Toy Impressão 3D PLA",
       "tituloShopee": "Cubo Infinito Antiestresse Fidget Toy Anti Ansiedade Brinquedo Sensorial Impressão 3D PLA 8x4cm Presente Escritório Home Office",
@@ -61,7 +61,8 @@
           "p": "Serve para criança?",
           "r": "A partir de 3 anos, com supervisão. Não há peça solta que possa ser engolida."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 29.9
     },
     {
       "ordem": 2,
@@ -69,14 +70,14 @@
       "candidatoId": "mw-2058192",
       "categoria": "tecnologia",
       "nome": "Suporte Ergonômico para Notebook (par)",
-      "precoUsualBRL": 59.9,
+      "precoUsualBRL": 26.9,
       "material": "PETG",
       "dimensoesMm": [
         150,
         85,
         60
       ],
-      "porQueFoiEscolhido": "Melhor relação lucro por hora da categoria tecnologia (R$ 38,98/h) e a menor ocupação de impressora do catálogo (39%), ou seja, sobra máquina para os outros produtos. Ticket alto o suficiente para pagar frete sozinho.",
+      "porQueFoiEscolhido": "ATENÇÃO: existe concorrente direto impresso em 3D — 'Pés Elevadores' da Vix3D — vendendo o mesmo conceito a R$ 18,33 com +1000 vendidos. E suportes de alumínio com regulagem começam em R$ 17,19 com milhares de avaliações. O preço caiu de R$ 59,90 para R$ 26,90. Só se sustenta com diferenciação real (PETG declarado, acabamento, atendimento).",
       "referenciaVisual": "https://makerworld.com/en/models/2058192-gaming-laptop-stand",
       "tituloML": "Suporte Ergonômico para Notebook Par Elevador Laptop 3D",
       "tituloShopee": "Suporte Ergonômico para Notebook Par Elevador de Laptop Antiderrapante Ventilação Home Office Impressão 3D PETG até 17 polegadas",
@@ -116,7 +117,8 @@
           "p": "Vem montado?",
           "r": "São duas peças independentes, uma para cada lado. Não há montagem."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 59.9
     },
     {
       "ordem": 3,
@@ -124,14 +126,14 @@
       "candidatoId": "mw-841705",
       "categoria": "escritorio",
       "nome": "Organizador de Marca-Texto 8 Lugares",
-      "precoUsualBRL": 39.9,
+      "precoUsualBRL": 31.9,
       "material": "PLA",
       "dimensoesMm": [
         130,
         55,
         45
       ],
-      "porQueFoiEscolhido": "Segundo maior lucro por hora do catálogo (R$ 45,38/h) com apenas 46% de ocupação da impressora. Escritório é a categoria mais profunda em modelos CC0 — dá para lançar variações sem trocar de nicho.",
+      "porQueFoiEscolhido": "O melhor do catálogo depois da revisão: apenas 18 concorrentes na Amazon para a busca específica — a menor saturação medida — e mediana de R$ 37,24. Margem de 58% no Mercado Livre com 46% de ocupação de impressora. Escritório também é a categoria mais profunda em modelos CC0.",
       "referenciaVisual": "https://makerworld.com/en/models/841705-stabilo-boss-textmarker-holder",
       "tituloML": "Organizador de Marca Texto 8 Lugares Porta Caneta Mesa 3D",
       "tituloShopee": "Organizador de Marca Texto 8 Lugares Suporte Porta Caneta Marcador Grifador Mesa Escritório Estudo Impressão 3D PLA",
@@ -171,7 +173,8 @@
           "p": "Dá para lavar?",
           "r": "Pano úmido resolve. Não vai à máquina de lavar louças."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 39.9
     },
     {
       "ordem": 4,
@@ -179,14 +182,14 @@
       "candidatoId": "mw-1530752",
       "categoria": "bem-estar",
       "nome": "Saboneteira Drenante Seca-Sabonete",
-      "precoUsualBRL": 29.9,
+      "precoUsualBRL": 19.9,
       "material": "PETG",
       "dimensoesMm": [
         110,
         80,
         25
       ],
-      "porQueFoiEscolhido": "Único modelo CC0 compatível com A1 mini encontrado em bem-estar — o nicho é escasso em domínio público, o que também significa pouca concorrência impressa. Resolve uma dor concreta e repetida (sabonete que derrete no próprio caldo).",
+      "porQueFoiEscolhido": "Único modelo CC0 compatível com A1 mini em bem-estar. Mas a categoria é dominada por plástico injetado de marca: a Coza vende a R$ 16,91 com 2,2 mil avaliações e +200 compras no mês. Preço caiu de R$ 29,90 para R$ 19,90 e a margem no marketplace ficou em 33% — a mais apertada do catálogo.",
       "referenciaVisual": "https://makerworld.com/en/models/1530752-soap-dish-always-dry-soap",
       "tituloML": "Saboneteira Drenante Sabonete Sempre Seco Banheiro Pia 3D",
       "tituloShopee": "Saboneteira Drenante Porta Sabonete Autodrenante Sempre Seco Banheiro Pia Cozinha Impressão 3D PETG Antiderrapante",
@@ -226,7 +229,8 @@
           "p": "Escorrega no azulejo molhado?",
           "r": "PETG tem atrito razoável em superfície molhada. Em azulejo muito liso, use um pedaço de fita dupla-face resistente à água."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 29.9
     },
     {
       "ordem": 5,
@@ -234,14 +238,14 @@
       "candidatoId": "mw-1384845",
       "categoria": "decoracao",
       "nome": "Mini Cachorro Dormindo",
-      "precoUsualBRL": 29.9,
+      "precoUsualBRL": 27.9,
       "material": "PLA",
       "dimensoesMm": [
         55,
         40,
         25
       ],
-      "porQueFoiEscolhido": "Maior lucro por hora de todo o catálogo (R$ 85,48/h) por uma margem enorme: 24 minutos de impressora e 8 g de filamento por peça, seis por mesa. É o produto que paga a conta de luz dos outros.",
+      "porQueFoiEscolhido": "Continua sendo o maior lucro por hora do catálogo (R$ 77,05/h) mesmo com o preço revisado para baixo: 24 minutos de impressora e 8 g de filamento por peça, seis por mesa. Concorrentes diretos impressos em 3D estão entre R$ 29,90 e R$ 45,00. É o produto que paga a conta de luz dos outros.",
       "referenciaVisual": "https://makerworld.com/en/models/1384845-a-cute-sleepy-puppy",
       "tituloML": "Mini Cachorro Dormindo Enfeite Decorativo Mesa Impressão 3D",
       "tituloShopee": "Mini Cachorro Dormindo Enfeite Decorativo de Mesa Estante Miniatura Cachorrinho Presente Impressão 3D PLA 5cm",
@@ -281,7 +285,8 @@
           "p": "Tem em outras cores?",
           "r": "Sim — a cor é escolhida no pedido. Consulte as disponíveis no momento."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 29.9
     },
     {
       "ordem": 6,
@@ -289,14 +294,14 @@
       "candidatoId": "mw-2322874",
       "categoria": "life-hacks",
       "nome": "Kit 10 Apitos de Emergência",
-      "precoUsualBRL": 24.9,
+      "precoUsualBRL": 29.9,
       "material": "PLA",
       "dimensoesMm": [
         45,
         15,
         10
       ],
-      "porQueFoiEscolhido": "Economia de produção única no levantamento: o próprio autor publica o arranjo de mesa cheia da A1 mini com 100 apitos em 4,9 h, e informa ~1 g por peça. É o único produto com massa e peças por mesa MEDIDAS, não estimadas. Custo de material do kit inteiro: R$ 1,10.",
+      "porQueFoiEscolhido": "Subiu de posição com os dados reais. O comparável correto não era um kit de passa-fio de R$ 17 — é o Kit 10 Apitos de Metal a R$ 33,15. Isso dobrou a âncora de preço para R$ 35,20 e levou o produto a R$ 67,51/h. Ressalva honesta: apito de metal tem material percebido melhor que PLA.",
       "referenciaVisual": "https://makerworld.com/en/models/2322874-penne-2-0-public-domain-safety-whistle-cc0",
       "tituloML": "Kit 10 Apitos de Emergência Segurança Trilha Escola Apito",
       "tituloShopee": "Kit 10 Apitos de Emergência Apito de Segurança Trilha Camping Escola Professor Brinde Evento Impressão 3D PLA Leve 1g",
@@ -336,7 +341,8 @@
           "p": "Serve para arbitragem esportiva?",
           "r": "Serve para uso escolar e recreativo. Para arbitragem profissional, prefira apito homologado pela federação."
         }
-      ]
+      ],
+      "precoUsualAnteriorBRL": 24.9
     }
   ]
 }

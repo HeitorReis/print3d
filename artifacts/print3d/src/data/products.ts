@@ -99,11 +99,11 @@ const raw = [
     "category": "entretenimento",
     "hook": "Cabe no bolso e some com a ansiedade da reunião.",
     "description": "Um cubo que não para. O Cubo Infinito é formado por oito blocos ligados por dobradiças impressas junto com a peça. Você dobra, ele vira; dobra de novo, ele volta. Não tem começo nem fim, e é exatamente por isso que a mão não larga.",
-    "priceBRL": 29.9,
+    "priceBRL": 21.9,
     "marketplacePrices": {
-      "mercado-livre": 38.9,
-      "shopee": 38.9,
-      "nuvemshop": 29.9
+      "mercado-livre": 25.9,
+      "shopee": 25.9,
+      "nuvemshop": 21.9
     },
     "material": "PLA",
     "dimensionsMm": [
@@ -153,11 +153,11 @@ const raw = [
     "category": "tecnologia",
     "hook": "Levanta a tela, endireita o pescoço, esfria a máquina.",
     "description": "O jeito mais barato de parar de olhar para baixo o dia inteiro. Notebook em cima da mesa deixa a tela abaixo da linha dos olhos. O pescoço compensa. Depois de algumas horas, dói.",
-    "priceBRL": 59.9,
+    "priceBRL": 26.9,
     "marketplacePrices": {
-      "mercado-livre": 71.9,
-      "shopee": 71.9,
-      "nuvemshop": 59.9
+      "mercado-livre": 31.9,
+      "shopee": 31.9,
+      "nuvemshop": 26.9
     },
     "material": "PETG",
     "dimensionsMm": [
@@ -206,11 +206,11 @@ const raw = [
     "category": "escritorio",
     "hook": "Oito marca-textos, oito lugares, zero garimpo na gaveta.",
     "description": "Quem estuda com marca-texto sabe: a cor que você quer é sempre a que sumiu. Este organizador resolve isso deixando os oito marcadores em pé, inclinados para trás, com a ponta colorida virada para você. Bate o olho, vê a cor, pega. Sem revirar estojo.",
-    "priceBRL": 39.9,
+    "priceBRL": 31.9,
     "marketplacePrices": {
-      "mercado-livre": 45.9,
-      "shopee": 45.9,
-      "nuvemshop": 39.9
+      "mercado-livre": 37.9,
+      "shopee": 37.9,
+      "nuvemshop": 31.9
     },
     "material": "PLA",
     "dimensionsMm": [
@@ -259,11 +259,11 @@ const raw = [
     "category": "bem-estar",
     "hook": "Sabonete parado na água vira gosma. Aqui a água vai embora.",
     "description": "O sabonete não derrete de tanto usar. Derrete de ficar parado na água. Toda saboneteira comum vira uma pocinha. A barra fica de molho, amolece pelas bordas e some na metade do tempo. Este modelo resolve pela geometria: o piso é inclinado e vazado, com canaleta de saída na frente. A água que escorre do sabonete não fica — vai embora.",
-    "priceBRL": 29.9,
+    "priceBRL": 19.9,
     "marketplacePrices": {
-      "mercado-livre": 35.9,
-      "shopee": 35.9,
-      "nuvemshop": 29.9
+      "mercado-livre": 23.9,
+      "shopee": 23.9,
+      "nuvemshop": 19.9
     },
     "material": "PETG",
     "dimensionsMm": [
@@ -312,11 +312,11 @@ const raw = [
     "category": "decoracao",
     "hook": "Um cachorrinho dormindo em cima do monitor. Só isso. E funciona.",
     "description": "Tem coisa que não precisa de justificativa. É um cachorro pequeno, enrolado, dormindo. Cinco centímetros e meio. Fica em cima do monitor, na borda da prateleira, no console do carro, na mesinha ao lado da cama. Não ocupa espaço e sempre arranca comentário de quem vê.",
-    "priceBRL": 29.9,
+    "priceBRL": 27.9,
     "marketplacePrices": {
-      "mercado-livre": 37.9,
-      "shopee": 37.9,
-      "nuvemshop": 29.9
+      "mercado-livre": 33.9,
+      "shopee": 33.9,
+      "nuvemshop": 27.9
     },
     "material": "PLA",
     "dimensionsMm": [
@@ -365,11 +365,11 @@ const raw = [
     "category": "life-hacks",
     "hook": "Dez apitos por menos que o preço de um. Um em cada mochila.",
     "description": "Apito é daqueles itens que só faz falta uma vez — e nessa vez faz muita falta. Este kit traz dez unidades porque a lógica é essa: não adianta ter um apito guardado na gaveta. Adianta ter um preso na mochila de trilha, um no chaveiro, um no estojo de primeiros socorros do carro, um na bolsa da criança.",
-    "priceBRL": 24.9,
+    "priceBRL": 29.9,
     "marketplacePrices": {
-      "mercado-livre": 32.9,
-      "shopee": 32.9,
-      "nuvemshop": 24.9
+      "mercado-livre": 35.9,
+      "shopee": 35.9,
+      "nuvemshop": 29.9
     },
     "material": "PLA",
     "dimensionsMm": [

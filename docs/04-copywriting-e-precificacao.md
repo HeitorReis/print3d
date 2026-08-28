@@ -1,5 +1,7 @@
 # Etapa 2‑1 — Anúncios e preço
 
+> **Preços revisados em 28/08/2026** com coleta de primeira mão. A tabela de preços deste documento está desatualizada; a vigente é [`data/outputs/precificacao.md`](../data/outputs/precificacao.md) e o resumo do que mudou está em [08‑revisão](08-revisao-com-dados-reais.md).
+
 ## O que a evidência realmente diz
 
 Comecei procurando as "regras de ouro" de copy de e‑commerce e encontrei, como esperado, muita afirmação e pouca medição. Vale separar o que tem base do que é folclore, porque duas dessas descobertas mudam o que **não** vale a pena fazer.

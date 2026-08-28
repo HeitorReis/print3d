@@ -18,6 +18,7 @@ const { candidatos } = ler('catalog/candidates.json');
 const { familias } = ler('catalog/market-prices.json');
 
 const aprovados = candidatos.filter((c) => c.status.startsWith('aprovado') && !c.excluirDoRanking);
+const familiaVerificada = (c) => Boolean(familias[c.familiaDeMercado]?.verificadoEm);
 
 const avaliacoes = aprovados.map((c) => {
   const familia = familias[c.familiaDeMercado];
@@ -37,16 +38,28 @@ const porCategoria = {};
 for (const a of avaliacoes) {
   (porCategoria[a.categoria] ??= []).push(a);
 }
+// Categorias so disputam o ranking quando o preco da familia do seu campeao foi
+// reverificado no marketplace. Sem isso, uma familia com ancora antiga e otimista
+// venceria uma reverificada e realista - comparacao injusta, nao resultado.
+const catVerificada = {};
+for (const a of avaliacoes) {
+  const cand = aprovados.find((c) => c.id === a.id);
+  a.precoVerificado = Boolean(familias[cand.familiaDeMercado]?.verificadoEm);
+  if (a.precoVerificado) catVerificada[a.categoria] = true;
+}
+
 const categorias = Object.entries(porCategoria).map(([categoria, itens]) => {
-  const ordenados = [...itens].sort((x, y) => y.score - x.score);
+  const verificados = itens.filter((i) => i.precoVerificado);
+  const ordenados = [...(verificados.length ? verificados : itens)].sort((x, y) => y.score - x.score);
   return {
     categoria,
+    precoVerificado: verificados.length > 0,
     campeao: ordenados[0],
     candidatos: ordenados,
     scoreDaCategoria: ordenados[0].score,
     profundidade: ordenados.length,
   };
-}).sort((a, b) => b.scoreDaCategoria - a.scoreDaCategoria);
+}).sort((a, b) => (Number(b.precoVerificado) - Number(a.precoVerificado)) || (b.scoreDaCategoria - a.scoreDaCategoria));
 
 const brl = (v) => 'R$ ' + v.toFixed(2).replace('.', ',');
 const num = (v, d = 2) => v.toFixed(d).replace('.', ',');
@@ -60,20 +73,20 @@ Parâmetros vigentes: PLA ${brl(params.materiais.PLA.precoPorKgBRL)}/kg · PETG 
 
 ## 1. Ranking de categorias
 
-| # | Categoria | Score | Produto campeão | R$/h | R$/dia | Ocupação | Impressões MW | Profundidade CC0 |
-|---|-----------|-------|-----------------|------|--------|----------|---------------|------------------|
+| # | Categoria | Score | Produto campeão | R$/h | R$/dia | Ocupação | Demanda medida | Preço |
+|---|-----------|-------|-----------------|------|--------|----------|----------------|-------|
 `;
 categorias.forEach((c, i) => {
   const a = c.campeao;
-  md += `| ${i + 1} | **${c.categoria}** | ${num(c.scoreDaCategoria, 3)} | ${a.nome} | ${brl(a.cenarios.central.lucrabilidade)} | ${brl(a.cenarios.central.lucrabilidadeDiaria)} | ${num(a.producao.ocupacaoDaImpressoraPct, 0)}% | ${(a.demandaValidada > 0 ? Math.round(10 ** a.demandaValidada - 1) : 0).toLocaleString('pt-BR')} | ${c.profundidade} |\n`;
+  md += `| ${i + 1} | **${c.categoria}** | ${num(c.scoreDaCategoria, 3)} | ${a.nome} | ${brl(a.cenarios.central.lucrabilidade)} | ${brl(a.cenarios.central.lucrabilidadeDiaria)} | ${num(a.producao.ocupacaoDaImpressoraPct, 0)}% | ${a.demanda.fonte === 'vendidos-no-marketplace' ? '+' + a.demanda.bruto.toLocaleString('pt-BR') + ' vendidos' : '—'} | ${c.precoVerificado ? '✅ verificado' : '⚠️ antigo'} |\n`;
 });
 
-md += `\n## 2. Todos os produtos aprovados\n\n| Produto | Categoria | Peças/mesa | Esforço (h/pç) | Filamento (g) | Custo mat. | Preço médio | R$/h | R$/dia | Score |\n|---|---|---|---|---|---|---|---|---|---|\n`;
+md += `\n## 2. Todos os produtos aprovados\n\n| Produto | Categoria | Peças/mesa | Esforço (h/pç) | Filamento (g) | Custo mat. | Preço médio | R$/h | R$/dia | Score | Preço |\n|---|---|---|---|---|---|---|---|---|---|---|\n`;
 [...avaliacoes].sort((a, b) => b.score - a.score).forEach((a) => {
-  md += `| ${a.nome} | ${a.categoria} | ${a.producao.pecasPorMesa} | ${num(a.producao.esforcoDeProducaoHporPeca, 3)} | ${num(a.producao.gramasPorPeca, 1)} | ${brl(a.custoDoMaterial)} | ${brl(a.preco.media)} | ${brl(a.cenarios.central.lucrabilidade)} | ${brl(a.cenarios.central.lucrabilidadeDiaria)} | ${num(a.score, 3)} |\n`;
+  md += `| ${a.nome} | ${a.categoria} | ${a.producao.pecasPorMesa} | ${num(a.producao.esforcoDeProducaoHporPeca, 3)} | ${num(a.producao.gramasPorPeca, 1)} | ${brl(a.custoDoMaterial)} | ${brl(a.preco.media)} | ${brl(a.cenarios.central.lucrabilidade)} | ${brl(a.cenarios.central.lucrabilidadeDiaria)} | ${num(a.score, 3)} | ${a.precoVerificado ? '✅' : '⚠️'} |\n`;
 });
 
-md += `\n## 3. Bandas de cenário (preço médio ± 1 desvio padrão)\n\n| Produto | Pessimista R$/h | Central R$/h | Otimista R$/h | Pessimista R$/dia | Central R$/dia | Otimista R$/dia |\n|---|---|---|---|---|---|---|\n`;
+md += `\n> ✅ = preço coletado de primeira mão no Mercado Livre / Amazon em 28/08/2026. ⚠️ = âncora antiga, de lojas próprias e guias de setor; não competiu pelo topo da categoria.\n\n## 3. Bandas de cenário (preço médio ± 1 desvio padrão)\n\n| Produto | Pessimista R$/h | Central R$/h | Otimista R$/h | Pessimista R$/dia | Central R$/dia | Otimista R$/dia |\n|---|---|---|---|---|---|---|\n`;
 [...avaliacoes].sort((a, b) => b.score - a.score).forEach((a) => {
   md += `| ${a.nome} | ${brl(a.cenarios.pessimista.lucrabilidade)} | ${brl(a.cenarios.central.lucrabilidade)} | ${brl(a.cenarios.otimista.lucrabilidade)} | ${brl(a.cenarios.pessimista.lucrabilidadeDiaria)} | ${brl(a.cenarios.central.lucrabilidadeDiaria)} | ${brl(a.cenarios.otimista.lucrabilidadeDiaria)} |\n`;
 });

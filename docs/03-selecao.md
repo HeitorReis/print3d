@@ -1,5 +1,7 @@
 # Etapa 1‑3 — As 6 categorias e os 6 produtos
 
+> **Revisado em 28/08/2026** com preços coletados de primeira mão no Mercado Livre e na Amazon. As seis categorias se mantiveram; os preços e a ordem interna mudaram bastante. O que mudou e por quê está em [08‑revisão com dados reais](08-revisao-com-dados-reais.md).
+
 Saída bruta do motor: [`data/outputs/ranking.md`](../data/outputs/ranking.md)
 
 ## Ranking de categorias

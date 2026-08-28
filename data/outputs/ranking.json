@@ -1,45 +1,45 @@
 {
-  "geradoEm": "2026-08-27T18:11:11.844Z",
+  "geradoEm": "2026-08-28T12:12:24.592Z",
   "categorias": [
     {
       "categoria": "decoracao",
-      "score": 0.8987922162765057,
+      "score": 0.9001343757660345,
       "campeao": "mw-1384845",
-      "profundidade": 4
-    },
-    {
-      "categoria": "escritorio",
-      "score": 0.5158640786987847,
-      "campeao": "mw-841705",
-      "profundidade": 5
-    },
-    {
-      "categoria": "life-hacks",
-      "score": 0.42577218933954897,
-      "campeao": "mw-2322874",
       "profundidade": 2
     },
     {
+      "categoria": "life-hacks",
+      "score": 0.8625656647140997,
+      "campeao": "mw-2322874",
+      "profundidade": 1
+    },
+    {
+      "categoria": "escritorio",
+      "score": 0.5037063250388537,
+      "campeao": "mw-841705",
+      "profundidade": 4
+    },
+    {
       "categoria": "tecnologia",
-      "score": 0.411717182912423,
+      "score": 0.29544981545880616,
       "campeao": "mw-2058192",
-      "profundidade": 3
+      "profundidade": 1
     },
     {
       "categoria": "entretenimento",
-      "score": 0.34098509172527613,
+      "score": 0.2765141248949295,
       "campeao": "mw-21188",
-      "profundidade": 3
+      "profundidade": 2
     },
     {
       "categoria": "bem-estar",
-      "score": 0.2997152854958647,
+      "score": 0.27494881749566974,
       "campeao": "mw-1530752",
       "profundidade": 1
     },
     {
       "categoria": "cozinha",
-      "score": 0.2500777736707192,
+      "score": 0.2873493534774353,
       "campeao": "mw-1575906",
       "profundidade": 3
     }
@@ -49,6 +49,15 @@
       "id": "mw-841705",
       "nome": "Stabilo Boss Textmarker Holder",
       "demandaValidada": 2.77232170672292,
+      "demanda": {
+        "valor": 2.77232170672292,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 591
+      },
+      "saturacao": {
+        "amazon": 18
+      },
+      "alertaConcorrencia": null,
       "categoria": "escritorio",
       "familia": "organizador-de-mesa",
       "licenca": "CC0",
@@ -70,36 +79,36 @@
         "ocupacaoDaImpressoraPct": 46.25
       },
       "preco": {
-        "n": 7,
-        "media": 43.88142857142857,
-        "desvioPadrao": 25.41553621217505,
-        "min": 19.9,
-        "max": 84.9,
-        "bandaInferior": 18.465892359253523,
-        "bandaSuperior": 69.29696478360361,
-        "fatorMarketplace": 1.15,
-        "mediaEmMarketplace": 50.46364285714285,
+        "n": 10,
+        "media": 37.243,
+        "desvioPadrao": 11.423253136572884,
+        "min": 22.8,
+        "max": 54.9,
+        "bandaInferior": 25.81974686342712,
+        "bandaSuperior": 48.666253136572884,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 43.94674,
         "qualidade": "ok"
       },
       "custoDoMaterial": 1.9074000000000002,
       "cenarios": {
         "pessimista": {
-          "lucro": 18.465892359253523,
-          "margemBruta": 16.558492359253524,
-          "lucrabilidade": 17.901072820814623,
-          "lucrabilidadeDiaria": 198.7019083110423
+          "lucro": 25.81974686342712,
+          "margemBruta": 23.91234686342712,
+          "lucrabilidade": 25.851185798299593,
+          "lucrabilidadeDiaria": 286.94816236112547
         },
         "central": {
-          "lucro": 43.88142857142857,
-          "margemBruta": 41.97402857142857,
-          "lucrabilidade": 45.37732818532819,
-          "lucrabilidadeDiaria": 503.68834285714286
+          "lucro": 37.243,
+          "margemBruta": 35.3356,
+          "lucrabilidade": 38.20064864864865,
+          "lucrabilidadeDiaria": 424.0272
         },
         "otimista": {
-          "lucro": 69.29696478360361,
-          "margemBruta": 67.38956478360362,
-          "lucrabilidade": 72.85358354984176,
-          "lucrabilidadeDiaria": 808.6747774032434
+          "lucro": 48.666253136572884,
+          "margemBruta": 46.75885313657288,
+          "lucrabilidade": 50.550111498997715,
+          "lucrabilidadeDiaria": 561.1062376388745
         }
       },
       "liquido": {
@@ -113,15 +122,25 @@
           "total": 5.038893041666667
         },
         "precoSugeridoLojaPropria": 11.085564691666669,
-        "margemLiquidaUnitariaNoPrecoCentral": 38.8425355297619,
-        "lucroLiquidoDiarioNoPrecoCentral": 466.11042635714284
+        "margemLiquidaUnitariaNoPrecoCentral": 32.204106958333334,
+        "lucroLiquidoDiarioNoPrecoCentral": 386.4492835
       },
-      "score": 0.5158640786987847
+      "score": 0.5037063250388537,
+      "precoVerificado": true
     },
     {
       "id": "mw-1324815",
       "nome": "Post-it To-Do List Template & Holder",
       "demandaValidada": 2.621176281775035,
+      "demanda": {
+        "valor": 2.621176281775035,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 417
+      },
+      "saturacao": {
+        "amazon": 18
+      },
+      "alertaConcorrencia": null,
       "categoria": "escritorio",
       "familia": "organizador-de-mesa",
       "licenca": "CC0",
@@ -143,36 +162,36 @@
         "ocupacaoDaImpressoraPct": 38.74999999999999
       },
       "preco": {
-        "n": 7,
-        "media": 43.88142857142857,
-        "desvioPadrao": 25.41553621217505,
-        "min": 19.9,
-        "max": 84.9,
-        "bandaInferior": 18.465892359253523,
-        "bandaSuperior": 69.29696478360361,
-        "fatorMarketplace": 1.15,
-        "mediaEmMarketplace": 50.46364285714285,
+        "n": 10,
+        "media": 37.243,
+        "desvioPadrao": 11.423253136572884,
+        "min": 22.8,
+        "max": 54.9,
+        "bandaInferior": 25.81974686342712,
+        "bandaSuperior": 48.666253136572884,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 43.94674,
         "qualidade": "ok"
       },
       "custoDoMaterial": 3.1415999999999995,
       "cenarios": {
         "pessimista": {
-          "lucro": 18.465892359253523,
-          "margemBruta": 15.324292359253523,
-          "lucrabilidade": 9.886640231776468,
-          "lucrabilidadeDiaria": 91.94575415552114
+          "lucro": 25.81974686342712,
+          "margemBruta": 22.67814686342712,
+          "lucrabilidade": 14.631062492533628,
+          "lucrabilidadeDiaria": 136.06888118056273
         },
         "central": {
-          "lucro": 43.88142857142857,
-          "margemBruta": 40.739828571428575,
-          "lucrabilidade": 26.2837603686636,
-          "lucrabilidadeDiaria": 244.43897142857145
+          "lucro": 37.243,
+          "margemBruta": 34.101400000000005,
+          "lucrabilidade": 22.000903225806457,
+          "lucrabilidadeDiaria": 204.60840000000002
         },
         "otimista": {
-          "lucro": 69.29696478360361,
-          "margemBruta": 66.15536478360362,
-          "lucrabilidade": 42.680880505550725,
-          "lucrabilidadeDiaria": 396.9321887016217
+          "lucro": 48.666253136572884,
+          "margemBruta": 45.52465313657289,
+          "lucrabilidade": 29.370743959079284,
+          "lucrabilidadeDiaria": 273.14791881943734
         }
       },
       "liquido": {
@@ -186,15 +205,25 @@
           "total": 6.698208916666665
         },
         "precoSugeridoLojaPropria": 14.736059616666665,
-        "margemLiquidaUnitariaNoPrecoCentral": 37.183219654761906,
-        "lucroLiquidoDiarioNoPrecoCentral": 223.09931792857145
+        "margemLiquidaUnitariaNoPrecoCentral": 30.544791083333337,
+        "lucroLiquidoDiarioNoPrecoCentral": 183.26874650000002
       },
-      "score": 0.33010651977781147
+      "score": 0.3314033809328905,
+      "precoVerificado": true
     },
     {
       "id": "mw-420070",
       "nome": "Desk organizer - Hex",
       "demandaValidada": 1.462397997898956,
+      "demanda": {
+        "valor": 1.462397997898956,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 28
+      },
+      "saturacao": {
+        "amazon": 18
+      },
+      "alertaConcorrencia": null,
       "categoria": "escritorio",
       "familia": "organizador-de-mesa",
       "licenca": "CC0",
@@ -216,36 +245,36 @@
         "ocupacaoDaImpressoraPct": 52.5
       },
       "preco": {
-        "n": 7,
-        "media": 43.88142857142857,
-        "desvioPadrao": 25.41553621217505,
-        "min": 19.9,
-        "max": 84.9,
-        "bandaInferior": 18.465892359253523,
-        "bandaSuperior": 69.29696478360361,
-        "fatorMarketplace": 1.15,
-        "mediaEmMarketplace": 50.46364285714285,
+        "n": 10,
+        "media": 37.243,
+        "desvioPadrao": 11.423253136572884,
+        "min": 22.8,
+        "max": 54.9,
+        "bandaInferior": 25.81974686342712,
+        "bandaSuperior": 48.666253136572884,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 43.94674,
         "qualidade": "ok"
       },
       "custoDoMaterial": 6.731999999999999,
       "cenarios": {
         "pessimista": {
-          "lucro": 18.465892359253523,
-          "margemBruta": 11.733892359253524,
-          "lucrabilidade": 3.725045193413817,
-          "lucrabilidadeDiaria": 46.935569437014095
+          "lucro": 25.81974686342712,
+          "margemBruta": 19.08774686342712,
+          "lucrabilidade": 6.059602178865753,
+          "lucrabilidadeDiaria": 76.35098745370848
         },
         "central": {
-          "lucro": 43.88142857142857,
-          "margemBruta": 37.14942857142857,
-          "lucrabilidade": 11.793469387755103,
-          "lucrabilidadeDiaria": 148.5977142857143
+          "lucro": 37.243,
+          "margemBruta": 30.511000000000003,
+          "lucrabilidade": 9.686031746031746,
+          "lucrabilidadeDiaria": 122.04400000000001
         },
         "otimista": {
-          "lucro": 69.29696478360361,
-          "margemBruta": 62.564964783603614,
-          "lucrabilidade": 19.861893582096386,
-          "lucrabilidadeDiaria": 250.25985913441446
+          "lucro": 48.666253136572884,
+          "margemBruta": 41.934253136572885,
+          "lucrabilidade": 13.312461313197742,
+          "lucrabilidadeDiaria": 167.73701254629154
         }
       },
       "liquido": {
@@ -259,15 +288,23 @@
           "total": 11.407064916666666
         },
         "precoSugeridoLojaPropria": 25.09554281666667,
-        "margemLiquidaUnitariaNoPrecoCentral": 32.4743636547619,
-        "lucroLiquidoDiarioNoPrecoCentral": 129.8974546190476
+        "margemLiquidaUnitariaNoPrecoCentral": 25.835935083333336,
+        "lucroLiquidoDiarioNoPrecoCentral": 103.34374033333334
       },
-      "score": 0.18188747802834118
+      "score": 0.1812054444724709,
+      "precoVerificado": true
     },
     {
       "id": "mw-787520",
       "nome": "Desk Shelf Riser Feet",
       "demandaValidada": 1.414973347970818,
+      "demanda": {
+        "valor": 1.414973347970818,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 25
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "escritorio",
       "familia": "suporte-monitor",
       "licenca": "CC0",
@@ -298,7 +335,7 @@
         "bandaSuperior": 87.13009773122238,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 74.93400000000001,
-        "qualidade": "baixa"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 6.63,
       "cenarios": {
@@ -335,12 +372,22 @@
         "margemLiquidaUnitariaNoPrecoCentral": 51.45869920833334,
         "lucroLiquidoDiarioNoPrecoCentral": 308.75219525000006
       },
-      "score": 0.2890010932598223
+      "score": 0.31882231554823237,
+      "precoVerificado": false
     },
     {
       "id": "mw-1566753",
       "nome": "Simple Box Generator - Make Any Container!",
       "demandaValidada": 0,
+      "demanda": {
+        "valor": 0,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 0
+      },
+      "saturacao": {
+        "amazon": 18
+      },
+      "alertaConcorrencia": null,
       "categoria": "escritorio",
       "familia": "organizador-de-mesa",
       "licenca": "CC0",
@@ -362,36 +409,36 @@
         "ocupacaoDaImpressoraPct": 56.87500000000001
       },
       "preco": {
-        "n": 7,
-        "media": 43.88142857142857,
-        "desvioPadrao": 25.41553621217505,
-        "min": 19.9,
-        "max": 84.9,
-        "bandaInferior": 18.465892359253523,
-        "bandaSuperior": 69.29696478360361,
-        "fatorMarketplace": 1.15,
-        "mediaEmMarketplace": 50.46364285714285,
+        "n": 10,
+        "media": 37.243,
+        "desvioPadrao": 11.423253136572884,
+        "min": 22.8,
+        "max": 54.9,
+        "bandaInferior": 25.81974686342712,
+        "bandaSuperior": 48.666253136572884,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 43.94674,
         "qualidade": "ok"
       },
       "custoDoMaterial": 3.1218000000000004,
       "cenarios": {
         "pessimista": {
-          "lucro": 18.465892359253523,
-          "margemBruta": 15.344092359253523,
-          "lucrabilidade": 6.744655982089459,
-          "lucrabilidadeDiaria": 92.06455415552114
+          "lucro": 25.81974686342712,
+          "margemBruta": 22.69794686342712,
+          "lucrabilidade": 9.977119500407523,
+          "lucrabilidadeDiaria": 136.18768118056272
         },
         "central": {
-          "lucro": 43.88142857142857,
-          "margemBruta": 40.75962857142857,
-          "lucrabilidade": 17.916320251177392,
-          "lucrabilidadeDiaria": 244.5577714285714
+          "lucro": 37.243,
+          "margemBruta": 34.1212,
+          "lucrabilidade": 14.99832967032967,
+          "lucrabilidadeDiaria": 204.7272
         },
         "otimista": {
-          "lucro": 69.29696478360361,
-          "margemBruta": 66.1751647836036,
-          "lucrabilidade": 29.087984520265316,
-          "lucrabilidadeDiaria": 397.05098870162163
+          "lucro": 48.666253136572884,
+          "margemBruta": 45.54445313657288,
+          "lucrabilidade": 20.019539840251813,
+          "lucrabilidadeDiaria": 273.2667188194373
         }
       },
       "liquido": {
@@ -405,15 +452,23 @@
           "total": 7.069940291666667
         },
         "precoSugeridoLojaPropria": 15.553868641666668,
-        "margemLiquidaUnitariaNoPrecoCentral": 36.8114882797619,
-        "lucroLiquidoDiarioNoPrecoCentral": 220.86892967857142
+        "margemLiquidaUnitariaNoPrecoCentral": 30.173059708333334,
+        "lucroLiquidoDiarioNoPrecoCentral": 181.03835825
       },
-      "score": 0.19516547539637968
+      "score": 0.17948917673949205,
+      "precoVerificado": true
     },
     {
       "id": "mw-200361",
       "nome": "Keyboard foot",
       "demandaValidada": 3.079543007402906,
+      "demanda": {
+        "valor": 3.079543007402906,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 1200
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "tecnologia",
       "familia": "acessorio-setup-pequeno",
       "licenca": "CC0",
@@ -444,7 +499,7 @@
         "bandaSuperior": 21.75972630343591,
         "fatorMarketplace": 1.25,
         "mediaEmMarketplace": 22.345,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 3.1824,
       "cenarios": {
@@ -481,12 +536,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 11.307560683333332,
         "lucroLiquidoDiarioNoPrecoCentral": 113.07560683333332
       },
-      "score": 0.23614666397316308
+      "score": 0.2690302610218325,
+      "precoVerificado": false
     },
     {
       "id": "mw-947577",
       "nome": "Wall mount phone holder (Pro_Max_Ultra)",
       "demandaValidada": 2.6972293427597176,
+      "demanda": {
+        "valor": 2.6972293427597176,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 497
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "tecnologia",
       "familia": "suporte-celular",
       "licenca": "CC0",
@@ -517,7 +580,7 @@
         "bandaSuperior": 46.59298227490213,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 38.08,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 4.039199999999999,
       "cenarios": {
@@ -554,12 +617,23 @@
         "margemLiquidaUnitariaNoPrecoCentral": 23.89855704166667,
         "lucroLiquidoDiarioNoPrecoCentral": 191.18845633333336
       },
-      "score": 0.2584695702552045
+      "score": 0.291707347866521,
+      "precoVerificado": false
     },
     {
       "id": "mw-2058192",
       "nome": "Gaming Laptop Stand",
-      "demandaValidada": 1.9822712330395684,
+      "demandaValidada": 3.000434077479319,
+      "demanda": {
+        "valor": 3.000434077479319,
+        "fonte": "vendidos-no-marketplace",
+        "bruto": 1000
+      },
+      "saturacao": {
+        "mercadoLivre": 259,
+        "amazon": 205
+      },
+      "alertaConcorrencia": "Concorrente direto impresso em 3D vendendo o MESMO conceito (par de pes elevadores) a R$ 18,33 com +1000 vendidos. Alem disso, suportes de aluminio e aco com regulagem competem a partir de R$ 17,19 com milhares de avaliacoes.",
       "categoria": "tecnologia",
       "familia": "suporte-notebook",
       "licenca": "CC0",
@@ -581,36 +655,36 @@
         "ocupacaoDaImpressoraPct": 38.74999999999999
       },
       "preco": {
-        "n": 3,
-        "media": 64.13333333333334,
-        "desvioPadrao": 20.965825367328936,
-        "min": 45,
-        "max": 79.9,
-        "bandaInferior": 43.16750796600441,
-        "bandaSuperior": 85.09915870066227,
-        "fatorMarketplace": 1.2,
-        "mediaEmMarketplace": 76.96000000000001,
-        "qualidade": "baixa - poucas observacoes diretas; refazer coleta antes de fixar preco"
+        "n": 13,
+        "media": 28.795384615384613,
+        "desvioPadrao": 10.1216851490456,
+        "min": 17.19,
+        "max": 50,
+        "bandaInferior": 18.673699466339013,
+        "bandaSuperior": 38.91706976443021,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 33.978553846153844,
+        "qualidade": "ok"
       },
       "custoDoMaterial": 3.712799999999999,
       "cenarios": {
         "pessimista": {
-          "lucro": 43.16750796600441,
-          "margemBruta": 39.454707966004406,
-          "lucrabilidade": 25.454650300648005,
-          "lucrabilidadeDiaria": 236.72824779602644
+          "lucro": 18.673699466339013,
+          "margemBruta": 14.960899466339013,
+          "lucrabilidade": 9.652193204089688,
+          "lucrabilidadeDiaria": 89.76539679803408
         },
         "central": {
-          "lucro": 64.13333333333334,
-          "margemBruta": 60.42053333333334,
-          "lucrabilidade": 38.98098924731183,
-          "lucrabilidadeDiaria": 362.52320000000003
+          "lucro": 28.795384615384613,
+          "margemBruta": 25.082584615384615,
+          "lucrabilidade": 16.18231265508685,
+          "lucrabilidadeDiaria": 150.49550769230768
         },
         "otimista": {
-          "lucro": 85.09915870066227,
-          "margemBruta": 81.38635870066227,
-          "lucrabilidade": 52.50732819397567,
-          "lucrabilidadeDiaria": 488.3181522039736
+          "lucro": 38.91706976443021,
+          "margemBruta": 35.20426976443021,
+          "lucrabilidade": 22.71243210608401,
+          "lucrabilidadeDiaria": 211.22561858658125
         }
       },
       "liquido": {
@@ -624,15 +698,23 @@
           "total": 7.309392916666665
         },
         "precoSugeridoLojaPropria": 16.080664416666664,
-        "margemLiquidaUnitariaNoPrecoCentral": 56.82394041666667,
-        "lucroLiquidoDiarioNoPrecoCentral": 340.9436425
+        "margemLiquidaUnitariaNoPrecoCentral": 21.485991698717946,
+        "lucroLiquidoDiarioNoPrecoCentral": 128.91595019230766
       },
-      "score": 0.411717182912423
+      "score": 0.29544981545880616,
+      "precoVerificado": true
     },
     {
       "id": "mw-1010016",
       "nome": "Wire Garbage Bag Holder Clip",
       "demandaValidada": 1.568201724066995,
+      "demanda": {
+        "valor": 1.568201724066995,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 36
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "cozinha",
       "familia": "utilitario-cozinha",
       "licenca": "CC0",
@@ -663,7 +745,7 @@
         "bandaSuperior": 25.34088027526073,
         "fatorMarketplace": 1.25,
         "mediaEmMarketplace": 24.80625,
-        "qualidade": "media - preco de KIT, nao de peca avulsa"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 5.038799999999999,
       "cenarios": {
@@ -700,12 +782,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 10.916941177083334,
         "lucroLiquidoDiarioNoPrecoCentral": 87.33552941666667
       },
-      "score": 0.1495168175429119
+      "score": 0.16814671314850144,
+      "precoVerificado": false
     },
     {
       "id": "mw-821583",
       "nome": "Small Clip - for herb bags & other packaging",
       "demandaValidada": 1,
+      "demanda": {
+        "valor": 1,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 9
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "cozinha",
       "familia": "utilitario-cozinha",
       "licenca": "CC0",
@@ -736,7 +826,7 @@
         "bandaSuperior": 25.34088027526073,
         "fatorMarketplace": 1.25,
         "mediaEmMarketplace": 24.80625,
-        "qualidade": "media - preco de KIT, nao de peca avulsa"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 2.6519999999999997,
       "cenarios": {
@@ -773,12 +863,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 13.964222041666666,
         "lucroLiquidoDiarioNoPrecoCentral": 251.35599674999997
       },
-      "score": 0.23866868535512784
+      "score": 0.2623803228616236,
+      "precoVerificado": false
     },
     {
       "id": "mw-1575906",
       "nome": "Vortex Fruit Washer (Size L)",
       "demandaValidada": 3.6902847025126295,
+      "demanda": {
+        "valor": 3.6902847025126295,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 4900
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "cozinha",
       "familia": "gadget-cozinha",
       "licenca": "CC0",
@@ -809,7 +907,7 @@
         "bandaSuperior": 85.10038864685154,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 76.956,
-        "qualidade": "baixa - nenhum lavador de frutas 3D com preco publico foi encontrado"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 8.552699999999998,
       "cenarios": {
@@ -846,12 +944,22 @@
         "margemLiquidaUnitariaNoPrecoCentral": 49.636680583333344,
         "lucroLiquidoDiarioNoPrecoCentral": 148.91004175000003
       },
-      "score": 0.2500777736707192
+      "score": 0.2873493534774353,
+      "precoVerificado": false
     },
     {
       "id": "mw-1530752",
       "nome": "Soap dish (always dry soap)",
-      "demandaValidada": 1.4471580313422192,
+      "demandaValidada": 2.303196057420489,
+      "demanda": {
+        "valor": 2.303196057420489,
+        "fonte": "vendidos-no-marketplace",
+        "bruto": 200
+      },
+      "saturacao": {
+        "amazon": 69
+      },
+      "alertaConcorrencia": "Categoria dominada por plastico injetado e silicone de marca (Coza) entre R$ 12,99 e R$ 29,90. Uma peca impressa nao tem vantagem funcional evidente sobre um produto injetado de R$ 16,91 com 2,2 mil avaliacoes.",
       "categoria": "bem-estar",
       "familia": "banheiro-bem-estar",
       "licenca": "CC0",
@@ -873,36 +981,36 @@
         "ocupacaoDaImpressoraPct": 53.125
       },
       "preco": {
-        "n": 3,
-        "media": 34.29333333333333,
-        "desvioPadrao": 11.06146614754723,
-        "min": 22.9,
-        "max": 44.99,
-        "bandaInferior": 23.2318671857861,
-        "bandaSuperior": 45.35479948088056,
-        "fatorMarketplace": 1.2,
-        "mediaEmMarketplace": 41.151999999999994,
-        "qualidade": "baixa - nenhuma saboneteira 3D com preco publico foi encontrada em loja legivel"
+        "n": 13,
+        "media": 22.962307692307693,
+        "desvioPadrao": 5.108178334537263,
+        "min": 12.99,
+        "max": 29.9,
+        "bandaInferior": 17.85412935777043,
+        "bandaSuperior": 28.070486026844957,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 27.095523076923076,
+        "qualidade": "ok"
       },
       "custoDoMaterial": 3.1824,
       "cenarios": {
         "pessimista": {
-          "lucro": 23.2318671857861,
-          "margemBruta": 20.0494671857861,
-          "lucrabilidade": 15.725072302577335,
-          "lucrabilidadeDiaria": 200.494671857861
+          "lucro": 17.85412935777043,
+          "margemBruta": 14.67172935777043,
+          "lucrabilidade": 11.507238711976807,
+          "lucrabilidadeDiaria": 146.71729357770428
         },
         "central": {
-          "lucro": 34.29333333333333,
-          "margemBruta": 31.110933333333328,
-          "lucrabilidade": 24.40073202614379,
-          "lucrabilidadeDiaria": 311.10933333333327
+          "lucro": 22.962307692307693,
+          "margemBruta": 19.77990769230769,
+          "lucrabilidade": 15.513653092006034,
+          "lucrabilidadeDiaria": 197.7990769230769
         },
         "otimista": {
-          "lucro": 45.35479948088056,
-          "margemBruta": 42.17239948088056,
-          "lucrabilidade": 33.07639174971024,
-          "lucrabilidadeDiaria": 421.72399480880557
+          "lucro": 28.070486026844957,
+          "margemBruta": 24.888086026844956,
+          "lucrabilidade": 19.52006747203526,
+          "lucrabilidadeDiaria": 248.88086026844957
         }
       },
       "liquido": {
@@ -916,15 +1024,26 @@
           "total": 6.592827291666667
         },
         "precoSugeridoLojaPropria": 14.504220041666668,
-        "margemLiquidaUnitariaNoPrecoCentral": 27.700506041666664,
-        "lucroLiquidoDiarioNoPrecoCentral": 277.00506041666665
+        "margemLiquidaUnitariaNoPrecoCentral": 16.369480400641027,
+        "lucroLiquidoDiarioNoPrecoCentral": 163.69480400641027
       },
-      "score": 0.2997152854958647
+      "score": 0.27494881749566974,
+      "precoVerificado": true
     },
     {
       "id": "mw-21188",
       "nome": "Sturdy Infinity Cube",
-      "demandaValidada": 4.53149169022153,
+      "demandaValidada": 3.000434077479319,
+      "demanda": {
+        "valor": 3.000434077479319,
+        "fonte": "vendidos-no-marketplace",
+        "bruto": 1000
+      },
+      "saturacao": {
+        "mercadoLivre": 190,
+        "amazon": 70
+      },
+      "alertaConcorrencia": null,
       "categoria": "entretenimento",
       "familia": "fidget-antistress",
       "licenca": "CC0",
@@ -946,36 +1065,36 @@
         "ocupacaoDaImpressoraPct": 54.58333333333334
       },
       "preco": {
-        "n": 3,
-        "media": 32.63333333333333,
-        "desvioPadrao": 12.107986345108479,
-        "min": 19.9,
-        "max": 39,
-        "bandaInferior": 20.525346988224854,
-        "bandaSuperior": 44.74131967844181,
-        "fatorMarketplace": 1.3,
-        "mediaEmMarketplace": 42.42333333333333,
+        "n": 16,
+        "media": 24.521874999999994,
+        "desvioPadrao": 5.1874158226102,
+        "min": 17.99,
+        "max": 35.72,
+        "bandaInferior": 19.334459177389796,
+        "bandaSuperior": 29.709290822610193,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 28.93581249999999,
         "qualidade": "ok"
       },
       "custoDoMaterial": 3.5904000000000003,
       "cenarios": {
         "pessimista": {
-          "lucro": 20.525346988224854,
-          "margemBruta": 16.934946988224855,
-          "lucrabilidade": 10.341952359221285,
-          "lucrabilidadeDiaria": 135.47957590579884
+          "lucro": 19.334459177389796,
+          "margemBruta": 15.744059177389795,
+          "lucrabilidade": 9.614692627413614,
+          "lucrabilidadeDiaria": 125.95247341911836
         },
         "central": {
-          "lucro": 32.63333333333333,
-          "margemBruta": 29.042933333333334,
-          "lucrabilidade": 17.736142493638674,
-          "lucrabilidadeDiaria": 232.34346666666667
+          "lucro": 24.521874999999994,
+          "margemBruta": 20.931474999999995,
+          "lucrabilidade": 12.782580152671752,
+          "lucrabilidadeDiaria": 167.45179999999996
         },
         "otimista": {
-          "lucro": 44.74131967844181,
-          "margemBruta": 41.15091967844181,
-          "lucrabilidade": 25.130332628056063,
-          "lucrabilidadeDiaria": 329.2073574275345
+          "lucro": 29.709290822610193,
+          "margemBruta": 26.118890822610194,
+          "lucrabilidade": 15.950467677929888,
+          "lucrabilidadeDiaria": 208.95112658088155
         }
       },
       "liquido": {
@@ -989,15 +1108,25 @@
           "total": 7.2258459791666665
         },
         "precoSugeridoLojaPropria": 15.896861154166668,
-        "margemLiquidaUnitariaNoPrecoCentral": 25.407487354166665,
-        "lucroLiquidoDiarioNoPrecoCentral": 203.25989883333332
+        "margemLiquidaUnitariaNoPrecoCentral": 17.296029020833327,
+        "lucroLiquidoDiarioNoPrecoCentral": 138.36823216666662
       },
-      "score": 0.34098509172527613
+      "score": 0.2765141248949295,
+      "precoVerificado": true
     },
     {
       "id": "mw-2322874",
       "nome": "Penne 2.0 - Public Domain Safety Whistle (CC0)",
-      "demandaValidada": 2.4653828514484184,
+      "demandaValidada": 2.303196057420489,
+      "demanda": {
+        "valor": 2.303196057420489,
+        "fonte": "vendidos-no-marketplace",
+        "bruto": 200
+      },
+      "saturacao": {
+        "amazon": 440
+      },
+      "alertaConcorrencia": "Existe kit de 10 apitos DE METAL com cordao por R$ 33,15, e apitos de aluminio de marca por R$ 19,90 com 1,3 mil avaliacoes. Um apito de PLA compete em desvantagem de material percebido.",
       "categoria": "life-hacks",
       "familia": "brinde-pequeno",
       "licenca": "CC0",
@@ -1019,36 +1148,36 @@
         "ocupacaoDaImpressoraPct": 63.12500000000002
       },
       "preco": {
-        "n": 3,
-        "media": 17.163333333333334,
-        "desvioPadrao": 4.783307781580998,
-        "min": 12.49,
-        "max": 20,
-        "bandaInferior": 12.380025551752336,
-        "bandaSuperior": 21.946641114914332,
-        "fatorMarketplace": 1.3,
-        "mediaEmMarketplace": 22.312333333333335,
+        "n": 4,
+        "media": 35.195,
+        "desvioPadrao": 4.464575381078624,
+        "min": 29.88,
+        "max": 39.25,
+        "bandaInferior": 30.730424618921376,
+        "bandaSuperior": 39.659575381078625,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 41.5301,
         "qualidade": "ok"
       },
       "custoDoMaterial": 1.1,
       "cenarios": {
         "pessimista": {
-          "lucro": 12.380025551752336,
-          "margemBruta": 11.280025551752336,
-          "lucrabilidade": 22.336684260895712,
-          "lucrabilidadeDiaria": 338.4007665525701
+          "lucro": 30.730424618921376,
+          "margemBruta": 29.630424618921374,
+          "lucrabilidade": 58.674108156279935,
+          "lucrabilidadeDiaria": 888.9127385676412
         },
         "central": {
-          "lucro": 17.163333333333334,
-          "margemBruta": 16.063333333333333,
-          "lucrabilidade": 31.8085808580858,
-          "lucrabilidadeDiaria": 481.9
+          "lucro": 35.195,
+          "margemBruta": 34.095,
+          "lucrabilidade": 67.5148514851485,
+          "lucrabilidadeDiaria": 1022.8499999999999
         },
         "otimista": {
-          "lucro": 21.946641114914332,
-          "margemBruta": 20.84664111491433,
-          "lucrabilidade": 41.28047745527589,
-          "lucrabilidadeDiaria": 625.3992334474299
+          "lucro": 39.659575381078625,
+          "margemBruta": 38.55957538107862,
+          "lucrabilidade": 76.35559481401705,
+          "lucrabilidadeDiaria": 1156.7872614323587
         }
       },
       "liquido": {
@@ -1062,15 +1191,26 @@
           "total": 3.947353941666667
         },
         "precoSugeridoLojaPropria": 8.684178671666668,
-        "margemLiquidaUnitariaNoPrecoCentral": 13.215979391666668,
-        "lucroLiquidoDiarioNoPrecoCentral": 396.47938175
+        "margemLiquidaUnitariaNoPrecoCentral": 31.247646058333334,
+        "lucroLiquidoDiarioNoPrecoCentral": 937.4293817500001
       },
-      "score": 0.42577218933954897
+      "score": 0.8625656647140997,
+      "precoVerificado": true
     },
     {
       "id": "mw-1128502",
       "nome": "Spiral Fidget Cone",
-      "demandaValidada": 1.6334684555795866,
+      "demandaValidada": 3.000434077479319,
+      "demanda": {
+        "valor": 3.000434077479319,
+        "fonte": "vendidos-no-marketplace",
+        "bruto": 1000
+      },
+      "saturacao": {
+        "mercadoLivre": 190,
+        "amazon": 70
+      },
+      "alertaConcorrencia": null,
       "categoria": "entretenimento",
       "familia": "fidget-antistress",
       "licenca": "CC0",
@@ -1092,36 +1232,36 @@
         "ocupacaoDaImpressoraPct": 64.58333333333334
       },
       "preco": {
-        "n": 3,
-        "media": 32.63333333333333,
-        "desvioPadrao": 12.107986345108479,
-        "min": 19.9,
-        "max": 39,
-        "bandaInferior": 20.525346988224854,
-        "bandaSuperior": 44.74131967844181,
-        "fatorMarketplace": 1.3,
-        "mediaEmMarketplace": 42.42333333333333,
+        "n": 16,
+        "media": 24.521874999999994,
+        "desvioPadrao": 5.1874158226102,
+        "min": 17.99,
+        "max": 35.72,
+        "bandaInferior": 19.334459177389796,
+        "bandaSuperior": 29.709290822610193,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 28.93581249999999,
         "qualidade": "ok"
       },
       "custoDoMaterial": 4.263599999999999,
       "cenarios": {
         "pessimista": {
-          "lucro": 20.525346988224854,
-          "margemBruta": 16.261746988224854,
-          "lucrabilidade": 8.393159735857989,
-          "lucrabilidadeDiaria": 130.09397590579883
+          "lucro": 19.334459177389796,
+          "margemBruta": 15.070859177389796,
+          "lucrabilidade": 7.778507962523766,
+          "lucrabilidadeDiaria": 120.56687341911837
         },
         "central": {
-          "lucro": 32.63333333333333,
-          "margemBruta": 28.369733333333333,
-          "lucrabilidade": 14.642443010752688,
-          "lucrabilidadeDiaria": 226.95786666666666
+          "lucro": 24.521874999999994,
+          "margemBruta": 20.258274999999994,
+          "lucrabilidade": 10.455883870967739,
+          "lucrabilidadeDiaria": 162.06619999999995
         },
         "otimista": {
-          "lucro": 44.74131967844181,
-          "margemBruta": 40.477719678441815,
-          "lucrabilidade": 20.891726285647387,
-          "lucrabilidadeDiaria": 323.8217574275345
+          "lucro": 29.709290822610193,
+          "margemBruta": 25.445690822610192,
+          "lucrabilidade": 13.133259779411713,
+          "lucrabilidadeDiaria": 203.56552658088154
         }
       },
       "liquido": {
@@ -1135,15 +1275,23 @@
           "total": 8.108756479166665
         },
         "precoSugeridoLojaPropria": 17.839264254166665,
-        "margemLiquidaUnitariaNoPrecoCentral": 24.524576854166668,
-        "lucroLiquidoDiarioNoPrecoCentral": 196.19661483333334
+        "margemLiquidaUnitariaNoPrecoCentral": 16.41311852083333,
+        "lucroLiquidoDiarioNoPrecoCentral": 131.30494816666663
       },
-      "score": 0.22360148455624484
+      "score": 0.2573287528935318,
+      "precoVerificado": true
     },
     {
       "id": "mw-652631",
       "nome": "Tic Tac Twist",
       "demandaValidada": 2.0170333392987803,
+      "demanda": {
+        "valor": 2.0170333392987803,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 103
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "entretenimento",
       "familia": "jogo-de-mesa-pequeno",
       "licenca": "CC0",
@@ -1174,7 +1322,7 @@
         "bandaSuperior": 102.59934504637135,
         "fatorMarketplace": 1.25,
         "mediaEmMarketplace": 84.1625,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 7.853999999999999,
       "cenarios": {
@@ -1211,12 +1359,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 54.45141758333333,
         "lucroLiquidoDiarioNoPrecoCentral": 217.80567033333332
       },
-      "score": 0.24992316206441648
+      "score": 0.2792018836859349,
+      "precoVerificado": false
     },
     {
       "id": "mw-907547",
       "nome": "Screw in coat/backpack/helmet hook",
       "demandaValidada": 0,
+      "demanda": {
+        "valor": 0,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 0
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "life-hacks",
       "familia": "gancho-organizacao",
       "licenca": "CC0",
@@ -1247,7 +1403,7 @@
         "bandaSuperior": 62.57901995512782,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 47.396,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 13.26,
       "cenarios": {
@@ -1284,12 +1440,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 20.081701687500004,
         "lucroLiquidoDiarioNoPrecoCentral": 80.32680675000002
       },
-      "score": 0.07091261776188724
+      "score": 0.07610093305332857,
+      "precoVerificado": false
     },
     {
       "id": "mw-116454",
       "nome": "Tubular Vase",
       "demandaValidada": 1.806179973983887,
+      "demanda": {
+        "valor": 1.806179973983887,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 63
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "decoracao",
       "familia": "vaso-decorativo",
       "licenca": "CC0",
@@ -1320,7 +1484,7 @@
         "bandaSuperior": 72.2437159878869,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 65.79,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 2.6960999999999995,
       "cenarios": {
@@ -1357,12 +1521,20 @@
         "margemLiquidaUnitariaNoPrecoCentral": 48.39346852083334,
         "lucroLiquidoDiarioNoPrecoCentral": 387.1477481666667
       },
-      "score": 0.35646735569015076
+      "score": 0.39389159443604554,
+      "precoVerificado": false
     },
     {
       "id": "mw-79685",
       "nome": "Plant Pot",
       "demandaValidada": 1.2787536009528289,
+      "demanda": {
+        "valor": 1.2787536009528289,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 18
+      },
+      "saturacao": null,
+      "alertaConcorrencia": null,
       "categoria": "decoracao",
       "familia": "vaso-decorativo",
       "licenca": "CC0",
@@ -1393,7 +1565,7 @@
         "bandaSuperior": 72.2437159878869,
         "fatorMarketplace": 1.2,
         "mediaEmMarketplace": 65.79,
-        "qualidade": "ok"
+        "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias"
       },
       "custoDoMaterial": 5.9598,
       "cenarios": {
@@ -1430,12 +1602,22 @@
         "margemLiquidaUnitariaNoPrecoCentral": 43.59384308333333,
         "lucroLiquidoDiarioNoPrecoCentral": 130.78152925
       },
-      "score": 0.17151516566296476
+      "score": 0.19043774895182047,
+      "precoVerificado": false
     },
     {
       "id": "mw-1384845",
       "nome": "A Cute Sleepy Puppy",
       "demandaValidada": 2.2764618041732443,
+      "demanda": {
+        "valor": 2.2764618041732443,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 188
+      },
+      "saturacao": {
+        "amazon": 77
+      },
+      "alertaConcorrencia": null,
       "categoria": "decoracao",
       "familia": "miniatura-decorativa",
       "licenca": "CC0",
@@ -1457,36 +1639,36 @@
         "ocupacaoDaImpressoraPct": 53.125000000000014
       },
       "preco": {
-        "n": 4,
-        "media": 37.225,
-        "desvioPadrao": 7.936361466902407,
-        "min": 35,
-        "max": 39.9,
-        "bandaInferior": 29.288638533097593,
-        "bandaSuperior": 45.161361466902406,
-        "fatorMarketplace": 1.25,
-        "mediaEmMarketplace": 46.53125,
+        "n": 7,
+        "media": 33.642857142857146,
+        "desvioPadrao": 12.392574005273904,
+        "min": 19.9,
+        "max": 53.9,
+        "bandaInferior": 21.250283137583242,
+        "bandaSuperior": 46.03543114813105,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 39.69857142857143,
         "qualidade": "ok"
       },
       "custoDoMaterial": 0.8976000000000001,
       "cenarios": {
         "pessimista": {
-          "lucro": 29.288638533097593,
-          "margemBruta": 28.391038533097593,
-          "lucrabilidade": 66.80244360728845,
-          "lucrabilidadeDiaria": 851.7311559929278
+          "lucro": 21.250283137583242,
+          "margemBruta": 20.35268313758324,
+          "lucrabilidade": 47.88866620607821,
+          "lucrabilidadeDiaria": 610.5804941274972
         },
         "central": {
-          "lucro": 37.225,
-          "margemBruta": 36.327400000000004,
-          "lucrabilidade": 85.47623529411764,
-          "lucrabilidadeDiaria": 1089.8220000000001
+          "lucro": 33.642857142857146,
+          "margemBruta": 32.74525714285715,
+          "lucrabilidade": 77.04766386554623,
+          "lucrabilidadeDiaria": 982.3577142857145
         },
         "otimista": {
-          "lucro": 45.161361466902406,
-          "margemBruta": 44.26376146690241,
-          "lucrabilidade": 104.15002698094683,
-          "lucrabilidadeDiaria": 1327.9128440070722
+          "lucro": 46.03543114813105,
+          "margemBruta": 45.137831148131056,
+          "lucrabilidade": 106.20666152501424,
+          "lucrabilidadeDiaria": 1354.1349344439318
         }
       },
       "liquido": {
@@ -1500,15 +1682,25 @@
           "total": 3.687429541666667
         },
         "precoSugeridoLojaPropria": 8.112344991666667,
-        "margemLiquidaUnitariaNoPrecoCentral": 33.537570458333334,
-        "lucroLiquidoDiarioNoPrecoCentral": 1006.12711375
+        "margemLiquidaUnitariaNoPrecoCentral": 29.95542760119048,
+        "lucroLiquidoDiarioNoPrecoCentral": 898.6628280357144
       },
-      "score": 0.8987922162765057
+      "score": 0.9001343757660345,
+      "precoVerificado": true
     },
     {
       "id": "mw-899654",
       "nome": "French Bulldog",
       "demandaValidada": 1.1139433523068367,
+      "demanda": {
+        "valor": 1.1139433523068367,
+        "fonte": "fallback-impressoes-makerworld",
+        "bruto": 12
+      },
+      "saturacao": {
+        "amazon": 77
+      },
+      "alertaConcorrencia": null,
       "categoria": "decoracao",
       "familia": "miniatura-decorativa",
       "licenca": "CC0",
@@ -1530,36 +1722,36 @@
         "ocupacaoDaImpressoraPct": 43.958333333333336
       },
       "preco": {
-        "n": 4,
-        "media": 37.225,
-        "desvioPadrao": 7.936361466902407,
-        "min": 35,
-        "max": 39.9,
-        "bandaInferior": 29.288638533097593,
-        "bandaSuperior": 45.161361466902406,
-        "fatorMarketplace": 1.25,
-        "mediaEmMarketplace": 46.53125,
+        "n": 7,
+        "media": 33.642857142857146,
+        "desvioPadrao": 12.392574005273904,
+        "min": 19.9,
+        "max": 53.9,
+        "bandaInferior": 21.250283137583242,
+        "bandaSuperior": 46.03543114813105,
+        "fatorMarketplace": 1.18,
+        "mediaEmMarketplace": 39.69857142857143,
         "qualidade": "ok"
       },
       "custoDoMaterial": 2.9172,
       "cenarios": {
         "pessimista": {
-          "lucro": 29.288638533097593,
-          "margemBruta": 26.371438533097592,
-          "lucrabilidade": 19.99729936159059,
-          "lucrabilidadeDiaria": 210.97150826478074
+          "lucro": 21.250283137583242,
+          "margemBruta": 18.33308313758324,
+          "lucrabilidade": 13.901863990584447,
+          "lucrabilidadeDiaria": 146.66466510066593
         },
         "central": {
-          "lucro": 37.225,
-          "margemBruta": 34.3078,
-          "lucrabilidade": 26.015393364928908,
-          "lucrabilidadeDiaria": 274.4624
+          "lucro": 33.642857142857146,
+          "margemBruta": 30.725657142857145,
+          "lucrabilidade": 23.299076506431955,
+          "lucrabilidadeDiaria": 245.80525714285716
         },
         "otimista": {
-          "lucro": 45.161361466902406,
-          "margemBruta": 42.244161466902405,
-          "lucrabilidade": 32.033487368267224,
-          "lucrabilidadeDiaria": 337.95329173521924
+          "lucro": 46.03543114813105,
+          "margemBruta": 43.11823114813105,
+          "lucrabilidade": 32.696289022279466,
+          "lucrabilidadeDiaria": 344.9458491850484
         }
       },
       "liquido": {
@@ -1573,10 +1765,11 @@
           "total": 6.332773822916667
         },
         "precoSugeridoLojaPropria": 13.932102410416668,
-        "margemLiquidaUnitariaNoPrecoCentral": 30.892226177083334,
-        "lucroLiquidoDiarioNoPrecoCentral": 247.13780941666667
+        "margemLiquidaUnitariaNoPrecoCentral": 27.310083319940478,
+        "lucroLiquidoDiarioNoPrecoCentral": 218.48066655952383
       },
-      "score": 0.28737411121899825
+      "score": 0.2903845106104753,
+      "precoVerificado": true
     }
   ]
 }
