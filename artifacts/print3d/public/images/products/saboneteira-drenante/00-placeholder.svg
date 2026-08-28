@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" role="img" aria-label="Saboneteira Drenante Seca-Sabonete">
+  <defs>
+    <pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0 H0 V16" fill="none" stroke="rgba(34,211,238,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="260" height="220" fill="#0F172A"/>
+  <rect width="260" height="220" fill="url(#g)"/>
+  <g stroke="#F97316" stroke-width="3" fill="none"><path d="M50 150 L60 110 h140 l10 40 Z"/><path d="M50 150 h160"/></g><g stroke="#22D3EE" stroke-width="2"><path d="M80 118 v24"/><path d="M105 118 v24"/><path d="M130 118 v24"/><path d="M155 118 v24"/><path d="M180 118 v24"/></g><path d="M120 178 v14" stroke="#22D3EE" stroke-width="3"/>
+  <text x="130" y="205" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(148,163,184,0.55)" letter-spacing="2">FOTO EM BREVE</text>
+</svg>

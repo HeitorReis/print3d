@@ -1,19 +1,19 @@
 import { useLang } from '@/contexts/LangContext';
 
 const STEPS_EN = [
-  { num: '01', label: 'Send the idea or file', detail: 'Share a reference, sketch, measurements, STL or CAD file.' },
-  { num: '02', label: 'Receive the quote', detail: 'I check feasibility, material, price and estimated delivery.' },
-  { num: '03', label: 'Confirm the details', detail: 'We align color, size, material and any adjustments before printing.' },
-  { num: '04', label: 'Production', detail: 'The part is printed, checked and cleaned.' },
-  { num: '05', label: 'Delivery or pickup', detail: 'You receive the finished piece with the agreed delivery method.' },
+  { num: '01', label: 'Pick the part', detail: 'Choose from the catalogue or send a reference for a custom piece.' },
+  { num: '02', label: 'Get the quote', detail: 'Price, colour, material and lead time confirmed by message before anything starts.' },
+  { num: '03', label: 'Confirm and pay', detail: 'Pix or the payment link. Production only starts after confirmation.' },
+  { num: '04', label: 'Printing', detail: 'The part is printed, inspected, cleaned and packed. Up to 3 business days.' },
+  { num: '05', label: 'Delivery', detail: 'Shipped with tracking, or picked up in São José dos Campos.' },
 ];
 
 const STEPS_PT = [
-  { num: '01', label: 'Envie a ideia ou arquivo', detail: 'Compartilhe referência, desenho, medidas, STL ou arquivo CAD.' },
-  { num: '02', label: 'Receba o orçamento', detail: 'Eu avalio viabilidade, material, preço e prazo estimado.' },
-  { num: '03', label: 'Confirme os detalhes', detail: 'Alinhamos cor, tamanho, material e ajustes antes da impressão.' },
-  { num: '04', label: 'Produção', detail: 'A peça é impressa, conferida e limpa.' },
-  { num: '05', label: 'Entrega ou retirada', detail: 'Você recebe a peça final pelo método combinado.' },
+  { num: '01', label: 'Escolha a peça', detail: 'Do catálogo, ou mande uma referência para uma peça sob medida.' },
+  { num: '02', label: 'Receba o orçamento', detail: 'Preço, cor, material e prazo confirmados por mensagem antes de qualquer coisa.' },
+  { num: '03', label: 'Confirme e pague', detail: 'Pix ou link de pagamento. A produção só começa depois da confirmação.' },
+  { num: '04', label: 'Impressão', detail: 'A peça é impressa, conferida, limpa e embalada. Até 3 dias úteis.' },
+  { num: '05', label: 'Entrega', detail: 'Envio com rastreio, ou retirada em São José dos Campos.' },
 ];
 
 export function ProcessSection() {
@@ -84,8 +84,8 @@ export function ProcessSection() {
 
         <p className="text-sm mt-12 max-w-2xl leading-relaxed" style={{ color: '#94A3B8' }}>
           {lang === 'en'
-            ? 'Want to see the process? Follow print tests, prototypes and finished parts on TikTok.'
-            : 'Quer ver o processo? Acompanhe testes, protótipos e peças finalizadas no TikTok.'}
+            ? 'A part with a printing defect is reprinted at no cost — just send a photo within 7 days of delivery.'
+            : 'Peça com defeito de impressão é reimpressa sem custo — basta enviar uma foto em até 7 dias após a entrega.'}
         </p>
       </div>
     </section>

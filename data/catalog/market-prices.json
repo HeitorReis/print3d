@@ -1,0 +1,960 @@
+{
+  "meta": {
+    "versao": "2026-08-28",
+    "moeda": "BRL",
+    "origemDosDados": "COLETA DE PRIMEIRA MAO no navegador do proprio usuario (Claude in Chrome), em 28/08/2026. Substitui a versao anterior, que usava lojas proprias e guias de setor como proxy.",
+    "cobertura": {
+      "mercado-livre": "2 de 6 familias (fidget-antistress e suporte-notebook), COM contagem de vendidos. As outras 4 nao foram coletadas: o ML passou a travar a pagina de busca apos ~6 buscas seguidas (rate limiting). Repetir em outra sessao, com intervalo entre buscas.",
+      "amazon-br": "6 de 6 familias, com preco e, em alguns anuncios, 'compras no mes passado'.",
+      "shopee": "0 de 6. A Shopee exige login para exibir busca e a conta nao estava logada no navegador."
+    },
+    "metodoEstatistico": "media aritmetica e desvio padrao amostral das observacoes nao marcadas como outlier.",
+    "sinalDeDemanda": "vendidosMax = maior contagem de vendas observada entre concorrentes DIRETOS da familia. E o sinal usado pelo motor no lugar das impressoes do MakerWorld, por medir disposicao a pagar no Brasil e nao interesse global de makers.",
+    "ajusteMarketplace": "fatorMarketplace multiplica a media para estimar o preco de vitrine equivalente dentro de ML/Shopee. Com dados de primeira mao COLETADOS NO PROPRIO MARKETPLACE, o fator passa a ser 1.0 nas familias cobertas pelo ML."
+  },
+  "familias": {
+    "organizador-de-mesa": {
+      "rotulo": "Organizador de mesa / porta-caneta / porta marca-texto",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": null,
+      "fonteDemanda": "Sem contagem de vendas coletada. A Amazon nao exibiu 'compras no mes' para esta familia e o ML travou antes da coleta.",
+      "saturacao": {
+        "amazon": 18
+      },
+      "nota": "Apenas 18 resultados na Amazon para a busca especifica - a menor saturacao de todo o catalogo.",
+      "observacoes": [
+        {
+          "preco": 22.8,
+          "produto": "Porta Objetos com 3 Divisorias Dello",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.7
+        },
+        {
+          "preco": 24.99,
+          "produto": "Organizador de Mesa Multifuncional 3D Porta Canetas Marca-Texto e Bloco de Notas",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 26.3,
+          "produto": "Organizador Diagonal Fume Maxcril",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.2
+        },
+        {
+          "preco": 32.99,
+          "produto": "Organizador P/Canetas Lettering Touch Em MDF",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 3.7
+        },
+        {
+          "preco": 32.99,
+          "produto": "Suporte Expositor Organizador para 60 Canetas em MDF",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 35.58,
+          "produto": "Porta objetos docura c/ 5 unidades Dello",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.9
+        },
+        {
+          "preco": 41.99,
+          "produto": "Porta Canetas Lapis Pinceis Treco Organizador",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 49.99,
+          "produto": "Suporte Expositor Organizador para 120 canetas",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 49.9,
+          "produto": "Porta Canetas Castelo Bruxo Magico",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 54.9,
+          "produto": "Organizador De Mesa Giratorio Porta Caneta Em Metal",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=organizador+marca+texto+porta+caneta+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "suporte-celular": {
+      "rotulo": "Suporte de celular / tablet",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 20.0,
+          "produto": "Suporte de celular para mesa - Impressao 3D",
+          "loja": "Open Eyes",
+          "url": "https://openeyes.com.br/produto/suporte-de-celular-para-mesa-impressao-3d/"
+        },
+        {
+          "preco": 24.9,
+          "produto": "Suporte de mesa para celular impresso 3D",
+          "loja": "ND3D",
+          "url": "https://www.nd3d.com.br/MLB-3961118483-suporte-de-mesa-para-celular-impresso-3d-_JM"
+        },
+        {
+          "preco": 25.0,
+          "produto": "Suporte Tablet Slim",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 29.0,
+          "produto": "Suporte para Tablet ate 1cm com trava antifurto",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 39.0,
+          "produto": "Suporte Tablet 1,5cm",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 52.5,
+          "produto": "Faixa de mercado para suporte de celular (R$35-70)",
+          "loja": "Tamo Tudo 3D (guia de setor)",
+          "url": "https://tamotudo3d.com.br/blog/5-produtos-mais-lucrativos-para-imprimir-e-vender-em-2026",
+          "tipo": "faixa",
+          "min": 35,
+          "max": 70
+        },
+        {
+          "preco": 99.9,
+          "produto": "Suporte celular Robo Armadura Mecha",
+          "loja": "Rota64",
+          "url": "https://www.rota64.com.br/MLB-3734926414-suporte-para-celular-impresso-3d-robo-armadura-mecha-_JM",
+          "outlier": true,
+          "motivo": "peca colecionavel grande, outra faixa de valor"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "acessorio-setup-pequeno": {
+      "rotulo": "Acessorio pequeno de setup (pe de teclado, passa-fio, suporte de controle)",
+      "fatorMarketplace": 1.25,
+      "observacoes": [
+        {
+          "preco": 12.49,
+          "produto": "Kit passa fio organizador de cabos (4 un)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 19.0,
+          "produto": "Kit passa fio quadrado (10 un)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 15.99,
+          "produto": "Suporte controles Xbox",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 19.0,
+          "produto": "Suporte Mouse Parede",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 22.9,
+          "produto": "Suporte barbeador (kit 3)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "suporte-notebook": {
+      "rotulo": "Suporte / elevador de notebook (par de apoios)",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": 1000,
+      "fonteDemanda": "Mercado Livre: 'Pes Elevadores De Visao Macbook Laptop Notebook Pezinhos' da Vix3D - produto praticamente identico ao nosso, impresso em 3D - 4.4 estrelas, +1000 vendidos, a R$ 18,33",
+      "saturacao": {
+        "mercadoLivre": 259,
+        "amazon": 205
+      },
+      "alertaConcorrencia": "Concorrente direto impresso em 3D vendendo o MESMO conceito (par de pes elevadores) a R$ 18,33 com +1000 vendidos. Alem disso, suportes de aluminio e aco com regulagem competem a partir de R$ 17,19 com milhares de avaliacoes.",
+      "observacoes": [
+        {
+          "preco": 18.33,
+          "produto": "Pes Elevadores De Visao Macbook Laptop Notebook Pezinhos (Vix3D, impresso em 3D)",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 1000,
+          "avaliacao": 4.4,
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 25.9,
+          "produto": "Suporte Para Notebook Ergonomico Portatil 2 Pecas",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 25.0,
+          "produto": "Suporte Para Notebook 11 A 16 Impressao 3d Premium",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 35.0,
+          "produto": "Suporte Para Notebook Elevador De Mesa Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 45.0,
+          "produto": "Suporte Para Notebook Ergonomico Portatil Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 50.0,
+          "produto": "Suporte Notebook Dobravel Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 25.01,
+          "produto": "Suporte Para Notebook Ergonomico Base Elevada",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 100,
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 19.0,
+          "produto": "Suporte De Mesa Universal Alto 180 Aberto",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 1000,
+          "avaliacao": 4.5
+        },
+        {
+          "preco": 28.03,
+          "produto": "Suporte Base Apoio Fixar Notebook Embaixo Da Mesa (Peko)",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 1000,
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 17.19,
+          "produto": "Suporte Para Notebook E MacBook em Aluminio com Altura Ajustavel",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=suporte+notebook+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 3000,
+          "avaliacao": 4.5
+        },
+        {
+          "preco": 35.0,
+          "produto": "Suporte OCTOO Uptable Dobravel e Portatil",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=suporte+notebook+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 400,
+          "avaliacao": 4.4
+        },
+        {
+          "preco": 29.9,
+          "produto": "Suporte OCTOO LiteStand Note",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=suporte+notebook+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 200,
+          "avaliacao": 4.5
+        },
+        {
+          "preco": 20.98,
+          "produto": "Suporte para laptop dobravel de aluminio ajustavel",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=suporte+notebook+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 50,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 92.0,
+          "produto": "Suporte Para Notebook Ergonomico Dobravel Em Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "anuncio sem venda registrada; preco muito acima do restante da categoria"
+        },
+        {
+          "preco": 128.0,
+          "produto": "Suporte Invisivel Para Laptop Com Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/suporte-notebook-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "importado da China, sem venda registrada"
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "suporte-monitor": {
+      "rotulo": "Pes / elevadores de prateleira e monitor",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 79.9,
+          "produto": "Prateleira de cubo modular",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 44.99,
+          "produto": "Bandeja octogonal",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "utilitario-cozinha": {
+      "rotulo": "Utilitario de cozinha pequeno (clipe, prendedor, suporte de lixeira) - vendido em kit",
+      "fatorMarketplace": 1.25,
+      "observacoes": [
+        {
+          "preco": 12.49,
+          "produto": "Kit passa fio organizador de cabos (4 un) - proxy de kit de pecas utilitarias pequenas",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 19.0,
+          "produto": "Kit passa fio quadrado (10 un) - proxy de kit",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 22.9,
+          "produto": "Suporte barbeador (kit 3)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 24.99,
+          "produto": "Suporte porta cartao de visita (kit 3)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "banheiro-bem-estar": {
+      "rotulo": "Saboneteira drenante",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": 200,
+      "fonteDemanda": "Amazon: Coza Saboneteira Splash, 'Mais de 200 compras no mes passado', 4.8 estrelas com 2,2 mil avaliacoes, a R$ 16,91",
+      "saturacao": {
+        "amazon": 69
+      },
+      "alertaConcorrencia": "Categoria dominada por plastico injetado e silicone de marca (Coza) entre R$ 12,99 e R$ 29,90. Uma peca impressa nao tem vantagem funcional evidente sobre um produto injetado de R$ 16,91 com 2,2 mil avaliacoes.",
+      "observacoes": [
+        {
+          "preco": 12.99,
+          "produto": "Saboneteira Folha Decorativa com Drenagem",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 16.91,
+          "produto": "Coza Saboneteira Splash",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 200,
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 19.9,
+          "produto": "Saboneteira em silicone com Dreno",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.9
+        },
+        {
+          "preco": 19.9,
+          "produto": "Saboneteira com Drenagem Preta 12,2 x 7,5 x 2 cm",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 19.9,
+          "produto": "Saboneteira Porta Sabonete Com Escorredor ELETROSTOCK",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 5.0
+        },
+        {
+          "preco": 22.61,
+          "produto": "Saboneteira de silicone autodrenante",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 22.9,
+          "produto": "Saboneteira Minimalista com Drenagem",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 22.9,
+          "produto": "Saboneteira Elegante Moderno Drenagem ELETROSTOCK",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 5.0
+        },
+        {
+          "preco": 24.9,
+          "produto": "Saboneteira Gatinho Branco com Drenagem",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 27.9,
+          "produto": "Saboneteira com Drenagem Inteligente em PET",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 27.9,
+          "produto": "Saboneteira Jacare Criativa com Drenagem",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 29.9,
+          "produto": "Saboneteira com Sistema de Drenagem Inteligente",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.1
+        },
+        {
+          "preco": 29.9,
+          "produto": "Porta Sabonete com Drenagem Design Ondulado",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 35.99,
+          "produto": "Kit 2 Saboneteiras Modernas ELETROSTOCK",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=saboneteira+drenante+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "kit de 2"
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "fidget-antistress": {
+      "rotulo": "Cubo infinito / fidget antiestresse impresso em 3D",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": 1000,
+      "fonteDemanda": "Mercado Livre: 'Cubo Infinito Galaxia Infinity Cube' 4.6 estrelas, +1000 vendidos, a R$ 19,00",
+      "saturacao": {
+        "mercadoLivre": 190,
+        "amazon": 70
+      },
+      "observacoes": [
+        {
+          "preco": 19.0,
+          "produto": "Cubo Infinito Galaxia Infinity Cube",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 1000,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 28.45,
+          "produto": "Cubo Infinito Ansiedade Infinity Cube Azul-celeste",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 500,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 19.0,
+          "produto": "Infinity Cube Fidget Cube Cubo Anti Estresse",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 500,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 30.0,
+          "produto": "Cubo Infinito Fidget Antistress Sensorial TDH",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 100,
+          "avaliacao": 5.0
+        },
+        {
+          "preco": 29.03,
+          "produto": "Infinity Cube Cuber Brasil",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 100,
+          "avaliacao": 4.8
+        },
+        {
+          "preco": 18.9,
+          "produto": "Infinity Cube Impressao 3d Estrutura Verde",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "vendidos": 25,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 25.0,
+          "produto": "Cubo Infinito Pla Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 20.0,
+          "produto": "Brinquedo Cubo Sensorial Infinito Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 24.9,
+          "produto": "Cubo Infinito Fidget Articulado Impressao 3d",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 25.9,
+          "produto": "Cubo Infinito Fidget Impressao 3d Anti Estresse",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 19.9,
+          "produto": "Cubo Infinito Sensorial em PLA 4 cm",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 22.89,
+          "produto": "Fidget Toy Anti Stress Sensorial (Cubo Infinito)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "comprasNoMes": 100,
+          "avaliacao": 3.4
+        },
+        {
+          "preco": 25.77,
+          "produto": "Cubo Magico Infinito Antiestresse Fidget Impressao 3D",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 29.9,
+          "produto": "Cubo Infinito 3D Impresso Vermelho e Laranja",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 35.72,
+          "produto": "Fidget Cubo Infinito Cube Infinity 3D Bicolor",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 3.9
+        },
+        {
+          "preco": 17.99,
+          "produto": "Cubo Infinito Antistress ELETROSTOCK (Preto)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.7
+        },
+        {
+          "preco": 75.9,
+          "produto": "Kit 10 Cubo Infinito Fidget",
+          "loja": "Mercado Livre",
+          "url": "https://lista.mercadolivre.com.br/cubo-infinito-impressao-3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "kit de 10, nao comparavel a unidade"
+        },
+        {
+          "preco": 78.9,
+          "produto": "Kit 4 Cubo Colecao Completa",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=cubo+infinito+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "kit de 4"
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "jogo-de-mesa-pequeno": {
+      "rotulo": "Jogo de mesa pequeno impresso em 3D",
+      "fatorMarketplace": 1.25,
+      "observacoes": [
+        {
+          "preco": 107.99,
+          "produto": "Jogo Equilibrio do Dragao 3D",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 49.0,
+          "produto": "Caixa Figurinhas Copa",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 45.0,
+          "produto": "Deck Box Pokemon 100 cartas",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/",
+          "nota": "referencia de faixa; o produto em si usa marca de terceiro"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "vaso-decorativo": {
+      "rotulo": "Vaso / cachepo decorativo",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 45.9,
+          "produto": "Vaso suculento design moderno",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 71.9,
+          "produto": "Vaso Decorativo Moderno (7x7x15 cm, 214 g de PLA)",
+          "loja": "DecoraPrint3D",
+          "url": "https://decoraprint3d.com.br/product/vaso-decorativo-moderno-impressao-3d/"
+        },
+        {
+          "preco": 39.0,
+          "produto": "Vaso Cachepot Decorativo Capitone (a partir de)",
+          "loja": "ArtTech 3D",
+          "url": "https://loja.arttech3d.com.br/casa-decoracao/vasos-e-cachepots/vaso-cachepot-decorativo-capitone"
+        },
+        {
+          "preco": 62.5,
+          "produto": "Faixa de mercado para vaso decorativo de 25 cm (R$45-80)",
+          "loja": "Tamo Tudo 3D (guia de setor)",
+          "url": "https://tamotudo3d.com.br/blog/quanto-custa-vaso-decorativo-3d",
+          "tipo": "faixa",
+          "min": 45,
+          "max": 80
+        },
+        {
+          "preco": 280.0,
+          "produto": "Vaso impresso em 3D organico preto (14 x 28 cm)",
+          "loja": "Camelia Decor",
+          "url": "https://www.cameliadecor.com.br/vaso-impresso-em-3d-organico-preto.html",
+          "outlier": true,
+          "motivo": "peca grande de decoracao premium, fora da faixa da A1 mini"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "miniatura-decorativa": {
+      "rotulo": "Miniatura decorativa pequena (pet / figura)",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": null,
+      "fonteDemanda": "Sem contagem de vendas coletada nesta familia.",
+      "saturacao": {
+        "amazon": 77
+      },
+      "observacoes": [
+        {
+          "preco": 19.9,
+          "produto": "Escultura Decorativa Cachorro de Balao (P)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 3.5
+        },
+        {
+          "preco": 20.99,
+          "produto": "Enfeite Decorativo Silhueta Mao e Pata Cachorro 3D",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 29.9,
+          "produto": "Estatua Decoracao Cachorro Pet Enfeite Minimalista PLA",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 5.0,
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 29.9,
+          "produto": "Escultura Amigo Fiel Decoracao Moderna",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28"
+        },
+        {
+          "preco": 35.91,
+          "produto": "Arte Decorativa Pet 3D para Parede em PLA",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.0
+        },
+        {
+          "preco": 45.0,
+          "produto": "Pug Cachorro Impressao 3D Objeto Decorativo",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 5.0,
+          "equivalenteDireto": true
+        },
+        {
+          "preco": 53.9,
+          "produto": "Shih-tzu decorativo Miniatura 10 cm Toque 3D",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "avaliacao": 4.1
+        },
+        {
+          "preco": 69.9,
+          "produto": "Kit 3 Mini Estatua Filhote de Cachorro em Resina",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=miniatura+cachorro+decorativa+impressao+3d",
+          "coletadoEm": "2026-08-28",
+          "outlier": true,
+          "motivo": "kit de 3, em resina"
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "gancho-organizacao": {
+      "rotulo": "Gancho / suporte de parede",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 19.0,
+          "produto": "Suporte Mouse Parede",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        },
+        {
+          "preco": 34.99,
+          "produto": "Suporte pulseiras relogio",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 64.5,
+          "produto": "Porta Chaves Aerofolio",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "brinde-pequeno": {
+      "rotulo": "Apito de emergencia / seguranca (kit)",
+      "fatorMarketplace": 1.18,
+      "vendidosMax": 200,
+      "fonteDemanda": "Amazon: Azteq Apito de Sobrevivencia Survivor de Aluminio, 'Mais de 200 compras no mes passado', 4.4 estrelas com 1,3 mil avaliacoes, a R$ 19,90",
+      "saturacao": {
+        "amazon": 440
+      },
+      "alertaConcorrencia": "Existe kit de 10 apitos DE METAL com cordao por R$ 33,15, e apitos de aluminio de marca por R$ 19,90 com 1,3 mil avaliacoes. Um apito de PLA compete em desvantagem de material percebido.",
+      "unidadesDoKitObservado": 10,
+      "observacoes": [
+        {
+          "preco": 33.15,
+          "produto": "Kit 10 Apitos De Metal Prateado com Cordao",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=kit+10+apitos",
+          "coletadoEm": "2026-08-28",
+          "equivalenteDireto": true,
+          "unidades": 10
+        },
+        {
+          "preco": 46.78,
+          "produto": "Kit 5 Apito Sobrevivencia Emergencia",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=kit+apito+seguranca+emergencia",
+          "coletadoEm": "2026-08-28",
+          "unidades": 5,
+          "ajustadoPara10": 93.56,
+          "outlier": true,
+          "motivo": "preco por unidade muito acima do restante"
+        },
+        {
+          "preco": 29.88,
+          "produto": "Equivalente a 10 un do Kit 2 Apitos De Metal com Cordao (R$ 5,98/un)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=kit+apito+seguranca+emergencia",
+          "coletadoEm": "2026-08-28",
+          "unidades": 10,
+          "derivado": true
+        },
+        {
+          "preco": 39.25,
+          "produto": "Equivalente a 10 un do Apito Profissional de Metal Kit 2 (R$ 7,85/un)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=kit+apito+seguranca+emergencia",
+          "coletadoEm": "2026-08-28",
+          "unidades": 10,
+          "derivado": true,
+          "comprasNoMes": 100,
+          "avaliacao": 4.6
+        },
+        {
+          "preco": 38.5,
+          "produto": "Equivalente a 10 un do KIt 2 Apitos De Metal Prateado (R$ 5,98/un ajustado)",
+          "loja": "Amazon",
+          "url": "https://www.amazon.com.br/s?k=kit+10+apitos",
+          "coletadoEm": "2026-08-28",
+          "unidades": 10,
+          "derivado": true
+        }
+      ],
+      "verificadoEm": "2026-08-28"
+    },
+    "decoracao-parede": {
+      "rotulo": "Decoracao de parede",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 79.9,
+          "produto": "Prateleira de cubo modular",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 99.0,
+          "produto": "Casinha Halloween LED",
+          "loja": "R3D",
+          "url": "https://loja.r3d.com.br/"
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    },
+    "gadget-cozinha": {
+      "rotulo": "Gadget de cozinha de porte medio (lavador, escorredor, suporte)",
+      "fatorMarketplace": 1.2,
+      "observacoes": [
+        {
+          "preco": 44.99,
+          "produto": "Bandeja octogonal",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 79.9,
+          "produto": "Suporte comedouro pets (a partir de)",
+          "loja": "OctoDIY",
+          "url": "https://www.octodiy.com.br/"
+        },
+        {
+          "preco": 67.5,
+          "produto": "Faixa de mercado para acessorio funcional de porte medio (R$45-90)",
+          "loja": "Tamo Tudo 3D (guia de setor)",
+          "url": "https://tamotudo3d.com.br/blog/5-produtos-mais-lucrativos-para-imprimir-e-vender-em-2026",
+          "tipo": "faixa",
+          "min": 45,
+          "max": 90
+        }
+      ],
+      "qualidade": "NAO REVERIFICADA em 28/08 - observacoes antigas de lojas proprias",
+      "verificadoEm": null
+    }
+  }
+}

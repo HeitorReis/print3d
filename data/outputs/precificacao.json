@@ -1,0 +1,146 @@
+[
+  {
+    "produto": "Cubo Infinito Antiestresse",
+    "canal": "mercado-livre",
+    "etiqueta": 25.9,
+    "taxa": 9.608,
+    "liquido": 16.291999999999998,
+    "margem": 9.06615402083333
+  },
+  {
+    "produto": "Cubo Infinito Antiestresse",
+    "canal": "shopee",
+    "etiqueta": 25.9,
+    "taxa": 9.18,
+    "liquido": 16.72,
+    "margem": 9.494154020833331
+  },
+  {
+    "produto": "Cubo Infinito Antiestresse",
+    "canal": "nuvemshop",
+    "etiqueta": 21.9,
+    "taxa": 0,
+    "liquido": 21.9,
+    "margem": 14.674154020833331
+  },
+  {
+    "produto": "Suporte Ergonômico para Notebook (par)",
+    "canal": "mercado-livre",
+    "etiqueta": 31.9,
+    "taxa": 10.328,
+    "liquido": 21.572,
+    "margem": 14.262607083333334
+  },
+  {
+    "produto": "Suporte Ergonômico para Notebook (par)",
+    "canal": "shopee",
+    "etiqueta": 31.9,
+    "taxa": 10.379999999999999,
+    "liquido": 21.52,
+    "margem": 14.210607083333334
+  },
+  {
+    "produto": "Suporte Ergonômico para Notebook (par)",
+    "canal": "nuvemshop",
+    "etiqueta": 26.9,
+    "taxa": 0,
+    "liquido": 26.9,
+    "margem": 19.59060708333333
+  },
+  {
+    "produto": "Organizador de Marca-Texto 8 Lugares",
+    "canal": "mercado-livre",
+    "etiqueta": 37.9,
+    "taxa": 11.048,
+    "liquido": 26.851999999999997,
+    "margem": 21.81310695833333
+  },
+  {
+    "produto": "Organizador de Marca-Texto 8 Lugares",
+    "canal": "shopee",
+    "etiqueta": 37.9,
+    "taxa": 11.58,
+    "liquido": 26.32,
+    "margem": 21.281106958333332
+  },
+  {
+    "produto": "Organizador de Marca-Texto 8 Lugares",
+    "canal": "nuvemshop",
+    "etiqueta": 31.9,
+    "taxa": 0,
+    "liquido": 31.9,
+    "margem": 26.86110695833333
+  },
+  {
+    "produto": "Saboneteira Drenante Seca-Sabonete",
+    "canal": "mercado-livre",
+    "etiqueta": 23.9,
+    "taxa": 9.368,
+    "liquido": 14.531999999999998,
+    "margem": 7.939172708333332
+  },
+  {
+    "produto": "Saboneteira Drenante Seca-Sabonete",
+    "canal": "shopee",
+    "etiqueta": 23.9,
+    "taxa": 8.780000000000001,
+    "liquido": 15.119999999999997,
+    "margem": 8.527172708333332
+  },
+  {
+    "produto": "Saboneteira Drenante Seca-Sabonete",
+    "canal": "nuvemshop",
+    "etiqueta": 19.9,
+    "taxa": 0,
+    "liquido": 19.9,
+    "margem": 13.307172708333333
+  },
+  {
+    "produto": "Mini Cachorro Dormindo",
+    "canal": "mercado-livre",
+    "etiqueta": 33.9,
+    "taxa": 10.568000000000001,
+    "liquido": 23.331999999999997,
+    "margem": 19.64457045833333
+  },
+  {
+    "produto": "Mini Cachorro Dormindo",
+    "canal": "shopee",
+    "etiqueta": 33.9,
+    "taxa": 10.780000000000001,
+    "liquido": 23.119999999999997,
+    "margem": 19.43257045833333
+  },
+  {
+    "produto": "Mini Cachorro Dormindo",
+    "canal": "nuvemshop",
+    "etiqueta": 27.9,
+    "taxa": 0,
+    "liquido": 27.9,
+    "margem": 24.21257045833333
+  },
+  {
+    "produto": "Kit 10 Apitos de Emergência",
+    "canal": "mercado-livre",
+    "etiqueta": 35.9,
+    "taxa": 10.808,
+    "liquido": 25.092,
+    "margem": 21.144646058333333
+  },
+  {
+    "produto": "Kit 10 Apitos de Emergência",
+    "canal": "shopee",
+    "etiqueta": 35.9,
+    "taxa": 11.18,
+    "liquido": 24.72,
+    "margem": 20.772646058333333
+  },
+  {
+    "produto": "Kit 10 Apitos de Emergência",
+    "canal": "nuvemshop",
+    "etiqueta": 29.9,
+    "taxa": 0,
+    "liquido": 29.9,
+    "margem": 25.952646058333332
+  }
+]

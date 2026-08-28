@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema/cost-params.schema.json",
+  "version": "2026-08-27",
+  "descricao": "Todos os parametros editaveis do motor de calculo. Altere aqui e rode `node data/tools/analyze.mjs` para recalcular tudo.",
+
+  "impressora": {
+    "modelo": "Bambu Lab A1 mini",
+    "camaMm": { "x": 180, "y": 180, "z": 180 },
+    "margemDaCamaMm": 5,
+    "espacamentoEntrePecasMm": 5,
+    "potenciaMediaW": 70,
+    "fonte_potencia": "custoimpressao3d.com.br (estimativa de mercado, 70 W medios) + wiki.bambulab.com",
+    "overheadPorMesaH": 0.15,
+    "comentario_overhead": "Aquecimento, purga, calibracao e primeira camada que nao escalam com o numero de pecas na mesa."
+  },
+
+  "operacao": {
+    "pausaEntreMesasH": 2,
+    "horasPorDia": 24,
+    "comentario": "Regra do briefing: pelo menos 2 h de pausa entre uma mesa e a proxima (retirada, limpeza, resfriamento)."
+  },
+
+  "materiais": {
+    "PLA": { "precoPorKgBRL": 110, "densidadeGcm3": 1.24 },
+    "PETG": { "precoPorKgBRL": 130, "densidadeGcm3": 1.27 }
+  },
+
+  "vazaoFilamento": {
+    "comentario": "Massa por hora de impressao. Usado quando a peca nao tem massa medida no fatiador. SUBSTITUA por valores reais do Bambu Studio assim que fatiar cada modelo (campo gramasPorPecaMedida).",
+    "solido": {
+      "gPorHora": 20.4,
+      "ancora": "Penne 2.0 Safety Whistle (CC0): mesa cheia da A1 mini = 100 apitos de ~1 g em 4,9 h -> 100 g / 4,9 h = 20,4 g/h",
+      "fonte": "https://makerworld.com/en/models/2322874-penne-2-0-public-domain-safety-whistle-cc0"
+    },
+    "paredeFina": {
+      "gPorHora": 12.9,
+      "ancora": "Vaso decorativo de 25 cm: 180 g de PLA em 14 h -> 12,9 g/h",
+      "fonte": "https://tamotudo3d.com.br/blog/quanto-custa-vaso-decorativo-3d"
+    }
+  },
+
+  "custosIndiretos": {
+    "comentario": "NAO entram na formula primaria do briefing. Entram apenas na camada `liquido`, que e calculada em paralelo para mostrar o lucro real.",
+    "energiaBRLporKWh": 0.95,
+    "fonte_energia": "canivetemei.com.br (exemplo 2026) - ajuste para a sua conta de luz",
+    "taxaDeFalhaPct": 7,
+    "fonte_falha": "canivetemei.com.br recomenda reserva de 5% a 10%",
+    "embalagemBRLporPeca": 1.5,
+    "maoDeObraBRLporHoraDeManuseio": 25,
+    "minutosDeManuseioPorPeca": 2,
+    "depreciacaoImpressoraBRL": 2200,
+    "vidaUtilHoras": 5000
+  },
+
+  "precificacao": {
+    "margemAlvoSobreCustoLiquido": 2.2,
+    "comentario_margem": "Multiplicador sobre o custo liquido total (material + energia + falha + embalagem + mao de obra + depreciacao) antes das taxas de marketplace.",
+    "arredondamento": "terminacao-9",
+    "comentario_arredondamento": "Ver docs/04-copywriting-e-precificacao.md - a evidencia para preco terminado em 9 e fraca; usamos como default de baixo custo, nao como alavanca principal."
+  }
+}

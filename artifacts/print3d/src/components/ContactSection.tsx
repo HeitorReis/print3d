@@ -68,9 +68,7 @@ export function ContactSection() {
             {t('contact_title')}
           </h2>
           <p className="text-base max-w-2xl leading-relaxed" style={{ color: '#94A3B8' }}>
-            {lang === 'en'
-              ? "Send your idea or question. WhatsApp is the fastest way to request a quote. I'll reply with feasibility, material suggestion, price and estimated delivery."
-              : 'Envie sua ideia ou dúvida. WhatsApp é o caminho mais rápido para pedir orçamento. Eu respondo com viabilidade, sugestão de material, preço e prazo estimado.'}
+            {t('contact_sub')}
           </p>
         </div>
 
